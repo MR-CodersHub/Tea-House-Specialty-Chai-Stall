@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Tea House Journal — Stories brewed with every cup. Explore tea traditions, steeping rituals, flavour pairings, and the art of slow living.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>The Tea House Journal | Stories Brewed With Every Cup</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/blog.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="blog">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 — BLOG HERO
+       Editorial magazine-style layout with lifestyle photography & ghost backdrop
+       ======================================================================== -->
+  <section class="blog-hero-section" id="blogHero">
+    <!-- Oversized ghost backdrop -->
+    <div class="blog-hero-backdrop" aria-hidden="true">JOURNAL</div>
+
+    <div class="container-editorial blog-hero-container">
+      <div class="blog-hero-inner">
+
+        <!-- LEFT: Editorial text column -->
+        <div class="blog-hero-text reveal-on-scroll">
+          <div class="blog-hero-eyebrow">
+            <span class="editorial-category-label">THE TEA HOUSE JOURNAL</span>
+            <span class="blog-eyebrow-line" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="blog-hero-heading">
+            Stories Brewed With<br>
+            <span class="blog-heading-focus">Every Single Cup.</span>
+          </h1>
+
+          <p class="blog-hero-desc">
+            Explore the traditions, flavours, rituals, and little moments that make every cup of chai special.
+            A collection of stories, recipes, and quiet inspiration from the heart of tea culture.
+          </p>
+
+          <div class="blog-hero-cta-row">
+            <a href="#blogListing" class="btn-terracotta">
+              <span>Explore Stories</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual composition -->
+        <div class="blog-hero-visual">
+          <div class="blog-hero-sage-blob" aria-hidden="true"></div>
+
+          <!-- Arch-top portrait card -->
+          <div class="blog-hero-arch-wrap reveal-on-scroll" data-delay="150">
+            <img src="assets/images/blog/blog-hero.jpg"
+              alt="Serene tea table setting with warm chai and open books in morning light"
+              class="blog-hero-arch-img"
+              loading="eager">
+            <div class="blog-hero-card-tag">
+              <span class="blog-tag-badge">Curated Reads</span>
+              <span class="blog-tag-sub">Tea &amp; Mindful Living</span>
+            </div>
+          </div>
+
+          <!-- Floating cursive badge -->
+          <div class="blog-hero-script-badge" aria-hidden="true">
+            <span class="blog-script-1">Word &amp; Warmth</span>
+            <span class="blog-script-2">Volume IV</span>
+            <span class="blog-script-decor"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY FILTER NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="blog-cat-nav-wrapper" id="journalCategories" aria-label="Blog category filter">
+    <div class="container-editorial">
+      <div class="blog-cat-nav-scroll" role="tablist">
+        <button type="button" class="blog-cat-pill is-active" role="tab" aria-selected="true" data-filter="all">
+          <i class="bi bi-grid-fill" aria-hidden="true"></i>
+          <span>All Stories</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Tea Rituals">
+          <i class="bi bi-sun" aria-hidden="true"></i>
+          <span>Tea Rituals</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Tea Culture">
+          <i class="bi bi-compass" aria-hidden="true"></i>
+          <span>Tea Culture</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Chai Preparation">
+          <i class="bi bi-fire" aria-hidden="true"></i>
+          <span>Chai Preparation</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Flavours &amp; Blends">
+          <i class="bi bi-stars" aria-hidden="true"></i>
+          <span>Flavours &amp; Blends</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Food &amp; Pairings">
+          <i class="bi bi-cake2" aria-hidden="true"></i>
+          <span>Food &amp; Pairings</span>
+        </button>
+        <button type="button" class="blog-cat-pill" role="tab" aria-selected="false" data-filter="Tea House Lifestyle">
+          <i class="bi bi-house-heart" aria-hidden="true"></i>
+          <span>Tea House Lifestyle</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       SECTION 02 — BLOG ARTICLES GRID (6 Articles)
+       Same Warm Ivory background throughout, zero horizontal section dividers
+       ======================================================================== -->
+  <section class="blog-listing-section" id="blogListing">
+    <div class="container-editorial">
+      <div class="blog-section-header reveal-on-scroll">
+        <span class="editorial-category-label">RECENT ESSAYS &amp; GUIDES</span>
+        <h2 class="blog-section-heading">From the Teapot to the Page.</h2>
+      </div>
+
+      <!-- Articles Grid: Populated dynamically and hydrated by blog-data.js -->
+      <div class="blog-cards-grid" id="blogGrid">
+        <!-- Rendered by blog.js from BLOG_POSTS in assets/js/data/blog-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 03 — EDITORIAL SPOTLIGHT / PHILOSOPHY
+       Compact reflective section maintaining Warm Ivory background
+       ======================================================================== -->
+  <section class="blog-spotlight-section" id="blogSpotlight">
+    <div class="container-editorial">
+      <div class="blog-spotlight-card reveal-on-scroll">
+        <div class="blog-spotlight-content">
+          <span class="editorial-category-label">OUR EDITORIAL NOTE</span>
+          <blockquote class="blog-spotlight-quote">
+            "A warm cup of tea is a pause in the rush of life — a quiet reminder that the simplest moments often hold the deepest comfort."
+          </blockquote>
+          <p class="blog-spotlight-author">
+            — The Curators of Tea House
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04 — FINAL CTA
+       Deep forest green background, warm ivory typography
+       ======================================================================== -->
+  <section class="blog-cta-section" id="blogCta">
+    <!-- Oversized ghost backdrop -->
+    <div class="blog-cta-backdrop" aria-hidden="true">STORIES</div>
+    <!-- Sage organic blobs -->
+    <div class="blog-cta-blob blog-cta-blob--left" aria-hidden="true"></div>
+    <div class="blog-cta-blob blog-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial blog-cta-inner">
+      <div class="blog-cta-content reveal-on-scroll">
+        <span class="blog-cta-eyebrow editorial-category-label">JOIN OUR TABLE</span>
+        <h2 class="blog-cta-heading">Taste the Stories Behind<br><em>Every Single Blend.</em></h2>
+        <p class="blog-cta-desc">
+          Step into our tea house stall to experience these recipes firsthand, or learn more about our philosophy.
+        </p>
+        <div class="blog-cta-buttons">
+          <a href="about.html" class="btn-terracotta">
+            <span>Our Story</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="menu.html" class="btn-forest blog-cta-btn-alt">
+            <span>Explore Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Interactive Modals: Login & Signup -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail" placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Account created! Welcome to Tea House Rewards.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50 Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Central Blog Data -->
+  <script src="assets/js/data/blog-data.js"></script>
+  <!-- Blog Listing Interactions -->
+  <script src="assets/js/pages/blog.js"></script>
+</body>
+</html>

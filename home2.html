@@ -1,0 +1,767 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tea House & Specialty Chai - Home 2 Experience. Step into a world of comforting flavours, mindful rituals, and moments worth sharing.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Home 2 â€“ Experience The Tea House | Specialty Chai Stall</title>
+
+  <!-- Google Fonts (Editorial Typography System matching Home 1) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Component & Site Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet for Home 2 -->
+  <link rel="stylesheet" href="assets/css/pages/home2.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body data-current-page="home2">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 – EXPERIENCE THE TEA HOUSE (HERO)
+       Asymmetric editorial collage: Cormorant Garamond serif heading +
+       layered image composition — unique visual identity from Home 1
+       ======================================================================== -->
+  <section class="h2-hero-section" id="heroSection">
+    <!-- Ghost backdrop word: top-right, enormous & subtle -->
+    <div class="h2-giant-backdrop" aria-hidden="true">CHAI</div>
+
+    <!-- Far-left vertical editorial label (xl screens only) -->
+    <div class="h2-hero-vert-label d-none d-xl-flex" aria-hidden="true">
+      <span class="h2-hero-vert-text">BREWED FOR HUMAN CONNECTION</span>
+      <span class="h2-hero-vert-line"></span>
+    </div>
+
+    <!-- Main two-column layout inside container -->
+    <div class="container-editorial h2-hero-container">
+      <div class="h2-hero-inner">
+
+        <!-- ===== LEFT: Editorial serif text column ===== -->
+        <div class="h2-hero-text-block">
+          <!-- Eyebrow label with terracotta leading line -->
+          <div class="h2-hero-eyebrow h2-anim-fade-up" data-anim-delay="0">
+            <span class="h2-eyebrow-line" aria-hidden="true"></span>
+            <span class="editorial-category-label">A MOMENT JUST FOR YOU</span>
+          </div>
+
+          <!-- Cormorant Garamond serif heading (key difference from Home 1 Manrope) -->
+          <h1 class="h2-hero-heading" aria-label="More Than Chai. It's a Feeling.">
+            <span class="h2-heading-line h2-anim-fade-up" data-anim-delay="80">More Than</span>
+            <span class="h2-heading-line h2-heading-chai h2-anim-fade-up" data-anim-delay="160">Chai.</span>
+            <span class="h2-heading-line h2-heading-italic h2-anim-fade-up" data-anim-delay="240"><em>It's a
+                Feeling.</em></span>
+          </h1>
+
+          <!-- Animated terracotta decorative rule -->
+          <div class="h2-hero-terracotta-rule h2-anim-expand" data-anim-delay="360" aria-hidden="true"></div>
+
+          <!-- Supporting description -->
+          <p class="h2-hero-desc h2-anim-fade-up" data-anim-delay="440">
+            Slow down and let the warmth find you. Every cup is a carefully crafted invitation—authentic chai, real
+            ingredients, and a moment worth savouring completely.
+          </p>
+
+          <!-- CTA row -->
+          <div class="h2-hero-cta-row h2-anim-fade-up" data-anim-delay="560">
+            <a href="about.html" class="btn-terracotta">
+              <span>Discover Our Experience</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#placeToPause" class="h2-hero-scroll-hint">
+              <span>Explore</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Stat badge -->
+          <div class="h2-hero-stat-badge h2-anim-fade-up" data-anim-delay="700">
+            <span class="h2-stat-num">100<span class="h2-stat-plus">+</span></span>
+            <span class="h2-stat-label">Chai varieties<br>to explore</span>
+          </div>
+        </div>
+
+        <!-- ===== RIGHT: Asymmetric editorial image collage ===== -->
+        <div class="h2-hero-collage">
+
+          <!-- Sage-green organic blob behind images -->
+          <div class="h2-collage-sage-blob" aria-hidden="true"></div>
+
+          <!-- Primary tall portrait image — arch top rounded -->
+          <div class="h2-collage-primary-wrap h2-anim-reveal-right" data-anim-delay="200">
+            <img src="assets/images/home2/hero/hero-experience.jpg"
+              alt="A serene tea house moment — a warm chai cup held gently in a cosy atmospheric setting"
+              class="h2-collage-primary-img" loading="eager">
+            <!-- Vertical editorial label over image -->
+            <div class="h2-collage-vert-label" aria-hidden="true">SIP · SAVOUR · REPEAT</div>
+          </div>
+
+          <svg class="h2-hero-arch-svg" viewBox="0 0 610 594" aria-hidden="true" focusable="false">
+            <defs>
+              <path id="h2-hero-arch-path" d="M 95 265 C 95 185 190 24 345 24 C 500 24 595 185 595 265" />
+            </defs>
+            <g class="h2-hero-arch-desktop h2-hero-arch-animated">
+              <text class="h2-hero-arch-text">
+                <textPath href="#h2-hero-arch-path" startOffset="-332">
+                  <tspan textLength="320" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •</tspan>
+                  <tspan dx="12" textLength="320" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <tspan dx="12" textLength="320" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <tspan dx="12" textLength="320" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <animate attributeName="startOffset" from="-332" to="0" dur="32s" calcMode="linear"
+                    repeatCount="indefinite" />
+                </textPath>
+              </text>
+            </g>
+            <g class="h2-hero-arch-mobile h2-hero-arch-animated">
+              <text class="h2-hero-arch-text">
+                <textPath href="#h2-hero-arch-path" startOffset="-414">
+                  <tspan textLength="400" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •</tspan>
+                  <tspan dx="14" textLength="400" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <tspan dx="14" textLength="400" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <tspan dx="14" textLength="400" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •
+                  </tspan>
+                  <animate attributeName="startOffset" from="-414" to="0" dur="20s" calcMode="linear"
+                    repeatCount="indefinite" />
+                </textPath>
+              </text>
+            </g>
+            <g class="h2-hero-arch-static-desktop">
+              <text class="h2-hero-arch-text">
+                <textPath href="#h2-hero-arch-path" startOffset="50%" text-anchor="middle">
+                  <tspan textLength="320" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •</tspan>
+                </textPath>
+              </text>
+            </g>
+            <g class="h2-hero-arch-static-mobile">
+              <text class="h2-hero-arch-text">
+                <textPath href="#h2-hero-arch-path" startOffset="50%" text-anchor="middle">
+                  <tspan textLength="400" lengthAdjust="spacing">SIP • SAVOR • REPEAT • DISCOVER • ENJOY •</tspan>
+                </textPath>
+              </text>
+            </g>
+          </svg>
+
+          <!-- Secondary overlapping card — lower-left of primary -->
+
+
+          <!-- Thin terracotta curve accent -->
+          <div class="h2-collage-curve-accent" aria-hidden="true">
+            <svg viewBox="0 0 60 220" fill="none" preserveAspectRatio="none">
+              <path d="M 30,0 C 52,45 15,90 32,135 C 48,175 12,200 28,220" stroke="var(--color-accent-terracotta)"
+                stroke-width="1.5" opacity="0.5" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 02 â€“ A PLACE TO PAUSE
+       Atmosphere & experience narrative with overlapping image collage & UNWIND typography
+       ======================================================================== -->
+  <section class="h2-pause-section" id="placeToPause">
+    <!-- Oversized Background Typography: UNWIND -->
+    <div class="h2-unwind-backdrop" aria-hidden="true">UNWIND</div>
+
+    <div class="container-editorial">
+      <div class="row align-items-center g-4">
+        <!-- Left Column: Overlapping Editorial Photography Collage -->
+        <div class="col-lg-6 order-2 order-lg-1 reveal-on-scroll">
+          <div class="h2-collage-stage">
+            <!-- Large Primary Atmosphere Photo -->
+            <div class="h2-collage-primary">
+              <img src="assets/images/home2/experience/tea-house-interior.jpg"
+                alt="Atmospheric tea house seating with handcrafted ceramic teapots" class="img-fluid" loading="lazy">
+            </div>
+            <!-- Smaller Overlapping Detail Image -->
+            <div class="h2-collage-secondary">
+              <img src="assets/images/home2/experience/pause-cutting-glass.jpg"
+                alt="Fresh hot masala chai steaming in a traditional cutting glass" class="img-fluid" loading="lazy">
+              <span class="h2-cutting-tag">Slow Brewed</span>
+            </div>
+            <!-- Sage decorative backdrop leaf circle -->
+            <div class="h2-collage-sage-circle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Storytelling Content -->
+        <div class="col-lg-6 order-1 order-lg-2 h2-pause-text-col reveal-on-scroll">
+          <span class="editorial-category-label">THE TEA HOUSE EXPERIENCE</span>
+          <h2 class="h2-section-heading">
+            A Little Escape From the Everyday.
+          </h2>
+          <p class="h2-section-desc">
+            Some moments deserve to slow down. Enjoy the warmth of a freshly prepared cup, the comfort of familiar
+            flavours, and the pleasure of simply being present.
+          </p>
+
+          <!-- 3 Atmosphere Highlights -->
+          <div class="h2-atmosphere-features">
+            <div class="h2-feature-item">
+              <div class="h2-feature-icon-circle">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div>
+                <h3 class="h2-feature-title">Unrushed Pacing</h3>
+                <p class="h2-feature-text">Take your time. No timers, no hasteâ€”just unhurried tea rituals and good
+                  company.</p>
+              </div>
+            </div>
+
+            <div class="h2-feature-item">
+              <div class="h2-feature-icon-circle">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <div>
+                <h3 class="h2-feature-title">Botanical Aromas</h3>
+                <p class="h2-feature-text">Hand-crushed ginger, whole green cardamom, and simmering whole milk steeped
+                  over gentle open flames.</p>
+              </div>
+            </div>
+
+            <div class="h2-feature-item">
+              <div class="h2-feature-icon-circle">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <div>
+                <h3 class="h2-feature-title">Clay &amp; Ceramic Ware</h3>
+                <p class="h2-feature-text">Served in artisanal terracotta kulhads that enhance earthy mineral notes with
+                  every sip.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 03 â€“ MOMENTS WORTH SHARING
+       Editorial collage displaying 4 distinct moments associated with chai
+       ======================================================================== -->
+  <section class="h2-moments-section" id="momentsSection">
+    <div class="container-editorial">
+      <!-- Section Header -->
+      <div class="h2-center-header reveal-on-scroll">
+        <span class="editorial-category-label">RITUALS OF COMFORT</span>
+        <h2 class="h2-section-heading">Every Cup Has a Moment.</h2>
+        <p class="h2-section-desc mx-auto" style="max-width: 580px;">
+          Chai is more than a drinkâ€”it is the rhythm of your day, a pause in your schedule, and an invitation to
+          reconnect.
+        </p>
+      </div>
+
+      <!-- Asymmetrical 4 Moments Editorial Grid -->
+      <div class="h2-moments-grid">
+        <!-- Moment 1: Morning Ritual -->
+        <div class="h2-moment-card h2-moment-tall reveal-on-scroll">
+          <div class="h2-moment-img-wrap">
+            <img src="assets/images/home2/moments/moment-morning.jpg"
+              alt="Golden morning sunlight illuminating a freshly steeped amber cup of tea" loading="lazy">
+            <span class="h2-moment-num">01</span>
+          </div>
+          <div class="h2-moment-body">
+            <span class="h2-moment-timing">6:00 AM â€“ 9:00 AM</span>
+            <h3 class="h2-moment-title">Morning Ritual</h3>
+            <p class="h2-moment-text">A peaceful start to the day. Awakening gentle energy with single-origin black tea
+              and citrus.</p>
+          </div>
+        </div>
+
+        <!-- Moment 2: Friendly Catch-Up -->
+        <div class="h2-moment-card reveal-on-scroll">
+          <div class="h2-moment-img-wrap">
+            <img src="assets/images/home2/moments/moment-catchup.jpg"
+              alt="Two cups of chai and teapot on a shared wooden table during a conversation" loading="lazy">
+            <span class="h2-moment-num">02</span>
+          </div>
+          <div class="h2-moment-body">
+            <span class="h2-moment-timing">Midday Connections</span>
+            <h3 class="h2-moment-title">Friendly Catch-Up</h3>
+            <p class="h2-moment-text">Conversations over a warm cup. Spiced cutting chai made for laughter, stories, and
+              lingering.</p>
+          </div>
+        </div>
+
+        <!-- Moment 3: Work Break -->
+        <div class="h2-moment-card reveal-on-scroll">
+          <div class="h2-moment-img-wrap">
+            <img src="assets/images/home2/moments/moment-workbreak.jpg"
+              alt="Pyramid tea bag and glass on workspace desk for afternoon refreshment" loading="lazy">
+            <span class="h2-moment-num">03</span>
+          </div>
+          <div class="h2-moment-body">
+            <span class="h2-moment-timing">3:00 PM Refresh</span>
+            <h3 class="h2-moment-title">Work Break</h3>
+            <p class="h2-moment-text">A refreshing pause between busy moments. Clear your thoughts with sharp ginger and
+              cardamom.</p>
+          </div>
+        </div>
+
+        <!-- Moment 4: Evening Comfort -->
+        <div class="h2-moment-card h2-moment-tall reveal-on-scroll">
+          <div class="h2-moment-img-wrap">
+            <img src="assets/images/home2/moments/moment-evening.png"
+              alt="Warm amber tea still life for cozy evening unwinding" loading="lazy">
+            <span class="h2-moment-num">04</span>
+          </div>
+          <div class="h2-moment-body">
+            <span class="h2-moment-timing">Twilight Hours</span>
+            <h3 class="h2-moment-title">Evening Comfort</h3>
+            <p class="h2-moment-text">A relaxing end to the day. Caffeine-free turmeric rooibos or golden spice to
+              soothe your evening.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04 â€“ DISCOVER YOUR CHAI MOOD (INTERACTIVE)
+       Interactive discovery tool matching moods with bespoke chai blends
+       ======================================================================== -->
+  <section class="h2-mood-section" id="moodSection">
+    <div class="container-editorial">
+      <div class="h2-center-header reveal-on-scroll">
+        <span class="editorial-category-label">FIND YOUR PERFECT MOMENT</span>
+        <h2 class="h2-section-heading">What Does Your Moment Taste Like?</h2>
+        <p class="h2-section-desc mx-auto" style="max-width: 600px;">
+          Every mood deserves its own little ritual. Select how you're feeling right now, and let us recommend the blend
+          crafted for your state of mind.
+        </p>
+      </div>
+
+      <!-- 4 Selectable Mood Options Row -->
+      <div class="h2-mood-selector-grid reveal-on-scroll">
+        <!-- Mood 1: The Comfort Seeker -->
+        <button type="button" class="h2-mood-tab-btn is-selected" data-mood="comfort">
+          <span class="h2-mood-icon-tag"><i class="bi bi-heart"></i></span>
+          <span class="h2-mood-tab-title">The Comfort Seeker</span>
+          <span class="h2-mood-tab-hint">Nostalgic &amp; Warm</span>
+        </button>
+
+        <!-- Mood 2: The Energy Booster -->
+        <button type="button" class="h2-mood-tab-btn" data-mood="energy">
+          <span class="h2-mood-icon-tag"><i class="bi bi-lightning-charge"></i></span>
+          <span class="h2-mood-tab-title">The Energy Booster</span>
+          <span class="h2-mood-tab-hint">Bold &amp; Invigorating</span>
+        </button>
+
+        <!-- Mood 3: The Calm Explorer -->
+        <button type="button" class="h2-mood-tab-btn" data-mood="calm">
+          <span class="h2-mood-icon-tag"><i class="bi bi-compass"></i></span>
+          <span class="h2-mood-tab-title">The Calm Explorer</span>
+          <span class="h2-mood-tab-hint">Floral &amp; Gentle</span>
+        </button>
+
+        <!-- Mood 4: The Flavour Lover -->
+        <button type="button" class="h2-mood-tab-btn" data-mood="flavour">
+          <span class="h2-mood-icon-tag"><i class="bi bi-stars"></i></span>
+          <span class="h2-mood-tab-title">The Flavour Lover</span>
+          <span class="h2-mood-tab-hint">Rich &amp; Aromatic</span>
+        </button>
+      </div>
+
+      <!-- Interactive Live Mood Result Stage -->
+      <div class="h2-mood-result-stage reveal-on-scroll">
+        <div class="row align-items-center g-4">
+          <!-- Left: Mood Match Details -->
+          <div class="col-lg-7">
+            <div class="h2-mood-content-card">
+              <span class="h2-mood-tag-badge" id="moodResultTag">RECOMMENDED FOR COMFORT</span>
+              <h3 class="h2-mood-result-heading" id="moodResultTitle">Classic Masala Chai</h3>
+              <p class="h2-mood-result-p" id="moodResultDesc">
+                When you crave reassurance and home-style warmth. Robust Assam orthodox leaves slow-boiled with crushed
+                green cardamom pods, cinnamon quills, whole cloves, and rich dairy milk.
+              </p>
+
+              <!-- Aroma Profile Badges -->
+              <div class="h2-mood-profile-list mb-4" id="moodResultProfile">
+                <span class="h2-profile-pill"><i class="bi bi-droplet-half"></i> Full Body</span>
+                <span class="h2-profile-pill"><i class="bi bi-fire"></i> Medium Spice</span>
+                <span class="h2-profile-pill"><i class="bi bi-cup"></i> Whole Milk Brew</span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 flex-wrap">
+                <span class="h2-mood-price" id="moodResultPrice">â‚¹149</span>
+                <a href="menu.html" class="btn-terracotta">
+                  <span>Order This Blend</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Preview of Recommended Pouch / Glass -->
+          <div class="col-lg-5">
+            <div class="h2-mood-visual-stage text-center">
+              <img id="moodResultImg" src="assets/images/home2/moments/moment-catchup.jpg"
+                alt="Recommended chai blend in traditional tea setting" class="h2-mood-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 05 â€“ BEHIND EVERY BEAUTIFUL CUP
+       Artisanal storytelling section detailing ingredients, craftsmanship, and hospitality
+       ======================================================================== -->
+  <section class="h2-craft-section" id="craftSection">
+    <!-- Oversized Background Typography: CRAFTED -->
+    <div class="h2-craft-backdrop" aria-hidden="true">CRAFTED</div>
+
+    <div class="container-editorial">
+      <div class="row align-items-center g-4">
+        <!-- Left: 3 Craft Highlights -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <span class="editorial-category-label">BEHIND THE CRAFT</span>
+          <h2 class="h2-section-heading">It's the Little Details That Make It Special.</h2>
+          <p class="h2-section-desc">
+            From the ingredients we choose to the care behind every serving, we believe the finest experiences are
+            created through thoughtful details.
+          </p>
+
+          <div class="h2-craft-pillars-list">
+            <!-- Pillar 1 -->
+            <div class="h2-pillar-card">
+              <span class="h2-pillar-index">01</span>
+              <div>
+                <h3 class="h2-pillar-title">Thoughtful Preparation</h3>
+                <p class="h2-pillar-desc">
+                  Whole spices are crushed fresh for each batch. Teas are brewed over calibrated open flames to marry
+                  tannins with milk fats gracefully.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="h2-pillar-card">
+              <span class="h2-pillar-index">02</span>
+              <div>
+                <h3 class="h2-pillar-title">Quality Ingredients</h3>
+                <p class="h2-pillar-desc">
+                  Single-estate orthodox Assam leaves and organic spices directly ethically sourced from small grower
+                  cooperatives in Idukki and Golaghat.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="h2-pillar-card">
+              <span class="h2-pillar-index">03</span>
+              <div>
+                <h3 class="h2-pillar-title">Warm Hospitality</h3>
+                <p class="h2-pillar-desc">
+                  A steaming cup held between two hands is universal comfort. Our tea masters welcome every guest like
+                  an old friend returning home.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="about.html" class="btn-forest">
+              <span>Discover Our Story</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Serving / Artisan Tea Photograph in Organic Arch -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="h2-craft-photo-wrapper">
+            <div class="h2-craft-image-stage">
+              <div class="h2-craft-terracotta-wave" aria-hidden="true">
+                <svg viewBox="0 0 80 600" fill="none" preserveAspectRatio="none">
+                  <path d="M 36,0 C 60,68 45,134 38,202 C 30,281 65,347 55,420 C 48,480 41,540 44,600"
+                    stroke="var(--color-accent-terracotta)" stroke-width="2" opacity="0.55" />
+                </svg>
+              </div>
+              <div class="h2-craft-arch-frame">
+                <img src="assets/images/home2-s.png"
+                  alt="Ceremonial matcha whisk and green tea powder in a ceramic bowl" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <span class="h2-craft-script-note">Steeped with Passion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 06 â€“ THE TEA HOUSE JOURNAL
+       Magazine-inspired editorial preview of 3 stories and tea inspirations
+       ======================================================================== -->
+  <section class="h2-journal-section" id="journalSection">
+    <div class="container-editorial">
+      <!-- Section Header -->
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4 reveal-on-scroll">
+        <div>
+          <span class="editorial-category-label">THE TEA HOUSE JOURNAL</span>
+          <h2 class="h2-section-heading mb-2">Stories Brewed With Every Cup.</h2>
+          <p class="h2-section-desc mb-0" style="max-width: 540px;">
+            A collection of little inspirations, tea traditions, flavour discoveries, and moments worth sharing.
+          </p>
+        </div>
+        <div>
+          <a href="blog.html" class="btn-terracotta">
+            <span>Explore All Stories</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 Magazine-Inspired Asymmetrical Articles Grid -->
+      <div class="row g-4">
+        <!-- Article 1: The Beauty of a Slow Morning -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <article class="h2-journal-card">
+            <div class="h2-journal-img-container">
+              <img src="assets/images/home2/journal/journal-morning.jpg" alt="Loose tea leaves and quiet morning light"
+                loading="lazy">
+              <span class="h2-journal-category">Rituals</span>
+            </div>
+            <div class="h2-journal-card-body">
+              <span class="h2-journal-readtime"><i class="bi bi-clock"></i> 4 min read</span>
+              <h3 class="h2-journal-title">
+                <a href="blog.html">The Beauty of a Slow Morning</a>
+              </h3>
+              <p class="h2-journal-excerpt">
+                How dedicating fifteen quiet minutes to brewing whole leaf tea resets your day and grounds your morning
+                thoughts before the world rushes in.
+              </p>
+              <a href="blog.html" class="h2-journal-link">Read Full Story â†’</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 2: A Journey Through Tea Traditions -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <article class="h2-journal-card h2-journal-featured">
+            <div class="h2-journal-img-container">
+              <img src="assets/images/home2/journal/journal-traditions.jpg"
+                alt="Aromatic spices arranged for traditional heritage chai" loading="lazy">
+              <span class="h2-journal-category">Heritage</span>
+            </div>
+            <div class="h2-journal-card-body">
+              <span class="h2-journal-readtime"><i class="bi bi-clock"></i> 6 min read</span>
+              <h3 class="h2-journal-title">
+                <a href="blog.html">A Journey Through Tea Traditions</a>
+              </h3>
+              <p class="h2-journal-excerpt">
+                From ancient terracotta pots in Kolkata alleys to lush mountain gardens in Assam: the timeless heritage
+                behind India's favourite daily ritual.
+              </p>
+              <a href="blog.html" class="h2-journal-link">Read Full Story â†’</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 3: Creating Your Own Tea Ritual -->
+        <div class="col-lg-4 col-md-12 reveal-on-scroll">
+          <article class="h2-journal-card">
+            <div class="h2-journal-img-container">
+              <img src="assets/images/home2/journal/journal-ritual.jpg"
+                alt="Artisan ceramic teapot and cup for personal tea ritual" loading="lazy">
+              <span class="h2-journal-category">Lifestyle</span>
+            </div>
+            <div class="h2-journal-card-body">
+              <span class="h2-journal-readtime"><i class="bi bi-clock"></i> 5 min read</span>
+              <h3 class="h2-journal-title">
+                <a href="blog.html">Creating Your Own Tea Ritual</a>
+              </h3>
+              <p class="h2-journal-excerpt">
+                Simple expert guidelines on water temperature, steeping duration, and whole-spice ratios for the perfect
+                handcrafted cup in your kitchen.
+              </p>
+              <a href="blog.html" class="h2-journal-link">Read Full Story â†’</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 07 â€“ FINAL PREMIUM CTA SECTION (MATCHING HOME 1)
+       Closing chapter of the homepage with organic forest backdrop & dual CTAs
+       ======================================================================== -->
+  <section class="final-cta-section" id="finalCtaSection">
+    <div class="container-editorial">
+      <div class="final-cta-card reveal-on-scroll">
+        <!-- Subtle botanical decorative leaf SVG -->
+        <div class="final-cta-leaf-deco" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <path d="M 10,110 C 20,50 60,20 110,10 C 100,70 60,100 10,110 Z" fill="#A7B397" opacity="0.35" />
+            <path d="M 10,110 C 45,75 75,45 110,10" stroke="#8EA181" stroke-width="1.8" opacity="0.45" />
+          </svg>
+        </div>
+
+        <!-- Content Center -->
+        <div class="final-cta-content text-center">
+          <span class="final-cta-subheading">A RITUAL IN EVERY SIP</span>
+          <h2 class="final-cta-heading">Make Every Moment a Chai Moment.</h2>
+          <p class="final-cta-description">
+            Discover your favourite blends, explore authentic flavours, and make every little break a memorable one.
+          </p>
+
+          <div class="final-cta-buttons-row">
+            <a href="menu.html" class="btn-terracotta btn-cta-lg">
+              <span>Explore Our Menu</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="loyalty.html" class="btn-cta-outline-light">
+              <span>Join Our Loyalty Club</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="m10 8 4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- ========================================================================
+       SHARED INTERACTIVE MODALS: LOGIN, SIGNUP, CHAI BUILDER
+       ======================================================================== -->
+  <!-- 1. Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm"
+            onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail"
+                placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword"
+                placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal"
+                class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an
+                account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm"
+            onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Account created! Welcome to Tea House Rewards.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com"
+                required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword"
+                placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50
+              Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal"
+                class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in
+                here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;">
+  </div>
+
+  <!-- Bootstrap 5.3 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Page-Specific JavaScript for Home 2 -->
+  <script src="assets/js/pages/home2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pouchBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2DDD5"/>
+      <stop offset="6%" stop-color="#F7F5F0"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="94%" stop-color="#F2EFE8"/>
+      <stop offset="100%" stop-color="#DBD5CA"/>
+    </linearGradient>
+    <linearGradient id="greenBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E3024"/>
+      <stop offset="50%" stop-color="#144333"/>
+      <stop offset="100%" stop-color="#0B261D"/>
+    </linearGradient>
+    <filter id="pouchShadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0a1d15" flood-opacity="0.22"/>
+    </filter>
+    <clipPath id="pouchClip">
+      <path d="M 50,45 L 350,45 Q 365,45 363,60 L 350,490 Q 348,515 320,518 L 80,518 Q 52,515 50,490 L 37,60 Q 35,45 50,45 Z"/>
+    </clipPath>
+    <pattern id="teaWindowPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="#24170D"/>
+      <circle cx="15" cy="15" r="4" fill="#3D2B1C"/>
+      <circle cx="45" cy="20" r="5" fill="#4B3522"/>
+      <circle cx="30" cy="40" r="6" fill="#1C120B"/>
+      <circle cx="10" cy="48" r="3" fill="#583E28"/>
+      <ellipse cx="40" cy="45" rx="5" ry="3" fill="#352417" transform="rotate(25 40 45)"/>
+      <ellipse cx="25" cy="18" rx="6" ry="2" fill="#523924" transform="rotate(-35 25 18)"/>
+      <circle cx="52" cy="8" r="2" fill="#8C6743"/>
+    </pattern>
+  </defs>
+
+  <g filter="url(#pouchShadow)">
+    <!-- Base Pouch Shape -->
+    <path d="M 50,45 L 350,45 Q 365,45 363,60 L 350,490 Q 348,515 320,518 L 80,518 Q 52,515 50,490 L 37,60 Q 35,45 50,45 Z" fill="url(#pouchBg)"/>
+
+    <g clip-path="url(#pouchClip)">
+      <!-- Zip lock & heat seal lines -->
+      <line x1="30" y1="52" x2="370" y2="52" stroke="#D3CDC0" stroke-width="1.5"/>
+      <line x1="30" y1="80" x2="370" y2="80" stroke="#DDD7CB" stroke-width="2"/>
+      <line x1="30" y1="85" x2="370" y2="85" stroke="#BFB8AA" stroke-width="0.8"/>
+      
+      <!-- Notch on edges -->
+      <path d="M 37,92 L 44,95 L 37,98 Z" fill="#999182"/>
+      <path d="M 363,92 L 356,95 L 363,98 Z" fill="#999182"/>
+
+      <!-- Lower Green Section -->
+      <path d="M 30,340 L 370,340 L 370,520 L 30,520 Z" fill="url(#greenBase)"/>
+
+      <!-- Brand Logo / Leaf on top -->
+      <g transform="translate(200, 140)">
+        <path d="M 0,-16 C 12,-16 20,-4 18,12 C 10,12 -2,4 0,-16 Z" fill="#123D2E"/>
+        <path d="M 0,-16 C -2,-16 -10,0 -8,10 C -2,10 6,2 0,-16 Z" fill="#3B6955"/>
+        <path d="M 0,-14 L 3,12" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+      </g>
+
+      <!-- Brand Title -->
+      <text x="200" y="172" font-family="'Manrope', 'DM Sans', sans-serif" font-weight="700" font-size="12" fill="#123D2E" text-anchor="middle" letter-spacing="4">TEA HOUSE</text>
+      <text x="200" y="186" font-family="'Cormorant Garamond', serif" font-weight="600" font-size="10.5" fill="#5F756B" text-anchor="middle" letter-spacing="2" font-style="italic">ORGANIC SPECIALTY CHAI</text>
+
+      <!-- Tea Window (Kraft cut-out showing loose black chai leaves) -->
+      <g transform="translate(100, 215)">
+        <rect x="0" y="0" width="200" height="105" rx="14" fill="url(#teaWindowPattern)" stroke="#B8AFA0" stroke-width="2"/>
+        <!-- Window reflection glare -->
+        <path d="M 2,12 Q 100,2 198,18 L 198,35 Q 100,18 2,32 Z" fill="#FFFFFF" opacity="0.15"/>
+        <rect x="2" y="2" width="196" height="101" rx="12" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+      </g>
+
+      <!-- Lower Green section text -->
+      <text x="200" y="380" font-family="'Manrope', sans-serif" font-weight="700" font-size="13" fill="#D2DEC8" text-anchor="middle" letter-spacing="3.5">MASALA CHAI</text>
+      <text x="200" y="402" font-family="'DM Sans', sans-serif" font-weight="400" font-size="10" fill="#E8F0E4" text-anchor="middle" letter-spacing="1.5">GOOD CHAI · BRIGHTER DAYS</text>
+      
+      <!-- Net Weight -->
+      <text x="200" y="450" font-family="'DM Sans', sans-serif" font-weight="500" font-size="9" fill="#8FA99A" text-anchor="middle" letter-spacing="2">NET WT. 100G</text>
+
+      <!-- Subtle Side Crease / 3D lighting highlights -->
+      <rect x="35" y="45" width="25" height="470" fill="black" opacity="0.04"/>
+      <rect x="340" y="45" width="25" height="470" fill="black" opacity="0.06"/>
+      <line x1="85" y1="45" x2="75" y2="518" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4"/>
+      <line x1="315" y1="45" x2="325" y2="518" stroke="#FFFFFF" stroke-width="1.2" opacity="0.25"/>
+    </g>
+  </g>
+</svg>

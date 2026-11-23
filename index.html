@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tea House & Specialty Chai Stall - Authentic Indian chai, artisan tea blends, organic spices, and moments of comfort.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Tea House & Specialty Chai Stall | Authentic Handcrafted Chai</title>
+
+  <!-- Google Fonts (Editorial Typography System) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Global Component Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/home1.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="index">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 1 – HERO SECTION (EXACT REFERENCE MATCH)
+       Split-layout: Left editorial content & Right half fully covered with tea photography
+       ======================================================================== -->
+  <section class="hero-section" id="heroSection">
+    <!-- Left Content Half -->
+    <div class="hero-left-wrapper">
+      <!-- Flowing Sage-Green Decorative Ribbon (Extends full height until header section end) -->
+      <div class="hero-sage-ribbon" aria-hidden="true">
+        <svg viewBox="0 0 140 800" fill="none" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="sageRibbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#9FB196" stop-opacity="0.95"/>
+              <stop offset="30%" stop-color="#889C7E" stop-opacity="0.9"/>
+              <stop offset="65%" stop-color="#A5B89C" stop-opacity="0.95"/>
+              <stop offset="85%" stop-color="#84987A" stop-opacity="0.92"/>
+              <stop offset="100%" stop-color="#738769" stop-opacity="0.88"/>
+            </linearGradient>
+            <linearGradient id="sageRibbonHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#D2DEC9" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#B2C2A8" stop-opacity="0.4"/>
+            </linearGradient>
+            <linearGradient id="sageRibbonShade" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#677A5E" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#55664E" stop-opacity="0.2"/>
+            </linearGradient>
+            <filter id="ribbonSoftShadow" x="-20%" y="-5%" width="150%" height="115%">
+              <feDropShadow dx="-2" dy="5" stdDeviation="5" flood-color="#123D2E" flood-opacity="0.12"/>
+            </filter>
+          </defs>
+
+          <!-- Main Ribbon Flowing Band: continues seamlessly to Y=800 (header section end) -->
+          <path d="M 82,0
+                   C 70,60 40,120 28,190
+                   C 16,270 32,350 60,440
+                   C 86,520 108,570 96,620
+                   C 84,660 62,700 44,750
+                   C 32,780 26,795 24,800
+                   L 42,800
+                   C 46,792 52,775 62,745
+                   C 80,695 102,655 114,615
+                   C 126,565 102,510 76,432
+                   C 48,345 34,268 44,192
+                   C 54,125 80,65 100,0
+                   Z" 
+                fill="url(#sageRibbonGrad)"
+                filter="url(#ribbonSoftShadow)"/>
+
+          <!-- Top Ribbon Inner Turn / Highlight -->
+          <path d="M 82,0
+                   C 74,40 58,90 46,140
+                   C 38,170 34,195 33,210
+                   C 36,195 44,160 52,130
+                   C 66,80 84,35 100,0
+                   Z" 
+                fill="url(#sageRibbonHighlight)"/>
+
+          <!-- Lower Curve Depth Fold -->
+          <path d="M 60,440
+                   C 86,520 108,570 96,620
+                   C 106,575 92,525 76,450
+                   Z" 
+                fill="url(#sageRibbonShade)"/>
+        </svg>
+      </div>
+
+      <!-- Far Left: Vertical Editorial Label with Thin Line -->
+      <div class="hero-margin-left">
+        <div class="hero-vertical-label">
+          <span>TEA FOR A BETTER YOU</span>
+        </div>
+      </div>
+
+      <!-- Left Column: Editorial Headline & Content -->
+      <div class="hero-text-col">
+        <span class="hero-intro-label">A MORE NATURAL YOU</span>
+        
+        <h1 class="hero-pure-headline">
+          <span>PURE</span>
+          <span>CHAI.</span>
+          <span class="hero-headline-tagline">BETTER MOMENTS.</span>
+        </h1>
+
+        <p class="hero-supporting-text">
+          Authentic flavours, natural ingredients, and better moments in every cup.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#signatureCollection" class="hero-btn-cta">
+            <span>Explore Our Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Half: Image fully covers from center to right side, top to bottom -->
+    <div class="hero-cover-half">
+      <img 
+        src="assets/images/home1-header.png" 
+        alt="Artisanal tea still-life flatlay with handcrafted ceramic teapot, teacup with freshly brewed amber tea, loose tea leaves, and organic herbs" 
+        class="hero-cover-img"
+        loading="eager"
+      >
+      <!-- Vertical Editorial Tag Floating on the Right -->
+      <div class="hero-cover-tag" aria-hidden="true">
+        <span>SIP · NOURISH · REPEAT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2 – WHY CHOOSE OUR CHAI / BENEFITS
+       Editorial split: Masala chai glass photography & 3 minimal circular SVG benefits
+       ======================================================================== -->
+  <section class="benefits-section" id="benefitsSection">
+    <div class="container-editorial">
+      <div class="benefits-grid">
+        <!-- Left: Rectangular Premium Chai Glass Photograph -->
+        <div class="benefits-image-card">
+          <div class="benefits-glass-frame">
+            <img 
+              src="assets/images/benefits/tea-cup-lemon.jpg" 
+              alt="A cup of freshly brewed tea surrounded by green foliage and botanicals"
+              loading="lazy"
+            >
+            <span class="benefits-glass-tag">Fresh Brewed</span>
+          </div>
+        </div>
+
+        <!-- Middle: Naturally Better Chai Content & 3 Benefits -->
+        <div class="benefits-content">
+          <h2 class="benefits-heading">
+            Naturally <em>Better</em> Chai
+          </h2>
+
+          <p class="benefits-description">
+            Every cup tells a story of authentic ingredients, traditional brewing, and carefully selected flavours. Experience chai made for your everyday moments—brewed slowly over open flames with unadulterated whole spices.
+          </p>
+
+          <!-- 3 Benefit Items with Minimal Circular SVG Icons -->
+          <div class="benefits-items-row">
+            <!-- Benefit 1 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-circle" aria-hidden="true">
+                <!-- Authentic Leaf Icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.5 3.5C11.3 3.5 5 7.8 4 14.7c-.5 3.5 1.7 5.8 5.1 5.3C16 19 20.5 12.5 20.5 3.5Z"/>
+                  <path d="M4.6 19.4c3-3.6 6.4-6.6 11.6-10"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Authentic Ingredients</h3>
+              <p class="benefit-desc">Carefully selected single-origin tea leaves and pesticide-free forest spices.</p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-circle" aria-hidden="true">
+                <!-- Steaming Kettle Icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19c-3.7 0-6-2.2-6-5.3 0-2.3 2.1-4.3 6-7.7 3.9 3.4 6 5.4 6 7.7 0 3.1-2.3 5.3-6 5.3Z"/>
+                  <path d="M12 19C8.5 15 6 12 4 10c-1.6 4.3-.1 8 3.1 9.2M12 19c3.5-4 6-7 8-9 1.6 4.3.1 8-3.1 9.2M12 19v-8"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Freshly Brewed</h3>
+              <p class="benefit-desc">Prepared fresh upon order with meticulous attention to flavour extraction and warmth.</p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="benefit-item">
+              <div class="benefit-icon-circle" aria-hidden="true">
+                <!-- Heart / Comfort Cup Icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.5 3.5C11.3 3.5 5 7.8 4 14.7c-.5 3.5 1.7 5.8 5.1 5.3C16 19 20.5 12.5 20.5 3.5Z"/>
+                  <path d="M4.6 19.4c3-3.6 6.4-6.6 11.6-10"/>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Moments of Comfort</h3>
+              <p class="benefit-desc">A perfect wholesome companion for early mornings, rainy evenings, and conversations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Far Right: Spices Bowl & Editorial Handwritten Badge -->
+        <div class="benefits-deco-col">
+          <div class="benefits-deco-bowl">
+            <img 
+              src="assets/images/home1-2s.png" 
+              alt="Fresh green mint leaves arranged around a stone bowl of almonds"
+              loading="lazy"
+            >
+          </div>
+          <span class="benefits-script-badge">
+            Plants · People<br>Better Days
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3 – FEATURED SPECIAL / OVERSIZED PRODUCT SHOWCASE (EXACT REFERENCE MATCH)
+       Giant "ORGANIC" typography with center-right product arrangement (assets/images/home1-s3.png)
+       ======================================================================== -->
+  <section class="featured-special-section" id="signatureCollection">
+    <!-- Giant Background Text -->
+    <div class="featured-giant-backdrop" aria-hidden="true">
+      ORGANIC
+    </div>
+
+    <!-- Flowing Terracotta Decorative Ribbon Line -->
+    <div class="featured-terracotta-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" fill="none">
+        <path d="M -40,95 C 145,120 230,175 390,174 C 560,184 640,146 800,150 C 1015,156 1140,133 1285,82 C 1360,55 1420,32 1480,22" stroke="var(--color-accent-terracotta)" stroke-width="2.4" opacity="0.78"/>
+      </svg>
+    </div>
+
+    <div class="featured-editorial-wrapper">
+      <!-- Far Left Margin: Vertical Label with Thin Line -->
+      <div class="featured-side-margin featured-margin-left">
+        <div class="featured-vertical-tag">
+          <span>FROM NATURE TO YOUR CUP</span>
+        </div>
+      </div>
+
+      <!-- Main Content & Product Arrangement Grid -->
+      <div class="featured-main-grid">
+        <!-- Lower-Left Content Column -->
+        <div class="featured-content-col">
+          <h2 class="featured-special-heading">Featured Special</h2>
+          <span class="featured-product-name">Signature Masala Chai</span>
+
+          <p class="featured-special-desc">
+            Discover our signature chai collection, carefully crafted with authentic ingredients and traditional flavours.
+          </p>
+
+          <div class="featured-price-box">
+            <span class="featured-price-value">₹149</span>
+          </div>
+
+          <div class="featured-cta-row">
+            <a href="menu.html" class="btn-shop-now">
+              <span>Shop Now</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center-Right Product Image: assets/images/home1-s3.png (Overlapping the Typography) -->
+        <div class="featured-product-col">
+          <div class="featured-image-stage">
+            <img 
+              src="assets/images/home1-s3.png" 
+              alt="Signature Masala Chai artisan collection package and traditional ceramic teapot arrangement" 
+              class="featured-product-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Far Right Margin: Vertical Label with Thin Line -->
+      <div class="featured-side-margin featured-margin-right">
+        <div class="featured-vertical-tag featured-tag-right">
+          <span>REAL TEA REAL GOOD LIVING</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4 – SIGNATURE BLENDS
+       3 distinct product packages standing horizontally side by side with natural spices
+       ======================================================================== -->
+  <section class="signature-blends-section" id="signatureBlends">
+    <svg class="blends-terracotta-sweep" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M 510,172 C 690,150 790,105 960,103 C 1130,101 1240,101 1340,51 C 1380,31 1410,12 1440,-6 L 1440,14 C 1410,34 1380,52 1340,66 C 1240,107 1130,116 960,118 C 790,120 690,160 510,172 Z" fill="var(--color-accent-terracotta)" opacity="0.78"/>
+    </svg>
+    <div class="container-editorial">
+      <!-- Section Header -->
+      <div class="blends-header-row">
+        <div class="blends-title-group">
+          <span class="blends-subheading">Thoughtfully crafted. Naturally better.</span>
+          <h2 class="blends-main-heading">Our Signature Blends</h2>
+          <p class="blends-intro-p">
+            Discover our most-loved chai creations, each prepared with carefully selected ingredients, distinctive aromas, and authentic Indian spices.
+          </p>
+        </div>
+
+        <div class="blends-cta-group">
+          <a href="menu.html" class="btn-terracotta">
+            <span>Explore All Chai Blends</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 Product Packages Standing Side-by-Side (Matching Reference Composition) -->
+      <div class="blends-packages-container">
+        <!-- Blend 1: Ginger Elaichi Chai (Sage Green Package) -->
+        <div class="blend-package-card">
+          <div class="blend-pouch-graphic">
+            <img 
+              src="assets/images/blends/blend-ginger-elaichi-crop.png" 
+              alt="Ginger Elaichi Chai sage-green pouch"
+              loading="lazy"
+            >
+          </div>
+          <div class="blend-card-info">
+            <h3 class="blend-name-title">Ginger Elaichi Chai</h3>
+            <span class="blend-card-flavor-tags">Fresh Ginger &amp; Cardamom</span>
+            <p class="blend-card-desc">
+              Crisp crushed ginger root paired with fragrant green cardamom pods. Refreshing, digestive, and naturally invigorating.
+            </p>
+            <div class="blend-card-footer">
+              <span class="blend-card-price">₹159</span>
+              <button type="button" class="btn-blend-mini" data-blend-name="Ginger Elaichi Chai">
+                + Add to Tray
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blend 2: Classic Masala Chai (Deep Forest Green Package) -->
+        <div class="blend-package-card">
+          <div class="blend-pouch-graphic">
+            <img 
+              src="assets/images/blends/blend-classic-masala-crop.png" 
+              alt="Classic Masala Chai deep forest green pouch"
+              loading="lazy"
+            >
+          </div>
+          <div class="blend-card-info">
+            <h3 class="blend-name-title">Classic Masala Chai</h3>
+            <span class="blend-card-flavor-tags">Traditional Indian Spices</span>
+            <p class="blend-card-desc">
+              The time-honored heritage recipe. Orthodox black tea steeped with star anise, cinnamon quills, cloves, and black pepper.
+            </p>
+            <div class="blend-card-footer">
+              <span class="blend-card-price">₹149</span>
+              <button type="button" class="btn-blend-mini" data-blend-name="Classic Masala Chai">
+                + Add to Tray
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blend 3: Golden Turmeric Chai (Terracotta Warm Orange Package) -->
+        <div class="blend-package-card">
+          <div class="blend-pouch-graphic">
+            <img 
+              src="assets/images/blends/blend-golden-turmeric-crop.png" 
+              alt="Golden Turmeric Chai warm terracotta pouch"
+              loading="lazy"
+            >
+          </div>
+          <div class="blend-card-info">
+            <h3 class="blend-name-title">Golden Turmeric Chai</h3>
+            <span class="blend-card-flavor-tags">Turmeric &amp; Warming Spices</span>
+            <p class="blend-card-desc">
+              Curated with sun-dried Lakadong turmeric, Ceylon cinnamon, and nutmeg. Silky smooth, restorative, and comforting.
+            </p>
+            <div class="blend-card-footer">
+              <span class="blend-card-price">₹169</span>
+              <button type="button" class="btn-blend-mini" data-blend-name="Golden Turmeric Chai">
+                + Add to Tray
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5 – CREATE YOUR OWN CHAI
+       Three numbered steps in horizontal editorial layout with ingredient previews
+       ======================================================================== -->
+  <section class="create-chai-section" id="createChaiSection">
+    <div class="container-editorial">
+      <!-- Section Header -->
+      <div class="create-chai-header">
+        <span class="editorial-category-label">Custom Chai Bar</span>
+        <h2 class="create-chai-heading">Create Your Perfect Chai</h2>
+        <p class="create-chai-sub">
+          Your chai. Your way. Every blend begins with your taste and steeped to your choice of strength.
+        </p>
+      </div>
+
+      <!-- 3 Numbered Steps Horizontal Row with Thin Dividers -->
+      <div class="steps-horizontal-wrapper">
+        <!-- Step 1: Choose Your Tea Base -->
+        <div class="step-card-editorial">
+          <div class="step-card-header">
+            <div class="step-number-circle">1</div>
+            <span class="step-title-text">Pick a Base</span>
+          </div>
+          <p class="step-card-details">
+            Classic Assam orthodox tea leaves, premium Nilgiri black tea, or soothing herbal caffeine-free base.
+          </p>
+          <div class="step-ingredient-preview">
+            <img 
+              src="assets/images/step1.png" 
+              alt="Black tea leaves with fresh green tea leaves"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Vertical Divider -->
+        <div class="step-vertical-divider" aria-hidden="true"></div>
+
+        <!-- Step 2: Add Your Flavours -->
+        <div class="step-card-editorial">
+          <div class="step-card-header">
+            <div class="step-number-circle">2</div>
+            <span class="step-title-text">Add a Flavour</span>
+          </div>
+          <p class="step-card-details">
+            Choose fresh hand-crushed ginger, whole green cardamom, cinnamon quills, cloves, or dried rose petals.
+          </p>
+          <div class="step-ingredient-preview">
+            <img 
+              src="assets/images/step2.png" 
+              alt="A plate of aromatic chai spices"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Vertical Divider -->
+        <div class="step-vertical-divider" aria-hidden="true"></div>
+
+        <!-- Step 3: Choose Your Brewing Style -->
+        <div class="step-card-editorial">
+          <div class="step-card-header">
+            <div class="step-number-circle">3</div>
+            <span class="step-title-text">Choose Your Style</span>
+          </div>
+          <p class="step-card-details">
+            Kadak (extra strong boil), mild silky milk brew, traditional double-boiled cutting, or oat-milk vegan.
+          </p>
+          <div class="step-ingredient-preview">
+            <img 
+              src="assets/images/step3.png" 
+              alt="Traditional copper kettle for brewing chai"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Step 4 / CTA Column on Right -->
+        <div class="step-cta-col">
+          <span class="step-script-accent">Good Things Steep Here</span>
+          <button type="button" class="btn-forest" data-bs-toggle="modal" data-bs-target="#chaiBuilderModal">
+            <span>Create My Chai</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6 – THE ART OF MAKING CHAI (NEW SECTION)
+       Editorial asymmetric layout with 3 stages, large decorative numerals & photography
+       ======================================================================== -->
+  <section class="art-of-chai-section" id="artOfChai">
+    <svg class="art-terracotta-stem" viewBox="0 0 180 900" preserveAspectRatio="none" fill="none" aria-hidden="true">
+      <path d="M -24,8 C 42,58 142,91 132,190 C 124,267 44,302 48,390 C 52,477 150,516 132,610 C 119,679 42,715 56,800 C 63,844 92,875 128,900" stroke="var(--color-accent-terracotta)" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+
+    <div class="container-editorial">
+      <!-- Section Header -->
+      <div class="art-header-block reveal-on-scroll">
+        <span class="editorial-category-label">THE ART OF MAKING CHAI</span>
+        <h2 class="art-main-heading">Every Great Cup Has a Beautiful Beginning.</h2>
+        <p class="art-intro-description">
+          From carefully selected ingredients to perfectly balanced blends, every step brings us closer to creating a chai worth remembering.
+        </p>
+      </div>
+
+      <!-- Asymmetrical Editorial Layout: Left Photo Stage + Right Interactive Progression -->
+      <div class="art-stages-grid">
+        <!-- Left: Prominent Tea-Making Visual in Organic Mask -->
+        <div class="art-visual-col reveal-on-scroll">
+          <div class="art-photo-stage">
+            <!-- Subtle sage decorative contour -->
+            <div class="art-sage-contour" aria-hidden="true">
+              <svg viewBox="0 0 500 500" fill="none">
+                <path d="M 60,60 C 160,10 380,20 440,100 C 500,180 470,360 410,430 C 340,490 140,480 70,420 C 10,360 -10,180 60,60 Z" fill="#A7B397" opacity="0.3"/>
+              </svg>
+            </div>
+
+            <!-- Organic Image Mask -->
+            <div class="art-organic-mask">
+              <img 
+                id="artActiveImage"
+                src="assets/images/hero/hero-chai-flatlay.jpg" 
+                alt="Artisanal loose tea leaves and freshly steeped chai still life" 
+                class="art-photo-img"
+                loading="lazy"
+              >
+            </div>
+
+            <!-- Small Script Accent -->
+            <span class="art-script-tag">Crafted with Patience</span>
+          </div>
+        </div>
+
+        <!-- Right: 3 Progression Stages with Large Decorative Numerals -->
+        <div class="art-stages-col">
+          <!-- Continuous Progression Line (Desktop) -->
+          <div class="art-timeline-line" aria-hidden="true"></div>
+
+          <!-- Stage 01 -->
+          <div class="art-stage-item is-active reveal-on-scroll" data-stage="1" data-img="assets/images/ingredients/tea-leaves.jpg" data-alt="Quality single-origin tea leaves">
+            <div class="art-stage-num-wrap">
+              <span class="art-backdrop-num">01</span>
+              <div class="art-node-circle"></div>
+            </div>
+            <div class="art-stage-content">
+              <span class="art-stage-step-tag">Stage 01</span>
+              <h3 class="art-stage-title">Carefully Selected</h3>
+              <p class="art-stage-desc">
+                Quality ingredients and carefully selected tea leaves create the foundation of an exceptional cup.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="art-stage-item reveal-on-scroll" data-stage="2" data-img="assets/images/ingredients/spices-mound.jpg" data-alt="Traditional spices and crushed cardamom">
+            <div class="art-stage-num-wrap">
+              <span class="art-backdrop-num">02</span>
+              <div class="art-node-circle"></div>
+            </div>
+            <div class="art-stage-content">
+              <span class="art-stage-step-tag">Stage 02</span>
+              <h3 class="art-stage-title">Thoughtfully Blended</h3>
+              <p class="art-stage-desc">
+                Traditional flavours and aromatic spices come together in beautifully balanced combinations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="art-stage-item reveal-on-scroll" data-stage="3" data-img="assets/images/hero/hero-chai-flatlay.jpg" data-alt="Steaming aromatic chai freshly brewed">
+            <div class="art-stage-num-wrap">
+              <span class="art-backdrop-num">03</span>
+              <div class="art-node-circle"></div>
+            </div>
+            <div class="art-stage-content">
+              <span class="art-stage-step-tag">Stage 03</span>
+              <h3 class="art-stage-title">Freshly Brewed</h3>
+              <p class="art-stage-desc">
+                Every cup is prepared with care to deliver warmth, flavour, and a moment worth enjoying.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 7 – FINAL PREMIUM CTA SECTION
+       Closing chapter of the homepage with organic forest backdrop & dual CTAs
+       ======================================================================== -->
+  <section class="final-cta-section" id="finalCtaSection">
+    <div class="container-editorial">
+      <div class="final-cta-card reveal-on-scroll">
+        <!-- Subtle botanical decorative leaf SVG -->
+        <div class="final-cta-leaf-deco" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <path d="M 10,110 C 20,50 60,20 110,10 C 100,70 60,100 10,110 Z" fill="#A7B397" opacity="0.35"/>
+            <path d="M 10,110 C 45,75 75,45 110,10" stroke="#8EA181" stroke-width="1.8" opacity="0.45"/>
+          </svg>
+        </div>
+
+        <!-- Content Center -->
+        <div class="final-cta-content text-center">
+          <span class="final-cta-subheading">A RITUAL IN EVERY SIP</span>
+          <h2 class="final-cta-heading">Make Every Moment a Chai Moment.</h2>
+          <p class="final-cta-description">
+            Discover your favourite blends, explore authentic flavours, and make every little break a memorable one.
+          </p>
+
+          <div class="final-cta-buttons-row">
+            <a href="menu.html" class="btn-terracotta btn-cta-lg">
+              <span>Explore Our Menu</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="loyalty.html" class="btn-cta-outline-light">
+              <span>Join Our Loyalty Club</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="m10 8 4 4-4 4"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- ========================================================================
+       INTERACTIVE MODALS: LOGIN, SIGNUP, CHAI BUILDER
+       ======================================================================== -->
+  <!-- 1. Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail" placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Account created! Welcome to Tea House Rewards.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50 Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Interactive Chai Customizer Modal -->
+  <div class="modal fade" id="chaiBuilderModal" tabindex="-1" aria-labelledby="chaiBuilderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <h2 class="modal-title mb-1" id="chaiBuilderModalLabel">Custom Chai Studio</h2>
+            <span class="small text-muted">Build your signature cup with our master tea artisans</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <div class="row g-4">
+            <!-- Left: Options Selection -->
+            <div class="col-md-7">
+              <!-- Step 1 Base -->
+              <div class="mb-4">
+                <label class="fw-bold d-block mb-2 text-uppercase small" style="letter-spacing: 1px; color: var(--color-accent-terracotta);">1. Select Tea Base</label>
+                <div class="d-flex flex-column gap-2">
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiBase" value="Classic Assam Orthodox" checked>
+                    <span><strong>Classic Assam Orthodox</strong> (Rich, robust, malt notes)</span>
+                  </label>
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiBase" value="Nilgiri Mountain Black">
+                    <span><strong>Nilgiri Mountain Black</strong> (Smooth, floral, crisp)</span>
+                  </label>
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiBase" value="Herbal Rooibos Blend">
+                    <span><strong>Herbal Rooibos</strong> (Caffeine-free, naturally sweet)</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Step 2 Spices -->
+              <div class="mb-4">
+                <label class="fw-bold d-block mb-2 text-uppercase small" style="letter-spacing: 1px; color: var(--color-accent-terracotta);">2. Infuse Aromatic Spices (+₹15 each)</label>
+                <div class="row g-2">
+                  <div class="col-6">
+                    <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                      <input type="checkbox" name="chaiSpice" value="Fresh Ginger" checked>
+                      <span>Fresh Crushed Ginger</span>
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                      <input type="checkbox" name="chaiSpice" value="Green Cardamom" checked>
+                      <span>Green Cardamom</span>
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                      <input type="checkbox" name="chaiSpice" value="Ceylon Cinnamon">
+                      <span>Ceylon Cinnamon</span>
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                      <input type="checkbox" name="chaiSpice" value="Clove & Black Pepper">
+                      <span>Clove &amp; Pepper</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 Brewing Style -->
+              <div class="mb-3">
+                <label class="fw-bold d-block mb-2 text-uppercase small" style="letter-spacing: 1px; color: var(--color-accent-terracotta);">3. Brewing Style &amp; Sweetness</label>
+                <div class="d-flex flex-column gap-2">
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiStyle" value="Kadak Open Flame Boil" checked>
+                    <span><strong>Kadak Style</strong> (Bold, authentic, whole milk)</span>
+                  </label>
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiStyle" value="Mild Silky Infusion">
+                    <span><strong>Silky Infusion</strong> (Subtle spice, low sweetness)</span>
+                  </label>
+                  <label class="p-2 border rounded d-flex align-items-center gap-2 cursor-pointer">
+                    <input type="radio" name="chaiStyle" value="Oat Milk Vegan Brew">
+                    <span><strong>Vegan Oat Brew</strong> (Barista oat milk, jaggery)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Live Summary Box -->
+            <div class="col-md-5">
+              <div class="p-3 border rounded-3 h-100 d-flex flex-column justify-content-between" style="background-color: var(--color-bg-secondary);">
+                <div>
+                  <h3 class="h6 fw-bold border-bottom pb-2 mb-3 text-uppercase" style="letter-spacing: 1px;">Your Custom Blend</h3>
+                  <div class="mb-2">
+                    <span class="small text-muted d-block">Base:</span>
+                    <span class="fw-semibold" id="summaryBase">Classic Assam Orthodox</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="small text-muted d-block">Spices:</span>
+                    <span class="fw-semibold" id="summarySpices">Fresh Ginger, Green Cardamom</span>
+                  </div>
+                  <div class="mb-3">
+                    <span class="small text-muted d-block">Style:</span>
+                    <span class="fw-semibold" id="summaryStyle">Kadak Open Flame Boil</span>
+                  </div>
+                </div>
+
+                <div class="border-top pt-3">
+                  <div class="d-flex justify-content-between align-items-baseline mb-3">
+                    <span class="small text-muted">Estimated Price:</span>
+                    <span class="h4 fw-bold mb-0" id="summaryPrice" style="color: var(--color-text-primary);">₹150</span>
+                  </div>
+                  <button type="button" class="btn-terracotta w-100 justify-content-center" id="orderCustomChaiBtn">
+                    Confirm &amp; Brew Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/home1.js"></script>
+</body>
+</html>

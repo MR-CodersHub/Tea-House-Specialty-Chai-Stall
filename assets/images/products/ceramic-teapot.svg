@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="potBody" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FAF8F5"/>
+      <stop offset="70%" stop-color="#ECE6DC"/>
+      <stop offset="100%" stop-color="#D6CEBF"/>
+    </linearGradient>
+    <linearGradient id="woodHandle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C28A55"/>
+      <stop offset="50%" stop-color="#9C6233"/>
+      <stop offset="100%" stop-color="#6E401B"/>
+    </linearGradient>
+    <filter id="potShadow" x="-20%" y="-10%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="20" stdDeviation="15" flood-color="#1b2e25" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#potShadow)">
+    <!-- Wooden Overhead Handle -->
+    <path d="M 130,220 C 120,70 340,70 330,220" fill="none" stroke="url(#woodHandle)" stroke-width="16" stroke-linecap="round"/>
+    <!-- Handle Brass Mounts -->
+    <rect x="120" y="200" width="20" height="26" rx="4" fill="#BFA15F" stroke="#7A602B" stroke-width="1.5"/>
+    <rect x="320" y="200" width="20" height="26" rx="4" fill="#BFA15F" stroke="#7A602B" stroke-width="1.5"/>
+
+    <!-- Spout (left) -->
+    <path d="M 150,250 C 90,240 50,200 40,170 C 45,165 60,170 70,185 C 90,210 120,230 155,238 Z" fill="url(#potBody)" stroke="#DDD5C7" stroke-width="1"/>
+
+    <!-- Main Pot Body (Round Ceramic) -->
+    <ellipse cx="230" cy="275" rx="140" ry="105" fill="url(#potBody)"/>
+    
+    <!-- Pot Neck / Rim -->
+    <ellipse cx="230" cy="190" rx="65" ry="16" fill="#D3CAB9"/>
+    <ellipse cx="230" cy="188" rx="63" ry="14" fill="#FAF7F2"/>
+
+    <!-- Lid -->
+    <ellipse cx="230" cy="180" rx="55" ry="14" fill="url(#potBody)"/>
+    <!-- Wooden Lid Knob -->
+    <rect x="220" y="152" width="20" height="20" rx="6" fill="url(#woodHandle)"/>
+    <ellipse cx="230" cy="152" rx="10" ry="4" fill="#D49E6A"/>
+
+    <!-- Subtle Ceramic Glaze Highlights & Shadow -->
+    <path d="M 160,230 Q 230,210 290,235 Q 230,220 160,230 Z" fill="#FFFFFF" opacity="0.6"/>
+    <ellipse cx="200" cy="265" rx="60" ry="40" fill="#FFFFFF" opacity="0.35" transform="rotate(-15 200 265)"/>
+    <path d="M 120,310 Q 230,380 340,310 Q 230,350 120,310 Z" fill="#000000" opacity="0.08"/>
+  </g>
+</svg>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with Tea House — Visit our specialty chai stall, send us an enquiry, or explore our opening hours and location.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Contact Us | Tea House &amp; Specialty Chai</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/contact.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="contact">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 — CONTACT HERO
+       Warm Ivory background, editorial typography, arch portrait visual
+       ======================================================================== -->
+  <section class="contact-hero-section" id="contactHero">
+    <!-- Oversized ghost backdrop -->
+    <div class="contact-hero-backdrop" aria-hidden="true">SAY HELLO</div>
+
+    <div class="container-editorial contact-hero-container">
+      <div class="contact-hero-inner">
+
+        <!-- LEFT: Editorial headline, eyebrow & CTA -->
+        <div class="contact-hero-text">
+          <div class="contact-hero-eyebrow">
+            <span class="contact-eyebrow-line" aria-hidden="true"></span>
+            <span class="editorial-category-label">WE'D LOVE TO HEAR FROM YOU</span>
+          </div>
+
+          <h1 class="contact-hero-heading">
+            Let's Make Your Next<br>
+            <em>Chai Moment Special.</em>
+          </h1>
+
+          <p class="contact-hero-desc">
+            Have a question, want to know more about our offerings, or simply wish to say hello? We'd be delighted to hear from you. Reach out and let's start a conversation.
+          </p>
+
+          <div class="contact-hero-cta-row">
+            <a href="#contactFormSection" class="btn-terracotta" id="heroScrollBtn">
+              <span>Send Us a Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual composition -->
+        <div class="contact-hero-visual">
+          <div class="contact-hero-sage-blob" aria-hidden="true"></div>
+
+          <!-- Arch-top portrait card -->
+          <div class="contact-hero-arch-wrap reveal-on-scroll">
+            <img src="assets/images/home2/moments/moment-morning.jpg"
+                 alt="A cup of tea with loose leaves, dried petals and a green plant"
+                 class="contact-hero-arch-img"
+                 loading="eager">
+            <div class="contact-hero-card-tag">
+              <span class="contact-tag-badge">Warm Hospitality</span>
+              <span class="contact-tag-sub">Tea House Community</span>
+            </div>
+          </div>
+
+          <!-- Floating decorative script badge -->
+          <div class="contact-hero-script-badge" aria-hidden="true">
+            <span class="contact-script-1">Warmth &amp; Welcome</span>
+            <span class="contact-script-2">Open Daily</span>
+            <span class="contact-script-decor"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 02 — CONTACT INFORMATION SECTION
+       4 Cards: Address, Phone, Email, Social Links.
+       All clearly identifiable editable placeholders.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="contact-info-section" id="contactInfo">
+    <div class="container-editorial">
+
+      <div class="contact-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">HERE TO HELP</span>
+        <h2 class="contact-section-heading">A Little Conversation Goes a Long Way.</h2>
+      </div>
+
+      <div class="contact-info-grid">
+
+        <!-- 1. Address Card -->
+        <div class="contact-info-card reveal-on-scroll" data-delay="50">
+          <div class="contact-info-icon-box">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+          </div>
+          <span class="contact-info-subtitle">VISIT OUR TEA HOUSE</span>
+          <h3 class="contact-info-title">42 Heritage Lane, Fort, Mumbai</h3>
+          <p class="contact-info-note">
+            Kala Ghoda Arts District, Maharashtra 400001. Open daily with courtyard &amp; curbside seating.
+          </p>
+          <div class="contact-info-action">
+            <a href="#mapSection" class="contact-info-link">
+              <span>View On Map</span>
+              <i class="bi bi-arrow-down-short" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Phone Card -->
+        <div class="contact-info-card reveal-on-scroll" data-delay="100">
+          <div class="contact-info-icon-box">
+            <i class="bi bi-telephone" aria-hidden="true"></i>
+          </div>
+          <span class="contact-info-subtitle">GIVE US A CALL</span>
+          <h3 class="contact-info-title">[Add actual phone number]</h3>
+          <p class="contact-info-note">
+            Available during stall hours for customer enquiries and pre-orders.
+          </p>
+          <div class="contact-info-action">
+            <span class="contact-placeholder-tag" title="Placeholder: clickable once verified number is set">
+              <i class="bi bi-lock-fill" aria-hidden="true"></i> Placeholder
+            </span>
+          </div>
+        </div>
+
+        <!-- 3. Email Card -->
+        <div class="contact-info-card reveal-on-scroll" data-delay="150">
+          <div class="contact-info-icon-box">
+            <i class="bi bi-envelope-open" aria-hidden="true"></i>
+          </div>
+          <span class="contact-info-subtitle">DROP US AN EMAIL</span>
+          <h3 class="contact-info-title">[Add actual email address]</h3>
+          <p class="contact-info-note">
+            For catering enquiries, press notes, or partnership collaborations.
+          </p>
+          <div class="contact-info-action">
+            <span class="contact-placeholder-tag" title="Placeholder: clickable once verified email is set">
+              <i class="bi bi-lock-fill" aria-hidden="true"></i> Placeholder
+            </span>
+          </div>
+        </div>
+
+        <!-- 4. Social Links Card -->
+        <div class="contact-info-card reveal-on-scroll" data-delay="200">
+          <div class="contact-info-icon-box">
+            <i class="bi bi-share" aria-hidden="true"></i>
+          </div>
+          <span class="contact-info-subtitle">FOLLOW OUR JOURNEY</span>
+          <h3 class="contact-info-title">@teahouse_specialty</h3>
+          <p class="contact-info-note">
+            Stories, secret seasonal brews, and morning chai musings.
+          </p>
+          <div class="contact-info-action">
+            <div class="contact-social-pills">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-pill" aria-label="Instagram">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contact-social-pill" aria-label="Facebook">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="contact-social-pill" aria-label="Pinterest">
+                <i class="bi bi-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 03 — CONTACT FORM & VISUAL COMPOSITION
+       Left: 5-field accessible enquiry form with client validation.
+       Right: Warm lifestyle photograph & editorial greeting.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="contact-form-section" id="contactFormSection">
+    <div class="container-editorial">
+
+      <div class="contact-form-layout">
+
+        <!-- LEFT: Contact Form -->
+        <div class="contact-form-column reveal-on-scroll">
+          <div class="contact-section-header">
+            <span class="editorial-category-label">LET'S TALK</span>
+            <h2 class="contact-section-heading">Tell Us What's on Your Mind.</h2>
+            <p class="contact-section-desc">
+              Whether you have a question, feedback, or an idea to share, send us a message. We're always happy to connect.
+            </p>
+          </div>
+
+          <!-- Alert / Feedback Banner -->
+          <div id="contactFormAlert" class="contact-form-alert d-none" role="alert" aria-live="polite"></div>
+
+          <form id="contactForm" class="contact-form-inner" novalidate>
+
+            <!-- 1. Name -->
+            <div class="form-group-custom">
+              <label for="contactName" class="form-label-custom">
+                <span>Your Name</span>
+                <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrapper-custom">
+                <i class="bi bi-person input-icon" aria-hidden="true"></i>
+                <input type="text"
+                       class="form-control-custom"
+                       id="contactName"
+                       name="name"
+                       placeholder="Enter your full name"
+                       autocomplete="name"
+                       required>
+              </div>
+              <div class="field-feedback" id="nameFeedback"></div>
+            </div>
+
+            <!-- 2. Email -->
+            <div class="form-group-custom">
+              <label for="contactEmail" class="form-label-custom">
+                <span>Email Address</span>
+                <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrapper-custom">
+                <i class="bi bi-envelope input-icon" aria-hidden="true"></i>
+                <input type="email"
+                       class="form-control-custom"
+                       id="contactEmail"
+                       name="email"
+                       placeholder="Enter your email address"
+                       autocomplete="email"
+                       required>
+              </div>
+              <div class="field-feedback" id="emailFeedback"></div>
+            </div>
+
+            <!-- 3. Phone (Optional) -->
+            <div class="form-group-custom">
+              <label for="contactPhone" class="form-label-custom">
+                <span>Phone Number</span>
+                <span class="form-optional">(Optional)</span>
+              </label>
+              <div class="input-wrapper-custom">
+                <i class="bi bi-telephone input-icon" aria-hidden="true"></i>
+                <input type="tel"
+                       class="form-control-custom"
+                       id="contactPhone"
+                       name="phone"
+                       placeholder="Enter your phone number"
+                       autocomplete="tel">
+              </div>
+              <div class="field-feedback" id="phoneFeedback"></div>
+            </div>
+
+            <!-- 4. Subject -->
+            <div class="form-group-custom">
+              <label for="contactSubject" class="form-label-custom">
+                <span>Subject</span>
+                <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrapper-custom">
+                <i class="bi bi-chat-left-dots input-icon" aria-hidden="true"></i>
+                <input type="text"
+                       class="form-control-custom"
+                       id="contactSubject"
+                       name="subject"
+                       placeholder="Enter your subject"
+                       required>
+              </div>
+              <div class="field-feedback" id="subjectFeedback"></div>
+            </div>
+
+            <!-- 5. Message -->
+            <div class="form-group-custom">
+              <label for="contactMessage" class="form-label-custom">
+                <span>Your Message</span>
+                <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrapper-custom textarea-wrapper">
+                <textarea class="form-control-custom form-textarea-custom"
+                          id="contactMessage"
+                          name="message"
+                          rows="5"
+                          placeholder="Write your message here..."
+                          required></textarea>
+              </div>
+              <div class="field-feedback" id="messageFeedback"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit-row">
+              <button type="submit" class="btn-terracotta contact-submit-btn" id="contactSubmitBtn">
+                <span class="submit-text">Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+              <span class="form-privacy-note">
+                <i class="bi bi-shield-check" aria-hidden="true"></i> We respect your privacy. No spam.
+              </span>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- RIGHT: Visual Composition -->
+        <div class="contact-visual-column reveal-on-scroll" data-delay="150">
+          <div class="contact-composition-card">
+            <div class="contact-composition-media">
+              <img src="assets/images/contact/contact-form.jpg"
+                   alt="Peaceful table with clay tea cups, fresh tea leaves and natural sunlight"
+                   class="contact-composition-img"
+                   loading="lazy">
+              <div class="contact-composition-badge">
+                <i class="bi bi-cup-hot" aria-hidden="true"></i>
+                <span>Fresh Daily</span>
+              </div>
+            </div>
+            <div class="contact-composition-body">
+              <span class="editorial-category-label">A WARM INVITATION</span>
+              <h3 class="contact-composition-heading">Every Good Conversation Starts Somewhere.</h3>
+              <p class="contact-composition-desc">
+                Whether it's a quick question or a thoughtful suggestion, there's always room for one more conversation over chai.
+              </p>
+              <div class="contact-composition-perks">
+                <div class="perk-item">
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  <span>Artisanal Small-Batch Blends</span>
+                </div>
+                <div class="perk-item">
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  <span>Catering &amp; Event Tastings</span>
+                </div>
+                <div class="perk-item">
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  <span>Warm, Friendly Responses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04 — MAP AND LOCATION SECTION
+       Interactive Google Maps Embed Area & Location Panel.
+       All clearly identifiable editable placeholders.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="contact-map-section" id="mapSection">
+    <div class="container-editorial">
+
+      <div class="contact-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">COME FIND US</span>
+        <h2 class="contact-section-heading">Your Chai Corner Is Waiting.</h2>
+        <p class="contact-section-desc mx-auto" style="max-width: 620px;">
+          We'd love to welcome you. Find our location and plan your next visit.
+        </p>
+      </div>
+
+      <div class="contact-map-layout">
+
+        <!-- Left: Map Container Frame with Live Interactive Google Map -->
+        <div class="contact-map-frame reveal-on-scroll">
+          <iframe
+            class="contact-map-iframe"
+            src="https://maps.google.com/maps?q=Kala+Ghoda,+Fort,+Mumbai,+Maharashtra+400001&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Tea House Location Map - 42 Heritage Lane, Kala Ghoda, Fort, Mumbai">
+          </iframe>
+          <div class="contact-map-card-badge">
+            <i class="bi bi-geo-alt-fill text-danger" aria-hidden="true"></i>
+            <span>42 Heritage Lane, Fort, Mumbai</span>
+          </div>
+        </div>
+
+        <!-- Right: Location Details Panel -->
+        <div class="contact-location-panel reveal-on-scroll" data-delay="100">
+          <h3 class="location-panel-title">Stall &amp; Location Guide</h3>
+
+          <div class="location-item">
+            <div class="location-item-icon">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+            </div>
+            <div class="location-item-text">
+              <span class="location-item-label">PHYSICAL ADDRESS</span>
+              <strong class="location-item-value">42 Heritage Lane, Kala Ghoda, Fort, Mumbai 400001</strong>
+              <small class="location-item-hint">Historic Heritage District, Central Walkway</small>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="location-item-icon">
+              <i class="bi bi-compass-fill" aria-hidden="true"></i>
+            </div>
+            <div class="location-item-text">
+              <span class="location-item-label">LANDMARKS &amp; TRANSIT</span>
+              <strong class="location-item-value">Near David Sassoon Library, 5 Mins from CSMT</strong>
+              <small class="location-item-hint">Easy pedestrian access with shaded courtyard seating</small>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="location-item-icon">
+              <i class="bi bi-bicycle" aria-hidden="true"></i>
+            </div>
+            <div class="location-item-text">
+              <span class="location-item-label">ACCESSIBILITY</span>
+              <strong class="location-item-value">Walk-in Friendly</strong>
+              <small class="location-item-hint">Wheelchair accessible stall front and shaded bench areas</small>
+            </div>
+          </div>
+
+          <div class="location-panel-cta">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Kala+Ghoda,+Fort,+Mumbai,+Maharashtra+400001"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-forest w-100 justify-content-center"
+               id="getDirectionsBtn">
+              <span>Get Directions</span>
+              <i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i>
+            </a>
+            <span class="directions-hint">Opens Google Maps navigation in a new tab.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 05 — OFFICE TIMINGS SECTION
+       Clean weekly schedule rendered and easily edited via JavaScript.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="contact-timings-section" id="timingsSection">
+    <div class="container-editorial">
+
+      <div class="contact-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">WHEN TO VISIT</span>
+        <h2 class="contact-section-heading">There's Always Time for Chai.</h2>
+        <p class="contact-section-desc mx-auto" style="max-width: 580px;">
+          Stop by for an early morning energizing brew, an unhurried afternoon pause, or evening conversation.
+        </p>
+      </div>
+
+      <div class="contact-timings-container reveal-on-scroll">
+        <div class="contact-timings-card">
+          <!-- Populated dynamically and hydrated from contact.js OFFICE_TIMINGS -->
+          <div class="contact-timings-grid" id="timingsScheduleGrid">
+            <!-- Weekly items rendered by contact.js -->
+          </div>
+
+          <div class="contact-timings-footer">
+            <div class="holiday-note-box">
+              <i class="bi bi-info-circle" aria-hidden="true"></i>
+              <span>Holiday hours, special brew days, and festival schedules are announced regularly on our social channels.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 06 — ADDITIONAL SECTION: A WARM WELCOME
+       Editorial composition before final CTA.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="contact-welcome-section" id="warmWelcome">
+    <div class="container-editorial">
+      <div class="contact-welcome-card reveal-on-scroll">
+        <div class="contact-welcome-image-wrap">
+          <img src="assets/images/contact/contact-welcome.jpg"
+               alt="Warm and welcoming tea house stall atmosphere with people enjoying freshly poured chai"
+               class="contact-welcome-img"
+               loading="lazy">
+          <div class="contact-welcome-stamp" aria-hidden="true">
+            <span>Handcrafted Daily</span>
+          </div>
+        </div>
+
+        <div class="contact-welcome-content">
+          <span class="editorial-category-label">OUR OPEN PROMISE</span>
+          <h2 class="contact-welcome-heading">Good Chai. Good Conversations. Great Moments.</h2>
+          <p class="contact-welcome-desc">
+            Whether you're visiting for your favourite cup, exploring something new, or simply stopping by to say hello, we're looking forward to welcoming you.
+          </p>
+          <div class="contact-welcome-badges">
+            <div class="welcome-badge-pill">
+              <i class="bi bi-sun-fill" aria-hidden="true"></i>
+              <span>Morning Rituals</span>
+            </div>
+            <div class="welcome-badge-pill">
+              <i class="bi bi-cup-straw" aria-hidden="true"></i>
+              <span>Afternoon Pauses</span>
+            </div>
+            <div class="welcome-badge-pill">
+              <i class="bi bi-chat-heart-fill" aria-hidden="true"></i>
+              <span>Shared Stories</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 07 — FINAL CTA
+       Deep forest green background, warm ivory typography
+       ======================================================================== -->
+  <section class="contact-cta-section" id="contactCta">
+    <!-- Oversized ghost backdrop -->
+    <div class="contact-cta-backdrop" aria-hidden="true">SEE YOU SOON</div>
+    <!-- Sage organic blobs -->
+    <div class="contact-cta-blob contact-cta-blob--left" aria-hidden="true"></div>
+    <div class="contact-cta-blob contact-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial contact-cta-inner">
+      <div class="contact-cta-content reveal-on-scroll">
+        <span class="contact-cta-eyebrow editorial-category-label">YOUR TABLE IS READY</span>
+        <h2 class="contact-cta-heading">We Can't Wait to<br><em>Welcome You.</em></h2>
+        <p class="contact-cta-desc">
+          Your next lovely tea moment could be just around the corner. Come discover the warmth of Tea House.
+        </p>
+        <div class="contact-cta-buttons">
+          <a href="menu.html" class="btn-terracotta">
+            <span>Explore Our Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="about.html" class="btn-forest contact-cta-btn-alt">
+            <span>Read Our Story</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Interactive Modals: Login & Signup -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail" placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Account created! Welcome to Tea House Rewards.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50 Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Contact Page Specific Script -->
+  <script src="assets/js/pages/contact.js"></script>
+</body>
+</html>

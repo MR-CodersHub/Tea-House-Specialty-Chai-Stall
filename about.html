@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Tea House — Our story, mission, values, journey, and the people behind every cup of specialty chai.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>About Us | Tea House & Specialty Chai</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/about.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="about">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 — ABOUT HERO / BRAND INTRODUCTION
+       Editorial two-column layout closely matching reference composition:
+       - Left: Eyebrow with line accent, Cormorant Garamond heading, supporting
+         text, and terracotta CTA button
+       - Right: Large arched top frame with warm studio backdrop, flower vase
+         with blossom branches, and foreground steaming tea cup/tray
+       - Overlapping large Sage Green circular shape behind the arch on left
+       - Top vertical header stripe accent
+       - Floating script badge "Good Chai, Better Days" in top-right
+       - Fine-line botanical leaf illustration in bottom-left corner
+       ======================================================================== -->
+  <section class="ab-hero-section" id="aboutHero">
+    <!-- Oversized ghost backdrop -->
+    <div class="ab-hero-backdrop" aria-hidden="true">CHAI</div>
+
+    <!-- Bottom-left botanical leaf decoration (matching reference) -->
+    <div class="ab-hero-botanical" aria-hidden="true">
+      <svg viewBox="0 0 180 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 15 240 C 35 180 60 130 100 45 C 108 30 118 18 132 8" stroke="var(--color-accent-terracotta)" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+        <path d="M 32 195 C 10 180 4 150 24 130 C 40 148 44 178 32 195 Z" fill="none" stroke="var(--color-accent-terracotta)" stroke-width="1.4" opacity="0.4"/>
+        <path d="M 32 195 C 24 165 22 148 24 130" stroke="var(--color-accent-terracotta)" stroke-width="0.8" opacity="0.3"/>
+        <path d="M 52 155 C 76 142 95 152 102 176 C 78 182 60 170 52 155 Z" fill="none" stroke="var(--color-accent-terracotta)" stroke-width="1.4" opacity="0.4"/>
+        <path d="M 52 155 C 70 162 88 170 102 176" stroke="var(--color-accent-terracotta)" stroke-width="0.8" opacity="0.3"/>
+        <path d="M 68 115 C 44 98 46 72 68 55 C 80 72 82 96 68 115 Z" fill="none" stroke="var(--color-accent-terracotta)" stroke-width="1.4" opacity="0.4"/>
+        <path d="M 68 115 C 56 94 58 74 68 55" stroke="var(--color-accent-terracotta)" stroke-width="0.8" opacity="0.3"/>
+        <path d="M 86 85 C 114 74 132 86 142 110 C 118 115 98 102 86 85 Z" fill="none" stroke="var(--color-accent-terracotta)" stroke-width="1.4" opacity="0.4"/>
+        <path d="M 86 85 C 106 94 126 102 142 110" stroke="var(--color-accent-terracotta)" stroke-width="0.8" opacity="0.3"/>
+        <path d="M 110 40 C 128 22 152 18 164 30 C 152 48 128 54 110 40 Z" fill="none" stroke="var(--color-accent-terracotta)" stroke-width="1.4" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <div class="container-editorial ab-hero-container">
+      <div class="ab-hero-inner">
+
+        <!-- LEFT: Editorial text column (matching reference) -->
+        <div class="ab-hero-text reveal-on-scroll">
+          <div class="ab-hero-eyebrow">
+            <span class="editorial-category-label">OUR STORY, OUR PASSION</span>
+            <span class="ab-eyebrow-line" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="ab-hero-heading">
+            A Little More Than<br>
+            <span class="ab-heading-focus">Just a Cup of Chai.</span>
+          </h1>
+
+          <p class="ab-hero-desc">
+            At Tea House, we believe the simplest moments can become the most meaningful.
+            Inspired by the warmth of traditional chai and the joy of sharing, we bring together
+            comforting flavours, thoughtful preparation, and a welcoming experience in every cup.
+          </p>
+
+          <div class="ab-hero-cta-row">
+            <a href="#ourStory" class="btn-terracotta">
+              <span>Discover Our Story</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Composition matching reference -->
+        <div class="ab-hero-composition">
+          <!-- Top vertical accent bar (from top behind the arch, like in reference) -->
+          <div class="ab-hero-top-bar" aria-hidden="true"></div>
+
+          <!-- Large circular decorative shape (Sage Green, peeking on the left) -->
+          <div class="ab-hero-circle-shape" aria-hidden="true"></div>
+
+          <!-- Main arched frame: filled completely by the vase image -->
+          <div class="ab-hero-arch-frame reveal-on-scroll" data-delay="150">
+            <img src="assets/images/about-vase.png"
+              alt="Artisanal ceramic vase with delicate blossoms"
+              class="ab-hero-arch-img"
+              loading="eager">
+          </div>
+
+          <!-- Foreground primary tea image: placed OUTSIDE the arch structure, overlapping in front -->
+          <div class="ab-hero-tea-wrap reveal-on-scroll" data-delay="250">
+            <img src="assets/images/about.png"
+              alt="A steaming handcrafted cup of specialty chai served with whole aromatic spices and tea leaves"
+              class="ab-hero-tea-img"
+              loading="eager">
+          </div>
+
+          <!-- Rotated script badge (top-right of arch, exactly like reference) -->
+          <div class="ab-hero-script-badge" aria-hidden="true">
+            <span class="ab-script-line-1">Good Chai,</span>
+            <span class="ab-script-line-2">Better Days</span>
+            <span class="ab-script-decor"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ========================================================================
+       SECTION 02 — OUR COMPANY STORY
+       Asymmetric image-and-text with oversized OUR JOURNEY backdrop
+       ======================================================================== -->
+  <section class="ab-story-section" id="ourStory"><span id="our-story" style="position:absolute;top:-80px;"></span>
+    <!-- Ghost backdrop -->
+    <div class="ab-story-backdrop" aria-hidden="true">JOURNEY</div>
+    <svg class="ab-story-accent" viewBox="0 0 80 160" aria-hidden="true">
+      <path d="M 75 5 C 27 24, 8 68, 23 155"></path>
+    </svg>
+
+    <div class="container-editorial">
+      <!-- Eyebrow -->
+      <div class="ab-section-header reveal-on-scroll">
+        <span class="editorial-category-label">HOW IT ALL BEGAN</span>
+        <h2 class="ab-section-heading">Rooted in Tradition.<br><em>Made for Today.</em></h2>
+      </div>
+
+      <div class="ab-story-inner">
+        <!-- Left: Image stack -->
+        <div class="ab-story-images reveal-on-scroll" data-delay="100">
+          <div class="ab-story-img-primary-wrap">
+            <img src="assets/images/ingredients/spices-mound.jpg"
+              alt="Aromatic spices at the heart of every Tea House blend"
+              class="ab-story-img-primary">
+          </div>
+          <div class="ab-story-img-secondary-wrap">
+            <img src="assets/images/home2/experience/pause-cutting-glass.jpg"
+              alt="A perfect cutting chai moment"
+              class="ab-story-img-secondary">
+            <div class="ab-story-img-tag">
+              <i class="bi bi-leaf" aria-hidden="true"></i>
+              <span>Authentic Ingredients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Story text -->
+        <div class="ab-story-text reveal-on-scroll" data-delay="200">
+          <p class="ab-story-para ab-story-lead">
+            Tea has always been more than a drink. It brings people together, creates moments of
+            comfort, and makes everyday conversations special. Inspired by this simple belief,
+            Tea House was created to celebrate the familiar warmth of chai through thoughtfully
+            prepared blends and a welcoming atmosphere.
+          </p>
+          <p class="ab-story-para">
+            From the ingredients we choose to the way every cup is prepared, our focus remains on
+            creating an experience that feels genuine, comforting, and memorable.
+          </p>
+
+          <!-- Stat row -->
+          <div class="ab-story-stats">
+            <div class="ab-stat-item">
+              <span class="ab-stat-num">100<span class="ab-stat-plus">+</span></span>
+              <span class="ab-stat-label">Chai Varieties</span>
+            </div>
+            <div class="ab-stat-divider" aria-hidden="true"></div>
+            <div class="ab-stat-item">
+              <span class="ab-stat-num">Every</span>
+              <span class="ab-stat-label">Cup, Handcrafted</span>
+            </div>
+            <div class="ab-stat-divider" aria-hidden="true"></div>
+            <div class="ab-stat-item">
+              <span class="ab-stat-num">One</span>
+              <span class="ab-stat-label">Mission: Warmth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 03 — MISSION & VISION
+       Two balanced editorial panels side by side
+       ======================================================================== -->
+  <section class="ab-mv-section" id="missionVision">
+    <div class="container-editorial">
+      <div class="ab-section-header ab-section-header-center reveal-on-scroll">
+        <span class="editorial-category-label">WHAT GUIDES US</span>
+        <h2 class="ab-section-heading">A Purpose Behind<br><em>Every Pour.</em></h2>
+      </div>
+
+      <div class="ab-mv-panels">
+        <!-- Mission Panel -->
+        <div class="ab-mv-panel ab-mv-panel--mission reveal-on-scroll" data-delay="0">
+          <div class="ab-mv-icon-wrap" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" stroke="var(--color-accent-terracotta)" stroke-width="1.5"/>
+              <path d="M10 16 C10 12 13 9 16 9 C19 9 22 12 22 16" stroke="var(--color-accent-terracotta)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M13 20 Q16 23 19 20" stroke="var(--color-accent-terracotta)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <span class="ab-mv-label">Our Mission</span>
+          <h3 class="ab-mv-title">What We Do</h3>
+          <p class="ab-mv-text">
+            To create meaningful tea experiences through carefully prepared chai, thoughtful ingredients,
+            and warm hospitality — making every visit and every cup feel truly special.
+          </p>
+          <div class="ab-mv-rule" aria-hidden="true"></div>
+        </div>
+
+        <!-- Vision Panel -->
+        <div class="ab-mv-panel ab-mv-panel--vision reveal-on-scroll" data-delay="150">
+          <div class="ab-mv-icon-wrap" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" stroke="var(--color-green-sage)" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="5" stroke="var(--color-green-sage)" stroke-width="1.5" fill="none"/>
+              <line x1="16" y1="2" x2="16" y2="8" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="16" y1="24" x2="16" y2="30" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="2" y1="16" x2="8" y2="16" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="24" y1="16" x2="30" y2="16" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="ab-mv-label">Our Vision</span>
+          <h3 class="ab-mv-title">Where We're Going</h3>
+          <p class="ab-mv-text">
+            To become a beloved destination for authentic chai experiences — bringing people together
+            through flavour, comfort, and the simple joy of shared moments.
+          </p>
+          <div class="ab-mv-rule ab-mv-rule--sage" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04 — JOURNEY / MILESTONES TIMELINE
+       Numbered milestones: horizontal on desktop, vertical on mobile
+       ======================================================================== -->
+  <section class="ab-journey-section" id="ourJourney">
+    <div class="ab-journey-backdrop" aria-hidden="true">STORY</div>
+
+    <div class="container-editorial">
+      <div class="ab-section-header reveal-on-scroll">
+        <span class="editorial-category-label">MOMENTS THAT SHAPED US</span>
+        <h2 class="ab-section-heading">Every Journey Has<br><em>a Beginning.</em></h2>
+      </div>
+
+      <!-- Timeline track -->
+      <div class="ab-timeline">
+        <div class="ab-timeline-track" aria-hidden="true"></div>
+
+        <!-- Milestone 01 -->
+        <div class="ab-milestone reveal-on-scroll" data-delay="0">
+          <div class="ab-milestone-dot">
+            <span class="ab-milestone-num">01</span>
+          </div>
+          <div class="ab-milestone-content">
+            <div class="ab-milestone-icon" aria-hidden="true">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h4 class="ab-milestone-title">The Idea</h4>
+            <p class="ab-milestone-text">
+              A simple belief that chai can make everyday moments more meaningful — that comfort
+              and connection can be found in a single cup.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 02 -->
+        <div class="ab-milestone reveal-on-scroll" data-delay="120">
+          <div class="ab-milestone-dot">
+            <span class="ab-milestone-num">02</span>
+          </div>
+          <div class="ab-milestone-content">
+            <div class="ab-milestone-icon" aria-hidden="true">
+              <i class="bi bi-cup-hot"></i>
+            </div>
+            <h4 class="ab-milestone-title">The Inspiration</h4>
+            <p class="ab-milestone-text">
+              Exploring traditional flavours, hand-selected ingredients, and the timeless culture
+              of sharing tea that spans generations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 03 -->
+        <div class="ab-milestone reveal-on-scroll" data-delay="240">
+          <div class="ab-milestone-dot">
+            <span class="ab-milestone-num">03</span>
+          </div>
+          <div class="ab-milestone-content">
+            <div class="ab-milestone-icon" aria-hidden="true">
+              <i class="bi bi-house-heart"></i>
+            </div>
+            <h4 class="ab-milestone-title">The Experience</h4>
+            <p class="ab-milestone-text">
+              Building a welcoming tea-house concept around comfort, quality, and genuine human
+              connection — one cup at a time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 04 -->
+        <div class="ab-milestone reveal-on-scroll" data-delay="360">
+          <div class="ab-milestone-dot">
+            <span class="ab-milestone-num">04</span>
+          </div>
+          <div class="ab-milestone-content">
+            <div class="ab-milestone-icon" aria-hidden="true">
+              <i class="bi bi-stars"></i>
+            </div>
+            <h4 class="ab-milestone-title">The Journey Ahead</h4>
+            <p class="ab-milestone-text">
+              Continuing to create memorable experiences, celebrate authentic chai culture, and
+              bring warmth to every moment — now and always.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- .ab-timeline -->
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 05 — MEET OUR TEAM
+       Editorial team grid with consistent image heights and hover effects
+       ======================================================================== -->
+  <section class="ab-team-section" id="ourTeam">
+    <div class="container-editorial">
+      <div class="ab-section-header ab-section-header-center reveal-on-scroll">
+        <span class="editorial-category-label">THE PEOPLE BEHIND THE EXPERIENCE</span>
+        <h2 class="ab-section-heading">Made Special by the<br><em>People Who Care.</em></h2>
+      </div>
+
+      <div class="ab-team-grid" id="teamGrid">
+        <!-- Team cards injected by about.js from TEAM_DATA array -->
+      </div>
+
+      <p class="ab-team-note reveal-on-scroll">
+        Team profiles are sample placeholders. Update <code>TEAM_DATA</code> in <code>assets/js/pages/about.js</code> with your team's details.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 06 — CUSTOMER TESTIMONIALS
+       Horizontal testimonial carousel with refined quotation styling
+       ======================================================================== -->
+  <section class="ab-testimonial-section" id="whatTheySay">
+    <div class="ab-testimonial-backdrop" aria-hidden="true">LOVE</div>
+
+    <div class="container-editorial">
+      <div class="ab-section-header ab-section-header-center reveal-on-scroll">
+        <span class="editorial-category-label">KIND WORDS, WARM MOMENTS</span>
+        <h2 class="ab-section-heading">The Best Part of<br><em>What We Do Is You.</em></h2>
+      </div>
+
+      <!-- Testimonial carousel -->
+      <div class="ab-testimonial-carousel" role="region" aria-label="Customer testimonials">
+        <div class="ab-testimonial-track" id="testimonialTrack">
+          <!-- Cards injected by about.js -->
+        </div>
+
+        <!-- Navigation -->
+        <div class="ab-testimonial-nav" role="group" aria-label="Testimonial navigation">
+          <button class="ab-testimonial-btn ab-testimonial-prev" id="testimonialPrev" aria-label="Previous testimonial">
+            <i class="bi bi-arrow-left" aria-hidden="true"></i>
+          </button>
+          <div class="ab-testimonial-dots" id="testimonialDots" role="tablist" aria-label="Testimonial indicators"></div>
+          <button class="ab-testimonial-btn ab-testimonial-next" id="testimonialNext" aria-label="Next testimonial">
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 07 — OUR VALUES
+       Four aligned brand value cards on desktop, 2-col mobile
+       ======================================================================== -->
+  <section class="ab-values-section" id="ourValues">
+    <div class="container-editorial">
+      <div class="ab-section-header ab-section-header-center reveal-on-scroll">
+        <span class="editorial-category-label">WHAT MATTERS TO US</span>
+        <h2 class="ab-section-heading">The Little Things<br><em>Make the Difference.</em></h2>
+      </div>
+
+      <div class="ab-values-grid">
+
+        <!-- Value 01 -->
+        <div class="ab-value-item reveal-on-scroll" data-delay="0">
+          <div class="ab-value-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 3 L14 25 M3 14 L25 14" stroke="var(--color-accent-terracotta)" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="14" cy="14" r="6" stroke="var(--color-accent-terracotta)" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h4 class="ab-value-title">Quality First</h4>
+          <p class="ab-value-text">Thoughtful attention to every ingredient and preparation step — because excellence is in the details.</p>
+        </div>
+
+        <!-- Value 02 -->
+        <div class="ab-value-item reveal-on-scroll" data-delay="100">
+          <div class="ab-value-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M4 14 Q8 6 14 10 Q20 14 24 6" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="14" cy="10" r="2.5" fill="var(--color-green-sage)" opacity="0.6"/>
+            </svg>
+          </div>
+          <h4 class="ab-value-title">Authentic Flavours</h4>
+          <p class="ab-value-text">Celebrating the familiar comfort of chai through recipes rooted in tradition and honest ingredients.</p>
+        </div>
+
+        <!-- Value 03 -->
+        <div class="ab-value-item reveal-on-scroll" data-delay="200">
+          <div class="ab-value-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 4 C8 4 4 9 4 14 C4 19 7 22 14 24 C21 22 24 19 24 14 C24 9 20 4 14 4Z" stroke="var(--color-accent-terracotta)" stroke-width="1.5" fill="none"/>
+              <path d="M10 14 Q14 18 18 14" stroke="var(--color-accent-terracotta)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <h4 class="ab-value-title">Warm Hospitality</h4>
+          <p class="ab-value-text">Making every guest feel genuinely welcome — from the moment they walk in to the last sip.</p>
+        </div>
+
+        <!-- Value 04 -->
+        <div class="ab-value-item reveal-on-scroll" data-delay="300">
+          <div class="ab-value-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 5 L16.5 11 L23 11.5 L18 16 L19.5 23 L14 19.5 L8.5 23 L10 16 L5 11.5 L11.5 11 Z" stroke="var(--color-green-sage)" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h4 class="ab-value-title">Meaningful Moments</h4>
+          <p class="ab-value-text">Creating spaces and experiences worth remembering — where time slows down and connection feels natural.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 08 — FINAL CTA
+       Deep forest green background, ivory text, and terracotta CTAs
+       ======================================================================== -->
+  <section class="ab-cta-section" id="joinUs">
+    <!-- Oversized ghost text -->
+    <div class="ab-cta-backdrop" aria-hidden="true">TOGETHER</div>
+    <!-- Sage organic shapes -->
+    <div class="ab-cta-blob ab-cta-blob--left" aria-hidden="true"></div>
+    <div class="ab-cta-blob ab-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial ab-cta-inner">
+      <div class="ab-cta-content reveal-on-scroll">
+        <span class="ab-cta-eyebrow editorial-category-label">A MOMENT TOGETHER</span>
+        <h2 class="ab-cta-heading">Come In, Slow Down,<br><em>and Stay a While.</em></h2>
+        <p class="ab-cta-desc">
+          Discover the flavours, warmth, and little moments that make Tea House special.
+          Your next favourite chai experience is waiting.
+        </p>
+        <div class="ab-cta-buttons">
+          <a href="menu.html" class="btn-terracotta">
+            <span>Explore Our Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="contact.html" class="btn-forest ab-cta-btn-alt">
+            <span>Get in Touch</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/about.js"></script>
+</body>
+</html>

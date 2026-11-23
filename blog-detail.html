@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read full article on The Tea House Journal — Authentic stories, brewing guides, and mindful tea rituals.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title id="pageTitle">Article Detail | The Tea House Journal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheets -->
+  <link rel="stylesheet" href="assets/css/pages/blog.css">
+  <link rel="stylesheet" href="assets/css/pages/blog-detail.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="blog">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       ARTICLE HEADER & HERO
+       ======================================================================== -->
+  <header class="detail-header-section" id="articleHeader">
+    <div class="container-editorial">
+      <!-- Breadcrumb navigation -->
+      <nav class="detail-breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">Journal</a></li>
+          <li class="breadcrumb-item active" id="articleCategoryBreadcrumb" aria-current="page">Tea Rituals</li>
+        </ol>
+      </nav>
+
+      <div class="detail-header-content">
+        <div class="detail-category-badge" id="articleCategoryBadge">Tea Rituals</div>
+        <h1 class="detail-article-title" id="articleTitle">The Beauty of a Slow Morning: Starting Your Day With Chai</h1>
+        <p class="detail-article-intro" id="articleIntro">
+          Discover how a simple morning cup of chai can turn an ordinary start into a peaceful and meaningful daily ritual.
+        </p>
+
+        <!-- Meta row: Author, Date, Reading time -->
+        <div class="detail-meta-bar">
+          <div class="detail-author-thumb">
+            <img src="assets/images/team/team-member-01.jpg" alt="Author" id="articleAuthorImg">
+          </div>
+          <div class="detail-meta-text">
+            <span class="detail-author-name" id="articleAuthorName">Tea House Editorial Team</span>
+            <div class="detail-meta-sub">
+              <span id="articleDate">October 18, 2026</span>
+              <span class="detail-meta-dot" aria-hidden="true">•</span>
+              <span id="articleReadTime">5 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       FEATURED COVER IMAGE
+       ======================================================================== -->
+  <section class="detail-cover-section">
+    <div class="container-editorial">
+      <div class="detail-cover-wrapper">
+        <img src="assets/images/blog/slow-morning.jpg" alt="Article Cover" class="detail-cover-img" id="articleCoverImg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ARTICLE BODY + SIDEBAR LAYOUT (Two-column on desktop)
+       ======================================================================== -->
+  <main class="detail-content-section">
+    <div class="container-editorial">
+      <div class="detail-layout-grid">
+
+        <!-- PRIMARY ARTICLE CONTENT (Left column) -->
+        <article class="detail-main-article" id="articleBodyContainer">
+          <!-- Article sections injected safely by blog-detail.js -->
+        </article>
+
+        <!-- SIDEBAR (Right column on desktop, moves below on mobile) -->
+        <aside class="detail-sidebar" aria-label="Journal Sidebar">
+          <!-- Categories widget -->
+          <div class="detail-widget detail-widget-categories">
+            <h4 class="detail-widget-title">Categories</h4>
+            <ul class="detail-cat-list" id="sidebarCategoryList">
+              <!-- Rendered by blog-detail.js -->
+            </ul>
+          </div>
+
+          <!-- Recent posts widget -->
+          <div class="detail-widget detail-widget-recent">
+            <h4 class="detail-widget-title">Recent Stories</h4>
+            <div class="detail-recent-list" id="sidebarRecentList">
+              <!-- Rendered by blog-detail.js -->
+            </div>
+          </div>
+
+          <!-- Editorial quote box -->
+          <div class="detail-widget detail-widget-quote">
+            <span class="editorial-category-label">TEA HOUSE ETHOS</span>
+            <p class="detail-quote-text">
+              "We believe the simplest acts — boiling water, crushing spices, sharing time — are where life is sweetest."
+            </p>
+            <a href="about.html" class="detail-quote-link">
+              <span>Read Our Story</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       AUTHOR BIO PROFILE SECTION
+       ======================================================================== -->
+  <section class="detail-author-section">
+    <div class="container-editorial">
+      <div class="detail-author-card">
+        <div class="detail-author-card-avatar">
+          <img src="assets/images/team/team-member-01.jpg" alt="Author" id="authorCardImg">
+        </div>
+        <div class="detail-author-card-info">
+          <span class="detail-author-card-role" id="authorCardRole">Specialty Tea Curators</span>
+          <h3 class="detail-author-card-name" id="authorCardName">Tea House Editorial Team</h3>
+          <p class="detail-author-card-bio" id="authorCardBio">
+            Dedicated to exploring traditional brewing traditions, culinary heritage, and the restorative power of mindful tea rituals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       RELATED ARTICLES SUGGESTIONS (3 Cards)
+       ======================================================================== -->
+  <section class="detail-related-section" id="relatedStories">
+    <div class="container-editorial">
+      <div class="blog-section-header">
+        <span class="editorial-category-label">CONTINUE READING</span>
+        <h2 class="blog-section-heading">More Stories to Savour.</h2>
+      </div>
+
+      <div class="detail-related-grid" id="relatedGrid">
+        <!-- Rendered by blog-detail.js from post.relatedIds -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FINAL CTA
+       ======================================================================== -->
+  <section class="blog-cta-section" id="detailCta">
+    <div class="blog-cta-backdrop" aria-hidden="true">STORIES</div>
+    <div class="blog-cta-blob blog-cta-blob--left" aria-hidden="true"></div>
+    <div class="blog-cta-blob blog-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial blog-cta-inner">
+      <div class="blog-cta-content">
+        <span class="blog-cta-eyebrow editorial-category-label">VISIT OUR STALL</span>
+        <h2 class="blog-cta-heading">Taste the Stories Behind<br><em>Every Single Blend.</em></h2>
+        <p class="blog-cta-desc">
+          Enjoy our slow-brewed handcrafted chai varieties in person at our Fort, Mumbai heritage stall.
+        </p>
+        <div class="blog-cta-buttons">
+          <a href="menu.html" class="btn-terracotta">
+            <span>Explore Our Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="blog.html" class="btn-forest blog-cta-btn-alt">
+            <span>All Journal Stories</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Interactive Modals: Login & Signup -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail" placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Account created! Welcome to Tea House Rewards.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50 Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Central Blog Data -->
+  <script src="assets/js/data/blog-data.js"></script>
+  <!-- Blog Detail Renderer -->
+  <script src="assets/js/pages/blog-detail.js"></script>
+</body>
+</html>

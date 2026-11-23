@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a Tea House account and make every visit a little more rewarding.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Sign Up | Tea House &amp; Specialty Chai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/auth.css">
+</head>
+<body data-current-page="signup">
+  <main class="auth-main auth-main--signup" id="mainContent">
+    <section class="auth-form-panel" aria-labelledby="signupHeading">
+      <div class="auth-form-topbar">
+        <a class="auth-brand" href="index.html" aria-label="Tea House home">
+          <img src="assets/images/logo/logo.png" alt="">
+          <span class="auth-brand-copy">
+            <span class="auth-brand-name">Tea House</span>
+            <span class="auth-brand-tagline">SPECIALTY CHAI</span>
+          </span>
+        </a>
+        <div class="auth-header-actions">
+          <div class="auth-utility-actions">
+            <button type="button" class="auth-utility-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout" title="Switch to RTL layout">
+              <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+              <span id="rtlToggleText">RTL</span>
+            </button>
+            <button type="button" class="auth-utility-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <i class="bi bi-moon-stars" aria-hidden="true"></i>
+              <span id="themeToggleText">Dark</span>
+            </button>
+          </div>
+          <a class="auth-back-link" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to Home</a>
+        </div>
+      </div>
+
+      <div class="auth-form-content">
+        <p class="auth-eyebrow">JOIN OUR TEA HOUSE</p>
+        <h1 class="auth-heading" id="signupHeading">A Little More Joy in Every Cup.</h1>
+        <p class="auth-intro">Create your account and make every visit a little more rewarding.</p>
+
+        <form class="auth-form auth-form--signup" id="signupForm" novalidate>
+          <div class="auth-fields-row">
+            <div class="auth-field">
+              <label class="auth-label" for="signupName">Full name</label>
+              <input class="auth-input" id="signupName" name="name" type="text" autocomplete="name" placeholder="Your full name" required aria-describedby="signupNameError">
+              <span class="auth-error" id="signupNameError"></span>
+            </div>
+
+            <div class="auth-field">
+              <label class="auth-label" for="signupEmail">Email address</label>
+              <input class="auth-input" id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="signupEmailError">
+              <span class="auth-error" id="signupEmailError"></span>
+            </div>
+          </div>
+
+          <div class="auth-field">
+            <label class="auth-label" for="signupPhone">Phone number</label>
+            <input class="auth-input" id="signupPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+1 555 123 4567" required aria-describedby="signupPhoneHint signupPhoneError">
+            <span class="auth-field-hint" id="signupPhoneHint">Include your country code if you are outside your region.</span>
+            <span class="auth-error" id="signupPhoneError"></span>
+          </div>
+
+          <div class="auth-field">
+            <label class="auth-label" for="signupPassword">Password</label>
+            <div class="auth-input-wrap">
+              <input class="auth-input" id="signupPassword" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required aria-describedby="passwordGuidance passwordStrengthLabel signupPasswordError">
+              <button class="auth-password-toggle" type="button" data-password-toggle="signupPassword" aria-label="Show password" aria-pressed="false">
+                <i class="bi bi-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="auth-password-guidance" id="passwordGuidance">
+              <div class="auth-strength-head">
+                <span>Password strength</span>
+                <span id="passwordStrengthLabel">Add a password</span>
+              </div>
+              <div class="auth-strength-meter" id="passwordStrengthMeter" role="meter" aria-label="Password strength" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <ul class="auth-password-requirements">
+                <li data-password-rule="length">At least 8 characters</li>
+                <li data-password-rule="lowercase">A lowercase letter</li>
+                <li data-password-rule="uppercase">An uppercase letter</li>
+                <li data-password-rule="number">A number</li>
+                <li data-password-rule="symbol">A symbol</li>
+              </ul>
+            </div>
+            <span class="auth-error" id="signupPasswordError"></span>
+          </div>
+
+          <div class="auth-field">
+            <label class="auth-label" for="signupConfirmPassword">Confirm password</label>
+            <div class="auth-input-wrap">
+              <input class="auth-input" id="signupConfirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Enter your password again" required aria-describedby="signupConfirmPasswordError">
+              <button class="auth-password-toggle" type="button" data-password-toggle="signupConfirmPassword" aria-label="Show confirm password" aria-pressed="false">
+                <i class="bi bi-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <span class="auth-error" id="signupConfirmPasswordError"></span>
+          </div>
+
+          <div class="auth-field auth-terms-field">
+            <label class="auth-checkbox-label" for="acceptTerms">
+              <input id="acceptTerms" name="terms" type="checkbox" required aria-describedby="signupTermsError">
+              <span>I agree to the Tea House Terms and Conditions.</span>
+            </label>
+            <span class="auth-error" id="signupTermsError"></span>
+          </div>
+
+          <p class="auth-status" id="signupStatus" role="status" aria-live="polite" hidden></p>
+          <button class="auth-submit btn-forest" type="submit">Create Account</button>
+        </form>
+
+        <p class="auth-switch">Already a member? <a href="login.html">Login here.</a></p>
+      </div>
+
+      <nav class="auth-socials" aria-label="Tea House social media">
+        <a class="auth-social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+        <a class="auth-social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        <a class="auth-social-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+        <a class="auth-social-link" href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="bi bi-pinterest" aria-hidden="true"></i></a>
+      </nav>
+    </section>
+
+    <aside class="auth-visual auth-visual--signup" aria-label="Tea shared with a friend">
+      <div class="auth-visual-shape" aria-hidden="true"></div>
+      <svg class="auth-botanical auth-botanical--signup" viewBox="0 0 180 260" fill="none" aria-hidden="true">
+        <path d="M25 242C85 188 92 116 144 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M57 202C27 200 13 182 12 158C38 160 55 174 57 202Z" fill="currentColor" fill-opacity=".26"/>
+        <path d="M78 164C109 160 124 142 127 119C101 121 84 136 78 164Z" fill="currentColor" fill-opacity=".26"/>
+        <path d="M98 123C68 120 54 101 53 78C79 81 95 96 98 123Z" fill="currentColor" fill-opacity=".26"/>
+        <path d="M118 83C147 77 161 59 160 36C135 41 120 57 118 83Z" fill="currentColor" fill-opacity=".26"/>
+      </svg>
+      <span class="auth-terracotta-dot auth-terracotta-dot--signup" aria-hidden="true"></span>
+      <div class="auth-photo-frame auth-photo-frame--signup">
+        <img src="assets/images/auth/signup-hero.jpg" alt="Two cups of tea and biscuits arranged on a wooden serving tray" fetchpriority="high">
+      </div>
+      <div class="auth-visual-copy">
+        <p class="auth-visual-heading">GOOD THINGS ARE BETTER SHARED</p>
+        <p class="auth-visual-description">Join us and make room for more beautiful chai moments.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/pages/signup.js"></script>
+</body>
+</html>

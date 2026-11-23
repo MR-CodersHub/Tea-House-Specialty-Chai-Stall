@@ -1,0 +1,1441 @@
+/* ==========================================================================
+   TEA HOUSE & SPECIALTY CHAI - HOME 2 PAGE SPECIFIC STYLES (home2.css)
+   Clean, Modular, Editorial Design System matching Home 1 design tokens & palette
+   - Single Warm Ivory Section Background: var(--color-bg-primary) [#F7F4EA]
+   - Single Uniform Card Background: var(--color-bg-secondary) [#EAE6D9]
+   - Compact editorial spacing: NO unnecessary gaps, seamless flow like Home 1
+   - Background word "SLOW DOWN" pinned at top of header
+   - Perfected fluid botanical green decoration behind hero photo
+   - Matching Final CTA Card in Deep Forest Green [#123D2E]
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SHARED SECTION HEADINGS & INTROS (COMPACT & NEAT)
+   -------------------------------------------------------------------------- */
+.h2-section-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+}
+
+.h2-section-desc {
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 1.35rem;
+}
+
+.h2-center-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 01 – EXPERIENCE THE TEA HOUSE (HERO)
+   UNIQUE DESIGN — Asymmetric editorial serif collage
+   Key differences from Home 1:
+     • Cormorant Garamond large serif heading (not Manrope display)
+     • Container-based layout (not absolute full-bleed image)
+     • Two-image collage with arch + overlapping card (not 50/50 cover split)
+     • Sage-green organic blob shape, terracotta decorative rule
+     • Stat badge, scroll hint, staggered entrance animations
+   -------------------------------------------------------------------------- */
+.h2-hero-section {
+  position: relative;
+  min-height: clamp(680px, 90vh, 940px);
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 5.5rem 0 4rem;
+}
+
+/* Ghost backdrop word — top-right, enormous & ultra-faint */
+.h2-giant-backdrop {
+  position: absolute;
+  top: -0.12em;
+  right: -0.04em;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(10rem, 22vw, 20rem);
+  letter-spacing: -4px;
+  color: var(--color-text-primary);
+  opacity: 0.03;
+  line-height: 0.85;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* Far-left vertical editorial label */
+.h2-hero-vert-label {
+  position: absolute;
+  left: clamp(0.75rem, 2vw, 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.h2-hero-vert-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.h2-hero-vert-line {
+  display: block;
+  width: 1px;
+  height: 44px;
+  background-color: var(--color-text-muted);
+  opacity: 0.4;
+}
+
+/* Container */
+.h2-hero-container {
+  position: relative;
+  z-index: 5;
+}
+
+/* Inner two-column editorial grid */
+.h2-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr clamp(320px, 42%, 530px);
+  gap: clamp(2.5rem, 5vw, 6rem);
+  align-items: center;
+}
+
+/* ===========================
+   LEFT: Editorial Text Column
+   =========================== */
+.h2-hero-text-block {
+  position: relative;
+  z-index: 6;
+}
+
+/* Eyebrow with leading terracotta line */
+.h2-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.h2-eyebrow-line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-accent-terracotta);
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+[dir="rtl"] .h2-eyebrow-line {
+  order: 2;
+}
+
+/* ★ Main heading — Cormorant Garamond SERIF ★
+   Completely different from Home 1 Manrope display heading */
+.h2-hero-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(3.4rem, 6.5vw, 5.8rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.0;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.2rem;
+}
+
+.h2-heading-line {
+  display: block;
+}
+
+/* "Chai." — bold forest green */
+.h2-heading-chai {
+  color: var(--color-forest-green, #123D2E);
+  font-weight: 700;
+}
+
+[data-theme="dark"] .h2-heading-chai {
+  color: var(--color-green-sage, #A7B397);
+}
+
+/* "It's a Feeling." — lighter italic terracotta */
+.h2-heading-italic {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.72em;
+  color: var(--color-accent-terracotta);
+  margin-top: 0.1em;
+}
+
+.h2-heading-italic em {
+  font-style: italic;
+}
+
+/* Animated terracotta gradient rule */
+.h2-hero-terracotta-rule {
+  width: clamp(40px, 6vw, 72px);
+  height: 2.5px;
+  background: linear-gradient(to right, var(--color-accent-terracotta), transparent);
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+  transform-origin: left center;
+}
+
+[dir="rtl"] .h2-hero-terracotta-rule {
+  background: linear-gradient(to left, var(--color-accent-terracotta), transparent);
+  transform-origin: right center;
+}
+
+/* Supporting text */
+.h2-hero-desc {
+  font-family: var(--font-sans);
+  font-size: clamp(0.98rem, 1.3vw, 1.1rem);
+  line-height: 1.72;
+  color: var(--color-text-muted);
+  max-width: 460px;
+  margin-bottom: 2.25rem;
+}
+
+/* CTA row */
+.h2-hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* Scroll hint link */
+.h2-hero-scroll-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.h2-hero-scroll-hint:hover {
+  color: var(--color-text-primary);
+  gap: 0.65rem;
+}
+
+/* Stat badge */
+.h2-hero-stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  padding: 0.65rem 1.4rem 0.65rem 0.75rem;
+  box-shadow: 0 4px 16px rgba(18, 61, 46, 0.07);
+}
+
+.h2-stat-num {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-accent-terracotta);
+  line-height: 1;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.h2-stat-plus {
+  font-size: 0.8em;
+}
+
+.h2-stat-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ===========================
+   RIGHT: Asymmetric Image Collage
+   =========================== */
+.h2-hero-collage {
+  position: relative;
+  height: clamp(460px, 66vh, 680px);
+  flex-shrink: 0;
+}
+
+/* Sage-green organic ambient blob */
+.h2-collage-sage-blob {
+  position: absolute;
+  top: -8%;
+  right: -10%;
+  width: 85%;
+  height: 95%;
+  background: radial-gradient(ellipse at 58% 38%, rgba(167, 179, 151, 0.26) 0%, rgba(167, 179, 151, 0.07) 60%, transparent 100%);
+  border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%;
+  z-index: 1;
+  pointer-events: none;
+  animation: h2BlobFloat 8s ease-in-out infinite alternate;
+}
+
+@keyframes h2BlobFloat {
+  from { transform: scale(1) rotate(0deg); }
+  to   { transform: scale(1.04) rotate(2deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .h2-collage-sage-blob { animation: none; }
+}
+
+/* Primary tall arch-top portrait */
+.h2-collage-primary-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72%;
+  height: 100%;
+  border-radius: 180px 180px 32px 32px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(18, 61, 46, 0.18);
+  z-index: 3;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h2-collage-primary-wrap:hover {
+  transform: translateY(-6px);
+}
+
+.h2-collage-primary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h2-collage-primary-wrap:hover .h2-collage-primary-img {
+  transform: scale(1.04);
+}
+
+/* Vertical editorial label over primary image */
+.h2-collage-vert-label {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.4rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: 4;
+}
+
+[dir="rtl"] .h2-collage-vert-label {
+  left: auto;
+  right: 1.4rem;
+  transform: rotate(0deg);
+}
+
+/* Secondary overlapping card — bottom-left of primary */
+.h2-collage-secondary-wrap {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 44%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(18, 61, 46, 0.18);
+  border: 4px solid var(--color-bg-secondary);
+  z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h2-collage-secondary-wrap:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.h2-collage-secondary-img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.h2-collage-secondary-wrap:hover .h2-collage-secondary-img {
+  transform: scale(1.07);
+}
+
+/* "Slow Brewed" pill tag on secondary card */
+.h2-collage-secondary-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(200, 117, 56, 0.3);
+}
+
+/* Thin terracotta decorative curve between images */
+.h2-collage-curve-accent {
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 32px;
+  height: 155px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.h2-collage-curve-accent svg {
+  width: 100%;
+  height: 100%;
+}
+
+.h2-hero-arch-svg {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: 6;
+  width: 116%;
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.h2-hero-arch-text {
+  fill: var(--color-text-primary);
+  fill-opacity: 0.9;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+
+.h2-hero-arch-mobile,
+.h2-hero-arch-static-desktop,
+.h2-hero-arch-static-mobile {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .h2-hero-arch-svg {
+    width: 108%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h2-hero-arch-svg {
+    top: -26px;
+    left: -10px;
+  }
+
+  .h2-hero-arch-desktop {
+    display: none;
+  }
+
+  .h2-hero-arch-mobile {
+    display: inline;
+  }
+
+  .h2-hero-arch-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h2-hero-arch-svg {
+    top: -22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .h2-hero-arch-animated {
+    display: none;
+  }
+
+  .h2-hero-arch-static-desktop {
+    display: inline;
+  }
+}
+
+@media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
+  .h2-hero-arch-static-desktop {
+    display: none;
+  }
+
+  .h2-hero-arch-static-mobile {
+    display: inline;
+  }
+}
+
+/* ===========================
+   ENTRANCE ANIMATIONS
+   =========================== */
+
+/* Base initial hidden state (set by JS) */
+.h2-anim-fade-up,
+.h2-anim-expand,
+.h2-anim-reveal-right {
+  opacity: 0;
+}
+
+/* Visible state applied by JS */
+.h2-anim-fade-up.is-h2-visible {
+  opacity: 1;
+  transform: translateY(0) !important;
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h2-anim-expand.is-h2-visible {
+  opacity: 1;
+  transform: scaleX(1) !important;
+  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.h2-anim-reveal-right.is-h2-visible {
+  opacity: 1;
+  transform: translateX(0) !important;
+  transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1), transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .h2-anim-fade-up,
+  .h2-anim-expand,
+  .h2-anim-reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02 â€“ A PLACE TO PAUSE
+   Compact spacing, no large gaps, warm ivory background
+   -------------------------------------------------------------------------- */
+.h2-pause-section {
+  position: relative;
+  padding: 2.25rem 0;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.h2-unwind-backdrop {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(5rem, 12vw, 10rem);
+  letter-spacing: -1px;
+  color: var(--color-text-primary);
+  opacity: 0.035;
+  line-height: 0.85;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.h2-collage-stage {
+  position: relative;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.h2-collage-primary {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(18, 61, 46, 0.1);
+  width: 85%;
+  position: relative;
+  z-index: 2;
+}
+
+.h2-collage-primary img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-collage-secondary {
+  position: absolute;
+  bottom: -24px;
+  right: -12px;
+  width: 52%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid var(--color-bg-secondary);
+  box-shadow: 0 14px 32px rgba(18, 61, 46, 0.14);
+  z-index: 3;
+}
+
+.h2-collage-secondary img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-cutting-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(200, 117, 56, 0.3);
+}
+
+.h2-collage-sage-circle {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--color-green-sage-alpha);
+  z-index: 1;
+}
+
+.h2-atmosphere-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.h2-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.h2-feature-icon-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: rgba(167, 179, 151, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.h2-feature-item:hover .h2-feature-icon-circle {
+  transform: scale(1.08);
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+}
+
+.h2-feature-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.h2-feature-text {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03 â€“ MOMENTS WORTH SHARING
+   Compact spacing, single card background: var(--color-bg-secondary) [#EAE6D9]
+   -------------------------------------------------------------------------- */
+.h2-moments-section {
+  padding: 3.5rem 0 4rem;
+  background-color: var(--color-bg-primary);
+  position: relative;
+}
+
+.h2-moments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.25vw, 1.5rem);
+  min-width: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.h2-moments-grid::-webkit-scrollbar,
+.h2-mood-selector-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.h2-moment-card {
+  height: 100%;
+  min-width: 0;
+  background-color: var(--color-white, #FFFFFF);
+  border: 1px solid rgba(18, 61, 46, 0.07);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 12px 34px rgba(18, 61, 46, 0.08);
+}
+
+.h2-moment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(18, 61, 46, 0.14);
+  border-color: rgba(200, 117, 56, 0.4);
+}
+
+.h2-moment-img-wrap {
+  position: relative;
+  height: 255px;
+  overflow: hidden;
+}
+
+.h2-moment-tall .h2-moment-img-wrap {
+  height: 255px;
+}
+
+.h2-moment-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.h2-moment-card:hover .h2-moment-img-wrap img {
+  transform: scale(1.08);
+}
+
+.h2-moment-num {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: rgba(18, 61, 46, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.h2-moment-body {
+  padding: 1.5rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.h2-moment-timing {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-accent-terracotta);
+  margin-bottom: 0.35rem;
+}
+
+.h2-moment-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.h2-moment-text {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04 â€“ DISCOVER YOUR CHAI MOOD (INTERACTIVE)
+   Compact spacing, single card background: var(--color-bg-secondary) [#EAE6D9]
+   -------------------------------------------------------------------------- */
+.h2-mood-section {
+  padding: 3.5rem 0 4rem;
+  background-color: var(--color-bg-primary);
+  position: relative;
+}
+
+.h2-mood-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  min-width: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.h2-mood-tab-btn {
+  height: 100%;
+  min-width: 0;
+  background-color: var(--color-bg-secondary);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 1.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(18, 61, 46, 0.06);
+}
+
+.h2-mood-tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(18, 61, 46, 0.09);
+}
+
+.h2-mood-tab-btn.is-selected {
+  border-color: var(--color-accent-terracotta);
+  box-shadow: 0 10px 24px rgba(200, 117, 56, 0.18);
+  transform: translateY(-3px);
+}
+
+.h2-mood-icon-tag {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(167, 179, 151, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.65rem;
+  transition: all 0.3s ease;
+}
+
+.h2-mood-tab-btn.is-selected .h2-mood-icon-tag {
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+}
+
+.h2-mood-tab-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.h2-mood-tab-hint {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  display: block;
+}
+
+.h2-mood-result-stage {
+  background-color: var(--color-bg-secondary);
+  border-radius: 28px;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(18, 61, 46, 0.08);
+  box-shadow: 0 16px 48px rgba(18, 61, 46, 0.09);
+  position: relative;
+  overflow: hidden;
+}
+
+.h2-mood-content-card {
+  position: relative;
+  z-index: 2;
+}
+
+.h2-mood-tag-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-terracotta);
+  background-color: rgba(200, 117, 56, 0.14);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.h2-mood-result-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 2.8vw, 2.3rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.h2-mood-result-p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 1.15rem;
+  max-width: 540px;
+}
+
+.h2-mood-profile-list {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.h2-profile-pill {
+  background-color: var(--color-bg-primary);
+  border: 1px solid rgba(18, 61, 46, 0.08);
+  border-radius: 50px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.h2-profile-pill i {
+  color: var(--color-accent-terracotta);
+}
+
+.h2-mood-price {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.h2-mood-visual-stage {
+  position: relative;
+}
+
+.h2-mood-img {
+  border-radius: 24px;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  box-shadow: 0 16px 44px rgba(18, 61, 46, 0.14);
+  transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05 â€“ BEHIND EVERY BEAUTIFUL CUP
+   Compact spacing, no large gaps, warm ivory background
+   -------------------------------------------------------------------------- */
+.h2-craft-section {
+  padding: 2.25rem 0;
+  background-color: var(--color-bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.h2-craft-backdrop {
+  position: absolute;
+  top: 0;
+  left: 4%;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(5rem, 12vw, 10rem);
+  letter-spacing: -1px;
+  color: var(--color-text-primary);
+  opacity: 0.035;
+  line-height: 0.85;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.h2-craft-pillars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+
+.h2-pillar-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.h2-pillar-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.h2-pillar-index {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-accent-terracotta);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.h2-pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.h2-pillar-desc {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.h2-craft-photo-wrapper {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h2-craft-image-stage {
+  position: relative;
+}
+
+.h2-craft-terracotta-wave {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-end: -2rem;
+  width: 4rem;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.h2-craft-terracotta-wave svg {
+  width: 100%;
+  height: 100%;
+}
+
+.h2-craft-arch-frame {
+  position: relative;
+  z-index: 1;
+  border-radius: 200px 200px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(18, 61, 46, 0.14);
+  border: 5px solid var(--color-bg-secondary);
+}
+
+.h2-craft-arch-frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.h2-craft-script-note {
+  font-family: var(--font-script);
+  font-size: 1.45rem;
+  color: var(--color-text-primary);
+  display: block;
+  margin-top: 0.6rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06 â€“ THE TEA HOUSE JOURNAL
+   Compact spacing, single card background: var(--color-bg-secondary) [#EAE6D9]
+   -------------------------------------------------------------------------- */
+.h2-journal-section {
+  padding: 2.25rem 0;
+  background-color: var(--color-bg-primary);
+  position: relative;
+}
+
+.h2-journal-card {
+  background-color: var(--color-bg-secondary);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(18, 61, 46, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(18, 61, 46, 0.06);
+}
+
+.h2-journal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(18, 61, 46, 0.12);
+  border-color: rgba(200, 117, 56, 0.35);
+}
+
+.h2-journal-img-container {
+  position: relative;
+  height: 185px;
+  overflow: hidden;
+}
+
+.h2-journal-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.h2-journal-card:hover .h2-journal-img-container img {
+  transform: scale(1.05);
+}
+
+.h2-journal-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(18, 61, 46, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+}
+
+.h2-journal-card-body {
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.h2-journal-readtime {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.45rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.h2-journal-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  margin-bottom: 0.45rem;
+}
+
+.h2-journal-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.h2-journal-title a:hover {
+  color: var(--color-accent-terracotta);
+}
+
+.h2-journal-excerpt {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0.9rem;
+  flex-grow: 1;
+}
+
+.h2-journal-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent-terracotta);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.h2-journal-link:hover {
+  gap: 0.6rem;
+  color: var(--color-accent-terracotta-dark);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07 â€“ FINAL PREMIUM CTA SECTION (EXACT MATCH WITH HOME 1)
+   Deep forest-green closing card with organic contours & dual CTAs
+   -------------------------------------------------------------------------- */
+.final-cta-section {
+  position: relative;
+  padding: 2rem 0 2.5rem;
+  background-color: var(--color-bg-primary);
+}
+
+.final-cta-card {
+  position: relative;
+  background-color: var(--color-text-primary);
+  border-radius: 36px;
+  padding: clamp(2rem, 3.5vw, 3.5rem) clamp(1.5rem, 3.5vw, 3.5rem);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(18, 61, 46, 0.18);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.final-cta-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 30px 75px rgba(18, 61, 46, 0.25);
+}
+
+/* Subtle botanical leaf flourish inside CTA card */
+.final-cta-leaf-deco {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 140px;
+  height: 140px;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+[dir="rtl"] .final-cta-leaf-deco {
+  right: auto;
+  left: -20px;
+  transform: scaleX(-1);
+}
+
+.final-cta-leaf-deco svg {
+  width: 100%;
+  height: 100%;
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.final-cta-subheading {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: var(--color-accent-terracotta);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.final-cta-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 4.4vw, 3.6rem);
+  font-weight: 600;
+  color: #F7F4EA;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.final-cta-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #D2DEC9;
+  max-width: 580px;
+  margin: 0 auto 2rem;
+}
+
+/* Dual CTA Buttons */
+.final-cta-buttons-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-cta-lg {
+  padding: 0.85rem 2.2rem;
+  font-size: 0.98rem;
+}
+
+.btn-cta-outline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  color: #F7F4EA !important;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  padding: 0.82rem 2rem;
+  border-radius: 50px;
+  border: 1.5px solid rgba(247, 244, 234, 0.38);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-cta-outline-light:hover {
+  background-color: rgba(247, 244, 234, 0.12);
+  border-color: #F7F4EA;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.btn-cta-outline-light svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-cta-outline-light:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .btn-cta-outline-light:hover svg {
+  transform: translateX(-4px);
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME SPECIFIC OVERRIDES
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .h2-craft-arch-frame {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .h2-moment-card,
+[data-theme="dark"] .h2-mood-tab-btn,
+[data-theme="dark"] .h2-mood-result-stage,
+[data-theme="dark"] .h2-journal-card {
+  background-color: #133327;
+  border-color: rgba(247, 244, 234, 0.08);
+}
+
+[data-theme="dark"] .h2-profile-pill {
+  background-color: #0D261C;
+  border-color: rgba(247, 244, 234, 0.12);
+}
+
+[data-theme="dark"] .final-cta-card {
+  background-color: #081B13;
+  border: 1px solid rgba(247, 244, 234, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   RTL DIRECTION OVERRIDES
+   -------------------------------------------------------------------------- */
+[dir="rtl"] .h2-collage-secondary {
+  right: auto;
+  left: -12px;
+}
+
+[dir="rtl"] .h2-collage-sage-circle {
+  left: auto;
+  right: -24px;
+}
+
+[dir="rtl"] .h2-moment-num {
+  right: auto;
+  left: 10px;
+}
+
+[dir="rtl"] .h2-journal-category {
+  left: auto;
+  right: 10px;
+}
+
+
+
+/* ── Hero: dark mode overrides ────────────────────────────────────────── */
+[data-theme="dark"] .h2-hero-stat-badge {
+  background-color: #133327;
+  border-color: rgba(247, 244, 234, 0.1);
+}
+
+[data-theme="dark"] .h2-collage-secondary-wrap {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Hero: RTL overrides ──────────────────────────────────────────────── */
+[dir="rtl"] .h2-hero-inner {
+  direction: rtl;
+}
+
+[dir="rtl"] .h2-hero-eyebrow {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .h2-hero-desc {
+  text-align: right;
+}
+
+[dir="rtl"] .h2-hero-stat-badge {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .h2-hero-cta-row {
+  flex-direction: row-reverse;
+}

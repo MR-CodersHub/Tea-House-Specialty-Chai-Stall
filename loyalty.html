@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tea House Loyalty Club — Collect points with every cup, unlock tier rewards, and enjoy exclusive member surprises.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Loyalty Club &amp; Rewards | Tea House &amp; Specialty Chai</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/loyalty.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="loyalty">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 — HERO: A LITTLE MORE REWARD IN EVERY SIP
+       Warm Ivory background, editorial typography, arch portrait visual with floating rewards
+       ======================================================================== -->
+  <section class="loyalty-hero-section" id="loyaltyHero">
+    <!-- Oversized ghost backdrop -->
+    <div class="loyalty-hero-backdrop" aria-hidden="true">REWARDS</div>
+
+    <div class="container-editorial loyalty-hero-container">
+      <div class="loyalty-hero-inner">
+
+        <!-- LEFT: Editorial headline, eyebrow & CTA -->
+        <div class="loyalty-hero-text">
+          <div class="loyalty-hero-eyebrow">
+            <span class="loyalty-eyebrow-line" aria-hidden="true"></span>
+            <span class="editorial-category-label">YOUR CHAI, YOUR REWARDS</span>
+          </div>
+
+          <h1 class="loyalty-hero-heading">
+            Every Cup Brings You<br>
+            Closer to <em>Something Special.</em>
+          </h1>
+
+          <p class="loyalty-hero-desc">
+            Make every chai moment more rewarding. Join our loyalty club, collect points with your favourite drinks, and enjoy special treats, exclusive perks, and little surprises along the way.
+          </p>
+
+          <div class="loyalty-hero-cta-row">
+            <button type="button" class="btn-terracotta" data-bs-toggle="modal" data-bs-target="#signupModal" id="heroJoinBtn">
+              <span>Join the Loyalty Club</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <a href="#rewardsSection" class="btn-forest loyalty-hero-btn-alt" id="heroExploreRewardsBtn">
+              <span>Explore Rewards</span>
+              <i class="bi bi-arrow-down-short ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual composition with floating rewards -->
+        <div class="loyalty-hero-visual">
+          <div class="loyalty-hero-sage-blob" aria-hidden="true"></div>
+
+          <!-- Arch-top portrait card -->
+          <div class="loyalty-hero-arch-wrap reveal-on-scroll">
+            <img src="assets/images/loyalty/loyalty-hero.jpg"
+                 alt="Warm specialty chai poured in an artisan cup with cinnamon and morning sun"
+                 class="loyalty-hero-arch-img"
+                 loading="eager">
+            <div class="loyalty-hero-card-tag">
+              <span class="loyalty-tag-badge">Chai Club Pass</span>
+              <span class="loyalty-tag-sub">Member Privileges</span>
+            </div>
+          </div>
+
+          <!-- Floating badge: 1 Cup = 10 Points -->
+          <div class="loyalty-float-badge float-badge-points reveal-on-scroll" data-delay="150" aria-hidden="true">
+            <div class="float-badge-icon">
+              <i class="bi bi-stars"></i>
+            </div>
+            <div class="float-badge-text">
+              <span class="badge-title">1 Cup = 10 Leaves</span>
+              <span class="badge-sub">Automatic Point Earning</span>
+            </div>
+          </div>
+
+          <!-- Floating decorative script badge -->
+          <div class="loyalty-hero-script-badge" aria-hidden="true">
+            <span class="loyalty-script-1">Sip &amp; Earn</span>
+            <span class="loyalty-script-2">Every Visit</span>
+            <span class="loyalty-script-decor"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 02 — HOW OUR LOYALTY CLUB WORKS
+       Connected 4-step journey with curved path and numbered icons.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-steps-section" id="howItWorks">
+    <div class="container-editorial">
+
+      <div class="loyalty-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">SIMPLE STEPS, LOVELY REWARDS</span>
+        <h2 class="loyalty-section-heading">A Few Little Steps. A Lot More Reasons to Smile.</h2>
+        <p class="loyalty-section-desc mx-auto" style="max-width: 600px;">
+          Enjoying our rewards club is designed to be effortless from your very first visit.
+        </p>
+      </div>
+
+      <div class="loyalty-steps-track">
+        <!-- Connecting path bridge on desktop -->
+        <div class="steps-connecting-line" aria-hidden="true"></div>
+
+        <div class="loyalty-steps-grid">
+
+          <!-- Step 1 -->
+          <div class="loyalty-step-card reveal-on-scroll" data-delay="50">
+            <div class="step-num-badge">01</div>
+            <div class="step-icon-wrap">
+              <i class="bi bi-person-check" aria-hidden="true"></i>
+            </div>
+            <h3 class="step-title">Join the Club</h3>
+            <p class="step-desc">
+              Become a member in seconds and begin your personalised chai rewards journey.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="loyalty-step-card reveal-on-scroll" data-delay="100">
+            <div class="step-num-badge">02</div>
+            <div class="step-icon-wrap">
+              <i class="bi bi-cup-hot" aria-hidden="true"></i>
+            </div>
+            <h3 class="step-title">Enjoy Your Chai</h3>
+            <p class="step-desc">
+              Order your favourite classic, spiced, or specialty brews at our heritage counter.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="loyalty-step-card reveal-on-scroll" data-delay="150">
+            <div class="step-num-badge">03</div>
+            <div class="step-icon-wrap">
+              <i class="bi bi-stars" aria-hidden="true"></i>
+            </div>
+            <h3 class="step-title">Collect Your Points</h3>
+            <p class="step-desc">
+              Watch your loyalty leaves grow automatically with every cup and seasonal treat.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="loyalty-step-card reveal-on-scroll" data-delay="200">
+            <div class="step-num-badge">04</div>
+            <div class="step-icon-wrap">
+              <i class="bi bi-gift" aria-hidden="true"></i>
+            </div>
+            <h3 class="step-title">Redeem Your Rewards</h3>
+            <p class="step-desc">
+              Exchange your points whenever you wish for complimentary drinks, snacks, and surprises.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 03 — MEMBERSHIP TIERS
+       3 Horizontally aligned cards with distinct coordinate styling and subtle center highlight.
+       Editable in JavaScript data store (TIERS_DATA).
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-tiers-section" id="membershipTiers">
+    <div class="container-editorial">
+
+      <div class="loyalty-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">FIND YOUR PLACE IN THE CLUB</span>
+        <h2 class="loyalty-section-heading">Every Chai Lover Has a Level of Their Own.</h2>
+        <p class="loyalty-section-desc mx-auto" style="max-width: 620px;">
+          Progress through our membership tiers naturally as you explore new flavours and daily rituals.
+        </p>
+      </div>
+
+      <div class="loyalty-tiers-grid" id="membershipTiersGrid">
+        <!-- Rendered dynamically by loyalty.js from TIERS_DATA -->
+      </div>
+
+      <div class="tiers-disclaimer-note text-center mt-4">
+        <small class="text-muted">
+          <i class="bi bi-info-circle me-1" aria-hidden="true"></i> Tier qualification and benefits are easily updated in program configuration.
+        </small>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04 — EXPLORE YOUR REWARDS
+       Interactive collection of 4 rewards with editable points and redeem interaction.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-rewards-section" id="rewardsSection">
+    <div class="container-editorial">
+
+      <div class="loyalty-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">GOOD MOMENTS, EVEN BETTER TREATS</span>
+        <h2 class="loyalty-section-heading">Little Rewards That Make Every Visit Special.</h2>
+        <p class="loyalty-section-desc mx-auto" style="max-width: 620px;">
+          From warm complimentary cups to artisanal tea-time pairings, explore what your loyalty leaves can unlock.
+        </p>
+      </div>
+
+      <div class="loyalty-rewards-grid" id="rewardsGrid">
+        <!-- Rendered dynamically by loyalty.js from REWARDS_DATA -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 05 — INTERACTIVE REWARDS PROGRESS
+       Digital luxury loyalty card + interactive points counter & progress demo.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-progress-section" id="rewardsProgress">
+    <div class="container-editorial">
+
+      <div class="loyalty-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">YOUR JOURNEY, YOUR REWARDS</span>
+        <h2 class="loyalty-section-heading">Every Visit Takes You a Little Further.</h2>
+        <p class="loyalty-section-desc mx-auto" style="max-width: 600px;">
+          Experience how your membership progress tracks automatically in our live digital preview.
+        </p>
+      </div>
+
+      <div class="loyalty-progress-card reveal-on-scroll">
+        <div class="loyalty-progress-layout">
+
+          <!-- Left: Digital Member Card -->
+          <div class="member-card-col">
+            <div class="digital-member-card" id="digitalMemberCard">
+              <div class="card-chip-row">
+                <div class="card-chip-icon" aria-hidden="true">
+                  <svg width="34" height="26" viewBox="0 0 34 26" fill="none">
+                    <rect width="34" height="26" rx="4" fill="#D4AF37" fill-opacity="0.25"/>
+                    <rect x="1" y="1" width="32" height="24" rx="3" stroke="#D4AF37" stroke-width="1.2"/>
+                    <path d="M1 9h32M1 17h32M12 1v24M22 1v24" stroke="#D4AF37" stroke-width="1"/>
+                  </svg>
+                </div>
+                <div class="card-brand-logo">
+                  <i class="bi bi-cup-hot-fill" aria-hidden="true"></i>
+                  <span>Tea House</span>
+                </div>
+              </div>
+
+              <div class="card-number-row" aria-label="Member card number">
+                <span>••••</span>
+                <span>••••</span>
+                <span>••••</span>
+                <span class="card-last-digits">4289</span>
+              </div>
+
+              <div class="card-bottom-row">
+                <div class="card-holder-info">
+                  <span class="card-label">MEMBER</span>
+                  <strong class="card-name">Valued Patron</strong>
+                </div>
+                <div class="card-tier-info">
+                  <span class="card-label">CURRENT STATUS</span>
+                  <span class="card-tier-badge" id="cardTierBadge">Chai Starter</span>
+                </div>
+              </div>
+
+              <!-- Card decorative glow -->
+              <div class="card-shine" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Right: Progress Dashboard & Demo Controls -->
+          <div class="progress-dashboard-col">
+            <div class="progress-stats-header">
+              <div>
+                <span class="stats-label">ACCUMULATED LEAVES</span>
+                <div class="stats-number-row">
+                  <span class="stats-counter" id="demoPointsCounter">240</span>
+                  <span class="stats-unit">Points</span>
+                </div>
+              </div>
+              <div class="stats-tier-pill" id="dashboardTierPill">
+                <i class="bi bi-shield-check me-1" aria-hidden="true"></i>
+                <span id="dashboardTierText">Chai Starter</span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-track-wrapper">
+              <div class="progress-track-meta">
+                <span>Progress to Next Tier</span>
+                <strong id="progressPercentText">80%</strong>
+              </div>
+              <div class="progress-track-bar">
+                <div class="progress-fill" id="demoProgressBar" style="width: 80%;"></div>
+              </div>
+              <div class="progress-milestone-hint" id="milestoneHintText">
+                <i class="bi bi-flag-fill me-1" aria-hidden="true"></i>
+                <span>60 more points to reach <strong>Chai Enthusiast</strong></span>
+              </div>
+            </div>
+
+            <!-- Interactive Demo Action Buttons -->
+            <div class="demo-controls-box">
+              <div class="demo-buttons-row">
+                <button type="button" class="btn-terracotta demo-action-btn" id="addPointsBtn">
+                  <i class="bi bi-plus-circle me-1" aria-hidden="true"></i>
+                  <span>Add Demo Points (+50)</span>
+                </button>
+                <button type="button" class="btn-forest demo-action-btn" id="resetPointsBtn">
+                  <i class="bi bi-arrow-counterclockwise me-1" aria-hidden="true"></i>
+                  <span>Reset Demo</span>
+                </button>
+              </div>
+              <p class="demo-note-text mb-0">
+                <i class="bi bi-sparkles me-1 text-warning" aria-hidden="true"></i>
+                Interactive visual preview: test real-time progress calculations and tier elevations.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 06 — MEMBER-ONLY MOMENTS
+       Unique creative split header & 3 equal-sized uniform cards in a balanced grid.
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-moments-section" id="memberMoments">
+    <div class="container-editorial">
+
+      <!-- Unique & Creative Split Editorial Header -->
+      <div class="moments-unique-header reveal-on-scroll">
+        <div class="moments-header-left">
+          <div class="moments-header-eyebrow">
+            <span class="moments-sparkle-icon" aria-hidden="true"><i class="bi bi-stars"></i></span>
+            <span class="editorial-category-label">A LITTLE EXTRA SOMETHING</span>
+          </div>
+          <h2 class="moments-unique-heading">
+            Because Being a Member<br>
+            <span class="moments-heading-accent">Should Feel <em>Uniquely Special.</em></span>
+          </h2>
+        </div>
+        <div class="moments-header-right">
+          <p class="moments-unique-desc">
+            Beyond points and tier levels, true hospitality lives in thoughtful, unexpected gestures. Discover three signature club privileges crafted to bring joy to every visit.
+          </p>
+          <div class="moments-header-pills">
+            <span class="moments-curated-badge">
+              <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+              <span>3 Member-Exclusive Privileges</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uniform 3-Column Equal-Sized Cards Grid -->
+      <div class="loyalty-moments-grid">
+
+        <!-- Moment Card 1: Birthday Surprises -->
+        <div class="moment-equal-card reveal-on-scroll" data-delay="50">
+          <div class="moment-equal-media">
+            <img src="assets/images/loyalty/moment-birthday.jpg"
+                 alt="Celebratory tea setting with fresh treat and warm candle"
+                 class="moment-equal-img"
+                 loading="lazy">
+            <div class="moment-equal-tag">
+              <i class="bi bi-gift" aria-hidden="true"></i>
+              <span>Annual Treat</span>
+            </div>
+            <div class="moment-floating-icon" aria-hidden="true">
+              <i class="bi bi-balloon-heart"></i>
+            </div>
+          </div>
+          <div class="moment-equal-body">
+            <span class="editorial-category-label">ANNUAL CELEBRATION</span>
+            <h3 class="moment-equal-title">Birthday Surprises</h3>
+            <p class="moment-equal-desc">
+              Your birthday month deserves a little extra warmth. Enjoy a complimentary signature cup and sweet accompaniment whenever you visit during your special week.
+            </p>
+            <div class="moment-equal-perk">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Complimentary signature brew during birthday week</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment Card 2: Seasonal Specials -->
+        <div class="moment-equal-card reveal-on-scroll" data-delay="100">
+          <div class="moment-equal-media">
+            <img src="assets/images/loyalty/moment-seasonal.jpg"
+                 alt="Winter spiced chai blend simmering with whole star anise and cardamom"
+                 class="moment-equal-img"
+                 loading="lazy">
+            <div class="moment-equal-tag">
+              <i class="bi bi-stars" aria-hidden="true"></i>
+              <span>Limited Release</span>
+            </div>
+            <div class="moment-floating-icon" aria-hidden="true">
+              <i class="bi bi-fire"></i>
+            </div>
+          </div>
+          <div class="moment-equal-body">
+            <span class="editorial-category-label">SEASONAL SPECIALS</span>
+            <h3 class="moment-equal-title">Seasonal Specials</h3>
+            <p class="moment-equal-desc">
+              From comforting Monsoon saffron infusions to warming Winter spice blends, club members enjoy special rates and complimentary tastings on limited small-batch creations.
+            </p>
+            <div class="moment-equal-perk">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Exclusive access to limited seasonal and festival brews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment Card 3: First Looks -->
+        <div class="moment-equal-card reveal-on-scroll" data-delay="150">
+          <div class="moment-equal-media">
+            <img src="assets/images/loyalty/moment-firstlook.jpg"
+                 alt="Artisan tea blender testing fresh tea leaves and single-estate spices"
+                 class="moment-equal-img"
+                 loading="lazy">
+            <div class="moment-equal-tag">
+              <i class="bi bi-eye" aria-hidden="true"></i>
+              <span>Member Preview</span>
+            </div>
+            <div class="moment-floating-icon" aria-hidden="true">
+              <i class="bi bi-compass"></i>
+            </div>
+          </div>
+          <div class="moment-equal-body">
+            <span class="editorial-category-label">FIRST LOOKS</span>
+            <h3 class="moment-equal-title">First Looks</h3>
+            <p class="moment-equal-desc">
+              Be the first to taste our secret recipes before they hit the menu. Join intimate tasting hours and share your feedback directly with our tea masters.
+            </p>
+            <div class="moment-equal-perk">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Invitations to private tasting hours and recipe previews</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 07 — FREQUENTLY ASKED QUESTIONS
+       Clean Bootstrap Accordion (one open at a time, smooth transition).
+       Same Warm Ivory background, zero horizontal dividers.
+       ======================================================================== -->
+  <section class="loyalty-faq-section" id="faqSection">
+    <div class="container-editorial">
+
+      <div class="loyalty-section-header text-center mx-auto reveal-on-scroll">
+        <span class="editorial-category-label">GOOD TO KNOW</span>
+        <h2 class="loyalty-section-heading">A Few Things You Might Be Wondering.</h2>
+        <p class="loyalty-section-desc mx-auto" style="max-width: 600px;">
+          Find answers to common questions about joining, collecting leaves, and enjoying member rewards.
+        </p>
+      </div>
+
+      <div class="loyalty-faq-container reveal-on-scroll">
+        <div class="accordion custom-loyalty-accordion" id="loyaltyFaqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                <span>How do I join the loyalty club?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                Joining takes less than a minute. Simply register online through our membership signup form or share your mobile number with our tea masters in person at the stall. You'll start earning loyalty points immediately with your very first cup.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                <span>How can I collect points?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                Whenever you order at our stall or through our online catering services, mention your registered member number or show your digital membership pass. Eligible purchases automatically record points to your account.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                <span>Where can I view my rewards?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                You can review your active points balance, available tier perks, and claimable reward items right here on the Loyalty Page or by logging into your member profile. Our team can also look up your balance at the counter anytime.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingFour">
+              <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                <span>Can I redeem my points for any menu item?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                Points can be redeemed across a generous selection of our regular chai varieties, handcrafted snacks, and seasonal gift merchandise. Please check the membership terms for the latest eligible rewards catalog.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingFive">
+              <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                <span>Do my points expire?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                We believe in unhurried enjoyment. Points remain active as long as you visit our stall or engage with our club within a continuous 12-month period. Please check the membership terms for the latest policy updates.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item custom-accordion-item">
+            <h3 class="accordion-header" id="faqHeadingSix">
+              <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                <span>Can I use my membership at different locations?</span>
+              </button>
+            </h3>
+            <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#loyaltyFaqAccordion">
+              <div class="accordion-body custom-accordion-body">
+                Yes. Your digital pass and member profile are universally recognized across all current and future Tea House locations, pop-up stalls, and catering kiosks.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 08 — FINAL CTA
+       Deep forest green background, warm ivory typography, organic backdrop
+       ======================================================================== -->
+  <section class="loyalty-cta-section" id="loyaltyCta">
+    <!-- Oversized ghost backdrop -->
+    <div class="loyalty-cta-backdrop" aria-hidden="true">LOYALTY</div>
+    <!-- Sage ambient blobs -->
+    <div class="loyalty-cta-blob loyalty-cta-blob--left" aria-hidden="true"></div>
+    <div class="loyalty-cta-blob loyalty-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial loyalty-cta-inner">
+      <div class="loyalty-cta-content reveal-on-scroll">
+        <span class="loyalty-cta-eyebrow editorial-category-label">MORE TO SAVOUR</span>
+        <h2 class="loyalty-cta-heading">Your Next Chai Comes With<br><em>More to Look Forward To.</em></h2>
+        <p class="loyalty-cta-desc">
+          Join our loyalty club and make every visit a little more special. Your favourite chai moments deserve a little extra.
+        </p>
+        <div class="loyalty-cta-buttons">
+          <button type="button" class="btn-terracotta" data-bs-toggle="modal" data-bs-target="#signupModal">
+            <span>Join the Club</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <a href="menu.html" class="btn-forest loyalty-cta-btn-alt">
+            <span>Explore Our Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Interactive Modals: Login & Signup -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="loginModalLabel">Welcome Back</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="loginForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide(); showToast('Welcome back to Tea House!');">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label small fw-semibold">Email or Mobile Number</label>
+              <input type="text" class="form-control form-control-custom" id="loginEmail" placeholder="you@domain.com or 10-digit mobile" required>
+            </div>
+            <div class="mb-4">
+              <label for="loginPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-forest w-100 justify-content-center py-2 mb-3">Sign In</button>
+            <p class="text-center small text-muted mb-0">
+              Don't have an account? <a href="#signup" data-bs-toggle="modal" data-bs-target="#signupModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="signupModalLabel">Join Our Tea Circle</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-4">
+          <form id="signupForm" onsubmit="event.preventDefault(); bootstrap.Modal.getInstance(document.getElementById('signupModal')).hide(); showToast('Welcome to Tea House Rewards! 50 bonus leaves added.');">
+            <div class="mb-3">
+              <label for="signupName" class="form-label small fw-semibold">Full Name</label>
+              <input type="text" class="form-control form-control-custom" id="signupName" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control form-control-custom" id="signupEmail" placeholder="you@domain.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="signupPassword" class="form-label small fw-semibold">Create Password</label>
+              <input type="password" class="form-control form-control-custom" id="signupPassword" placeholder="At least 8 characters" required>
+            </div>
+            <button type="submit" class="btn-terracotta w-100 justify-content-center py-2 mb-3">Register &amp; Claim 50 Loyalty Leaves</button>
+            <p class="text-center small text-muted mb-0">
+              Already a member? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal" class="fw-semibold text-decoration-underline" style="color: var(--color-accent-terracotta);">Log in here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Loyalty Page Specific Script -->
+  <script src="assets/js/pages/loyalty.js"></script>
+</body>
+</html>

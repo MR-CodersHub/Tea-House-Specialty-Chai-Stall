@@ -1,0 +1,1432 @@
+/* ==========================================================================
+   TEA HOUSE & SPECIALTY CHAI - HOME 1 PAGE SPECIFIC STYLES (home1.css)
+   Clean, modular page styles strictly for Home 1 landing page
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. SECTION 1 – HERO SECTION (EXACT REFERENCE MATCH)
+   Split layout: Left content & Right half fully covered top-to-bottom with image
+   -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  min-height: clamp(620px, 82vh, 860px);
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  align-items: stretch;
+}
+
+/* Flowing Sage-Green Decorative Ribbon (Exact Reference Match - Spans full height until header ends) */
+.hero-sage-ribbon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: clamp(4.2rem, 8vw, 9.2rem);
+  width: clamp(80px, 9vw, 135px);
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-left-wrapper:hover .hero-sage-ribbon {
+  transform: translateY(-4px) rotate(-0.5deg);
+}
+
+.hero-sage-ribbon svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Left Content Wrapper (occupies the left half) */
+.hero-left-wrapper {
+  position: relative;
+  z-index: 5;
+  width: 50%;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem 4rem clamp(1.5rem, 5vw, 6rem);
+}
+
+/* Far Left Margin: Vertical Label */
+.hero-margin-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: clamp(1.5rem, 3vw, 3.5rem);
+  flex-shrink: 0;
+}
+
+.hero-vertical-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.hero-vertical-label::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 38px;
+  background-color: var(--color-text-muted);
+  opacity: 0.45;
+}
+
+/* Hero Text Column */
+.hero-text-col {
+  max-width: 520px;
+  z-index: 6;
+  margin-inline-start: 1rem;
+}
+
+.hero-intro-label {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.hero-pure-headline {
+  font-family: var(--font-display);
+  font-size: clamp(3.6rem, 7.5vw, 6.4rem);
+  font-weight: 900;
+  color: var(--color-text-primary);
+  line-height: 0.92;
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+}
+
+.hero-pure-headline span {
+  display: block;
+}
+
+.hero-pure-headline .hero-headline-tagline {
+  margin-top: 0.2em;
+  font-size: 0.42em;
+  line-height: 1.1;
+  letter-spacing: 0.015em;
+}
+
+.hero-supporting-text {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 410px;
+  margin-bottom: 2.25rem;
+}
+
+.hero-btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF !important;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.3px;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  border: 1px solid var(--color-accent-terracotta);
+  box-shadow: 0 4px 18px rgba(200, 117, 56, 0.28);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.hero-btn-cta:hover {
+  background-color: var(--color-accent-terracotta-dark);
+  border-color: var(--color-accent-terracotta-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200, 117, 56, 0.38);
+}
+
+.hero-btn-cta svg {
+  transition: transform 0.25s ease;
+}
+
+.hero-btn-cta:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .hero-btn-cta:hover svg {
+  transform: translateX(-4px);
+}
+
+/* Right Half: Image fully covers from center to right side, top to bottom */
+.hero-cover-half {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-color: var(--color-bg-primary);
+}
+
+/* Subtle soft blend on the left edge of the image into the hero background */
+.hero-cover-half::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  background: linear-gradient(to right, var(--color-bg-primary) 0%, transparent 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-cover-half:hover .hero-cover-img {
+  transform: scale(1.025);
+}
+
+/* Floating Vertical Tag on Right Half */
+.hero-cover-tag {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 2.5rem;
+  z-index: 4;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.hero-cover-tag::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 38px;
+  background-color: var(--color-text-muted);
+  opacity: 0.45;
+}
+
+/* RTL Direction Adjustments */
+[dir="rtl"] .hero-cover-half {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .hero-cover-half::before {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg-primary) 0%, transparent 100%);
+}
+
+[dir="rtl"] .hero-left-wrapper {
+  padding: 4rem clamp(1.5rem, 5vw, 6rem) 4rem 2rem;
+}
+
+[dir="rtl"] .hero-margin-left {
+  margin-right: 0;
+  margin-left: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+[dir="rtl"] .hero-cover-tag {
+  right: auto;
+  left: 2.5rem;
+}
+
+[dir="rtl"] .hero-sage-ribbon {
+  left: auto;
+  right: clamp(4.2rem, 8vw, 9.2rem);
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .hero-left-wrapper:hover .hero-sage-ribbon {
+  transform: scaleX(-1) translateY(-4px) rotate(-0.5deg);
+}
+
+/* --------------------------------------------------------------------------
+   2. SECTION 2 – WHY CHOOSE OUR CHAI / BENEFITS
+   -------------------------------------------------------------------------- */
+.benefits-section {
+  position: relative;
+  padding: 2.5rem 0;
+  background-color: var(--color-bg-primary);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.9fr) minmax(180px, 0.72fr);
+  align-items: stretch;
+  gap: clamp(1.25rem, 2.4vw, 2.5rem);
+}
+
+.benefits-image-card {
+  position: relative;
+}
+
+.benefits-glass-frame {
+  border-radius: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: min(100%, 24rem);
+  aspect-ratio: 1 / 1;
+}
+
+.benefits-glass-frame img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.benefits-glass-frame:hover img {
+  transform: scale(1.03);
+}
+
+.benefits-glass-tag {
+  display: none;
+}
+
+.benefits-content {
+  min-width: 0;
+}
+
+.benefits-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.benefits-heading em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.benefits-description {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-bottom: 1.65rem;
+  max-width: 560px;
+}
+
+.benefits-items-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  text-align: center;
+}
+
+.benefit-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: var(--color-green-sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  margin-bottom: 0.7rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 1px solid rgba(167, 179, 151, 0.4);
+}
+
+.benefit-item:hover .benefit-icon-circle {
+  transform: translateY(-3px);
+  background-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+}
+
+.benefit-icon-circle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.benefit-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.35rem;
+  line-height: 1.05;
+}
+
+.benefit-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.benefits-deco-col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.benefits-deco-bowl {
+  width: calc(100% + 2rem);
+  height: 250px;
+  margin-right: -1rem;
+  overflow: visible;
+}
+
+.benefits-deco-bowl img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: translate(-0.75rem, 2rem);
+}
+
+.benefits-script-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: -0.25rem;
+  z-index: 1;
+  font-family: var(--font-script);
+  font-size: 1.65rem;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  text-align: right;
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+@media (min-width: 1200px) {
+  .benefits-section > .container-editorial {
+    width: 100%;
+    max-width: none;
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: minmax(0, 24rem) minmax(0, 1fr) minmax(150px, 14vw);
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .benefits-content {
+    max-width: 50rem;
+  }
+
+  .benefits-glass-frame img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center 55%;
+  }
+
+  .benefits-deco-bowl {
+    width: 100%;
+    height: 280px;
+    margin-right: 0;
+  }
+
+  .benefits-script-badge {
+    right: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. SECTION 3 – FEATURED SPECIAL / OVERSIZED PRODUCT SHOWCASE
+   -------------------------------------------------------------------------- */
+.featured-special-section {
+  position: relative;
+  min-height: 500px;
+  padding: 0;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.featured-giant-backdrop {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(6.5rem, 16vw, 14.5rem);
+  font-weight: 900;
+  color: var(--color-green-sage-alpha);
+  letter-spacing: clamp(5px, 1.4vw, 16px);
+  text-transform: uppercase;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1;
+}
+
+.featured-terracotta-wave {
+  position: absolute;
+  bottom: -4%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.featured-terracotta-wave svg {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-editorial-wrapper {
+  display: grid;
+  grid-template-columns: 45px 1fr 45px;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.featured-side-margin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-vertical-tag {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.featured-vertical-tag::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 38px;
+  background-color: var(--color-text-muted);
+  opacity: 0.45;
+}
+
+.featured-tag-right {
+  transform: rotate(0deg);
+}
+
+.featured-main-grid {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: stretch;
+  position: relative;
+  min-height: 500px;
+}
+
+.featured-content-col {
+  position: relative;
+  z-index: 4;
+  align-self: end;
+  margin-bottom: 3rem;
+  padding-left: 6rem;
+  inset-inline-start: 3rem;
+}
+
+[dir="rtl"] .featured-content-col {
+  padding-right: 6rem;
+  padding-left: 0;
+}
+
+.featured-special-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 0.2rem;
+}
+
+.featured-product-name {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.featured-special-desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  margin-bottom: 0.8rem;
+  max-width: 410px;
+}
+
+.featured-price-box {
+  margin-bottom: 0.8rem;
+}
+
+.featured-price-value {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.btn-shop-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-text-primary);
+  color: #FFFFFF !important;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.3px;
+  padding: 0.65rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(18, 61, 46, 0.25);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-shop-now:hover {
+  background-color: #0b261d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(18, 61, 46, 0.35);
+}
+
+[data-theme="dark"] .featured-special-section .btn-shop-now {
+  background-color: var(--color-accent-terracotta);
+  color: #0D261C !important;
+}
+
+[data-theme="dark"] .featured-special-section .btn-shop-now:hover {
+  background-color: #E7A06B;
+}
+
+.btn-shop-now svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-shop-now:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .btn-shop-now:hover svg {
+  transform: translateX(-4px);
+}
+
+.featured-product-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 3;
+}
+
+.featured-image-stage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  background: transparent;
+}
+
+.featured-product-img {
+  width: 100%;
+  max-width: 660px;
+  max-height: 440px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION 4 – SIGNATURE BLENDS
+   -------------------------------------------------------------------------- */
+.signature-blends-section {
+  position: relative;
+  overflow: hidden;
+  padding: 2.75rem 0 3rem;
+  background-color: var(--color-bg-primary);
+}
+
+.signature-blends-section > .container-editorial {
+  position: relative;
+  z-index: 1;
+}
+
+.blends-terracotta-sweep {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  width: 100%;
+  height: clamp(150px, 17vw, 220px);
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.blends-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.blends-title-group {
+  max-width: 600px;
+}
+
+.blends-main-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.blends-subheading {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-accent-terracotta);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.blends-intro-p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.blends-packages-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.blend-package-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: transform 0.4s ease;
+  padding: 0.5rem;
+}
+
+.blend-package-card:hover {
+  transform: translateY(-8px);
+}
+
+.blend-pouch-graphic {
+  width: 250px;
+  max-width: 100%;
+  aspect-ratio: 8 / 11;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 18px 24px rgba(18, 61, 46, 0.16));
+  transition: filter 0.3s ease;
+}
+
+.blend-pouch-graphic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blend-package-card:hover .blend-pouch-graphic {
+  filter: drop-shadow(0 22px 30px rgba(18, 61, 46, 0.24));
+}
+
+.blend-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.blend-name-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.blend-card-flavor-tags {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-accent-terracotta);
+  margin-bottom: 0.6rem;
+}
+
+.blend-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  max-width: 290px;
+  margin-bottom: 1rem;
+}
+
+.blend-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blend-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.btn-blend-mini {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.blend-package-card:hover .btn-blend-mini {
+  background-color: var(--color-accent-terracotta);
+  border-color: var(--color-accent-terracotta);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECTION 5 – CREATE YOUR OWN CHAI
+   -------------------------------------------------------------------------- */
+.create-chai-section {
+  position: relative;
+  padding: 2.75rem 0;
+  background-color: var(--color-bg-primary);
+}
+
+.create-chai-header {
+  text-align: left;
+  margin-bottom: 2.25rem;
+}
+
+.create-chai-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.create-chai-sub {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.steps-horizontal-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 0.8fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.step-card-editorial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-green-sage);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(167, 179, 151, 0.4);
+}
+
+.step-title-text {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+}
+
+.step-card-details {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  min-height: 42px;
+}
+
+.step-ingredient-preview {
+  width: min(100%, 180px);
+  height: 180px;
+  overflow: visible;
+  margin-top: 0.5rem;
+}
+
+.step-ingredient-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.step-card-editorial:hover .step-ingredient-preview img {
+  transform: scale(1.08);
+}
+
+.step-vertical-divider {
+  width: 1px;
+  height: 220px;
+  background-color: var(--color-border);
+}
+
+.step-cta-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.step-script-accent {
+  font-family: var(--font-script);
+  font-size: 1.7rem;
+  color: var(--color-accent-terracotta);
+  margin-bottom: 1.5rem;
+  transform: rotate(-5deg);
+  line-height: 1.1;
+}
+
+/* --------------------------------------------------------------------------
+   6. SECTION 6 – THE ART OF MAKING CHAI (NEW SECTION)
+   Asymmetric editorial layout with progressive stages & organic imagery
+   -------------------------------------------------------------------------- */
+.art-of-chai-section {
+  position: relative;
+  padding: 3rem 0;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+/* Vertical terracotta flourish */
+.art-terracotta-stem {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: clamp(90px, 11vw, 155px);
+  height: 90%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.art-header-block {
+  text-align: left;
+  max-width: 680px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.art-main-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 0.9rem;
+}
+
+.art-intro-description {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* Asymmetrical Grid: 45% Photo Stage + 55% Stages Progression */
+.art-stages-grid {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  position: relative;
+  z-index: 2;
+}
+
+/* Left: Photo Stage with Organic Mask */
+.art-visual-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-photo-stage {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Soft sage decorative contour behind image */
+.art-sage-contour {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  bottom: -24px;
+  left: -24px;
+  pointer-events: none;
+  z-index: 1;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.art-photo-stage:hover .art-sage-contour {
+  transform: scale(1.03) rotate(1deg);
+}
+
+.art-sage-contour svg {
+  width: 100%;
+  height: 100%;
+}
+
+.art-organic-mask {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  border-radius: 42% 58% 65% 35% / 40% 45% 55% 60%;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(18, 61, 46, 0.12);
+  transition: border-radius 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s ease;
+  background-color: var(--color-bg-secondary);
+}
+
+.art-photo-stage:hover .art-organic-mask {
+  border-radius: 46% 54% 58% 42% / 45% 48% 52% 55%;
+  transform: translateY(-4px);
+}
+
+.art-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+}
+
+.art-photo-stage:hover .art-photo-img {
+  transform: scale(1.05);
+}
+
+.art-script-tag {
+  position: absolute;
+  bottom: -1rem;
+  right: 1rem;
+  z-index: 3;
+  font-family: var(--font-script);
+  font-size: 1.65rem;
+  color: var(--color-accent-terracotta);
+  transform: rotate(-6deg);
+  pointer-events: none;
+}
+
+/* Right: 3 Progression Stages */
+.art-stages-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Vertical Progression Line on Desktop */
+.art-timeline-line {
+  position: absolute;
+  top: 3.5rem;
+  bottom: 3.5rem;
+  left: 3.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-green-sage) 0%, var(--color-accent-terracotta) 100%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+[dir="rtl"] .art-timeline-line {
+  left: auto;
+  right: 3.5rem;
+}
+
+/* Stage Item */
+.art-stage-item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8rem;
+  padding: 1.8rem 2.2rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.art-stage-item:hover,
+.art-stage-item.is-active {
+  background-color: var(--color-bg-secondary);
+  border-color: rgba(18, 61, 46, 0.08);
+  box-shadow: 0 10px 30px rgba(18, 61, 46, 0.06);
+  transform: translateX(8px);
+}
+
+[dir="rtl"] .art-stage-item:hover,
+[dir="rtl"] .art-stage-item.is-active {
+  transform: translateX(-8px);
+}
+
+/* Stage Number & Node Circle */
+.art-stage-num-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 60px;
+  position: relative;
+}
+
+.art-backdrop-num {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: rgba(18, 61, 46, 0.16);
+  line-height: 0.9;
+  letter-spacing: -1px;
+  transition: color 0.35s ease, transform 0.35s ease;
+  user-select: none;
+}
+
+.art-stage-item:hover .art-backdrop-num,
+.art-stage-item.is-active .art-backdrop-num {
+  color: var(--color-accent-terracotta);
+  transform: scale(1.08);
+}
+
+.art-node-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-green-sage);
+  border: 2px solid var(--color-bg-primary);
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.art-stage-item:hover .art-node-circle,
+.art-stage-item.is-active .art-node-circle {
+  background-color: var(--color-accent-terracotta);
+  transform: scale(1.4);
+}
+
+/* Stage Text Content */
+.art-stage-content {
+  flex-grow: 1;
+}
+
+.art-stage-step-tag {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-terracotta);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.art-stage-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+
+.art-stage-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. SECTION 7 – FINAL PREMIUM CTA SECTION
+   Deep forest-green closing chapter with organic contours & dual CTAs
+   -------------------------------------------------------------------------- */
+.final-cta-section {
+  position: relative;
+  padding: 2.5rem 0 3rem;
+  background-color: var(--color-bg-primary);
+}
+
+.final-cta-card {
+  position: relative;
+  background-color: var(--color-text-primary);
+  border-radius: 36px;
+  padding: clamp(2.5rem, 4vw, 4.25rem) clamp(1.5rem, 4vw, 4rem);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(18, 61, 46, 0.18);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.final-cta-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 30px 75px rgba(18, 61, 46, 0.25);
+}
+
+/* Subtle botanical leaf flourish inside CTA card */
+.final-cta-leaf-deco {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 140px;
+  height: 140px;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+[dir="rtl"] .final-cta-leaf-deco {
+  right: auto;
+  left: -20px;
+  transform: scaleX(-1);
+}
+
+.final-cta-leaf-deco svg {
+  width: 100%;
+  height: 100%;
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.final-cta-subheading {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: var(--color-accent-terracotta);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.final-cta-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  font-weight: 600;
+  color: #F7F4EA;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.final-cta-description {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #D2DEC9;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Dual CTA Buttons */
+.final-cta-buttons-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-cta-lg {
+  padding: 0.9rem 2.4rem;
+  font-size: 1rem;
+}
+
+.btn-cta-outline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  color: #F7F4EA !important;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.4px;
+  padding: 0.88rem 2.2rem;
+  border-radius: 50px;
+  border: 1.5px solid rgba(247, 244, 234, 0.38);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.btn-cta-outline-light:hover {
+  background-color: rgba(247, 244, 234, 0.12);
+  border-color: #F7F4EA;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.btn-cta-outline-light svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-cta-outline-light:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .btn-cta-outline-light:hover svg {
+  transform: translateX(-4px);
+}
+
+/* Dark Theme Adjustments for Section 6 & 7 */
+[data-theme="dark"] .final-cta-card {
+  background-color: #081B13;
+  border: 1px solid rgba(247, 244, 234, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .art-backdrop-num {
+  color: rgba(247, 244, 234, 0.12);
+}
+
+[data-theme="dark"] .art-stage-item:hover,
+[data-theme="dark"] .art-stage-item.is-active {
+  background-color: #133327;
+  border-color: rgba(247, 244, 234, 0.08);
+}
+
+/* Scroll Reveal Base Classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

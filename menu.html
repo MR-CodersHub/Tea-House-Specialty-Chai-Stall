@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tea House & Specialty Chai Menu — Handcrafted classic chai, signature blends, refreshing iced chai, herbal infusions, coolers, and fresh bakery bites.">
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+  <title>Our Menu | Tea House & Specialty Chai</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Page-Specific Stylesheet -->
+  <link rel="stylesheet" href="assets/css/pages/menu.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-current-page="menu">
+
+  <!-- Reusable Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ========================================================================
+       SECTION 01 — MENU HERO
+       Editorial layout introducing the specialty chai & beverage collection
+       ======================================================================== -->
+  <section class="menu-hero-section" id="menuHero">
+    <!-- Oversized ghost backdrop -->
+    <div class="menu-hero-backdrop" aria-hidden="true">THE MENU</div>
+
+    <div class="container-editorial menu-hero-container">
+      <div class="menu-hero-inner">
+
+        <!-- LEFT: Editorial text column -->
+        <div class="menu-hero-text reveal-on-scroll">
+          <div class="menu-hero-eyebrow">
+            <span class="editorial-category-label">EXPLORE OUR MENU</span>
+            <span class="menu-eyebrow-line" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="menu-hero-heading">
+            A Little Something for<br>
+            <span class="menu-heading-focus">Every Chai Moment.</span>
+          </h1>
+
+          <p class="menu-hero-desc">
+            From familiar favourites to thoughtfully crafted specialties, discover a collection of
+            comforting flavours made to brighten every moment. Slow brewed with organic spices and whole leaves.
+          </p>
+
+          <div class="menu-hero-cta-row">
+            <a href="#menuCategories" class="btn-terracotta">
+              <span>Explore Our Collection</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual composition -->
+        <div class="menu-hero-visual">
+          <div class="menu-hero-sage-blob" aria-hidden="true"></div>
+
+          <!-- Arch-top portrait card -->
+          <div class="menu-hero-arch-wrap reveal-on-scroll" data-delay="150">
+            <img src="assets/images/menu/menu-hero.jpg"
+              alt="Freshly steeped specialty chai and authentic spice setup"
+              class="menu-hero-arch-img"
+              loading="eager">
+            <div class="menu-hero-card-tag">
+              <span class="menu-tag-badge">Handcrafted Daily</span>
+              <span class="menu-tag-sub">100% Whole Spices</span>
+            </div>
+          </div>
+
+          <!-- Floating cursive badge -->
+          <div class="menu-hero-script-badge" aria-hidden="true">
+            <span class="menu-script-1">Fresh Brews</span>
+            <span class="menu-script-2">Pure Comfort</span>
+            <span class="menu-script-decor"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY NAVIGATION BAR (Sticky below navbar)
+       ======================================================================== -->
+  <nav class="menu-cat-nav-wrapper" id="menuCategories" aria-label="Menu category navigation">
+    <div class="container-editorial">
+      <div class="menu-cat-nav-scroll" role="tablist">
+        <a href="#classic-chai" class="menu-cat-pill is-active" role="tab" aria-selected="true" data-cat="classic-chai">
+          <i class="bi bi-cup-hot" aria-hidden="true"></i>
+          <span>Classic Chai</span>
+        </a>
+        <a href="#signature-chai" class="menu-cat-pill" role="tab" aria-selected="false" data-cat="signature-chai">
+          <i class="bi bi-stars" aria-hidden="true"></i>
+          <span>Signature Chai</span>
+        </a>
+        <a href="#iced-chai" class="menu-cat-pill" role="tab" aria-selected="false" data-cat="iced-chai">
+          <i class="bi bi-snow" aria-hidden="true"></i>
+          <span>Iced Chai</span>
+        </a>
+        <a href="#tea-infusions" class="menu-cat-pill" role="tab" aria-selected="false" data-cat="tea-infusions">
+          <i class="bi bi-flower1" aria-hidden="true"></i>
+          <span>Tea &amp; Infusions</span>
+        </a>
+        <a href="#refreshing-coolers" class="menu-cat-pill" role="tab" aria-selected="false" data-cat="refreshing-coolers">
+          <i class="bi bi-droplet-half" aria-hidden="true"></i>
+          <span>Refreshing Coolers</span>
+        </a>
+        <a href="#sweet-treats" class="menu-cat-pill" role="tab" aria-selected="false" data-cat="sweet-treats">
+          <i class="bi bi-cake2" aria-hidden="true"></i>
+          <span>Sweet Treats &amp; Bites</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       CATEGORY 01 – CLASSIC CHAI
+       ======================================================================== -->
+  <section class="menu-category-section" id="classic-chai">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">TIMELESS FAVOURITES</span>
+          <span class="menu-category-num" aria-hidden="true">01</span>
+        </div>
+        <h2 class="menu-section-heading">The Classics We Love.</h2>
+        <p class="menu-section-desc">
+          Comforting, familiar, and full of flavour. These are the chai favourites that make every tea break feel special.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/classic-masala.jpg" alt="Classic Masala Chai in a ceramic cup" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Bestseller</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Classic Masala Chai</h3>
+              <span class="menu-item-price">₹149</span>
+            </div>
+            <p class="menu-item-text">A comforting blend of rich Assam tea, milk, and hand-crushed traditional whole spices.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-fire" aria-hidden="true"></i> Traditional Brew</span>
+              <button class="menu-order-btn" aria-label="Add Classic Masala Chai to order" data-name="Classic Masala Chai" data-price="₹149">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/ginger-chai.jpg" alt="Ginger Chai with fresh crushed ginger" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Warming</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Ginger Chai</h3>
+              <span class="menu-item-price">₹139</span>
+            </div>
+            <p class="menu-item-text">A warming cup simmered with the bold freshness and invigorating kick of sharp fresh ginger.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Fresh Adrak</span>
+              <button class="menu-order-btn" aria-label="Add Ginger Chai to order" data-name="Ginger Chai" data-price="₹139">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/cardamom-chai.jpg" alt="Fragrant Cardamom Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Fragrant</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Cardamom Chai</h3>
+              <span class="menu-item-price">₹149</span>
+            </div>
+            <p class="menu-item-text">A fragrant, soothing chai infused with the delicate aroma of freshly ground green cardamom pods.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-heart" aria-hidden="true"></i> Green Elaichi</span>
+              <button class="menu-order-btn" aria-label="Add Cardamom Chai to order" data-name="Cardamom Chai" data-price="₹149">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/strong-milk-chai.jpg" alt="Rich Strong Milk Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Kadak</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Strong Milk Chai</h3>
+              <span class="menu-item-price">₹129</span>
+            </div>
+            <p class="menu-item-text">A rich, full-bodied cup simmered twice for those who truly enjoy an authentic kadak brew.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-cup" aria-hidden="true"></i> Heavy CTC</span>
+              <button class="menu-order-btn" aria-label="Add Strong Milk Chai to order" data-name="Strong Milk Chai" data-price="₹129">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY 02 – SIGNATURE CHAI
+       ======================================================================== -->
+  <section class="menu-category-section" id="signature-chai">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">OUR SPECIAL CREATIONS</span>
+          <span class="menu-category-num" aria-hidden="true">02</span>
+        </div>
+        <h2 class="menu-section-heading">A Signature in Every Sip.</h2>
+        <p class="menu-section-desc">
+          Discover distinctive chai creations thoughtfully blended for those who enjoy something a little different.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/saffron-chai.jpg" alt="Royal Saffron Chai garnished with pistachios" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Royal Blend</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Saffron Chai</h3>
+              <span class="menu-item-price">₹189</span>
+            </div>
+            <p class="menu-item-text">A fragrant and luxurious chai slow-steeped with Kashmiri saffron strands and golden milk.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-gem" aria-hidden="true"></i> Pure Kesar</span>
+              <button class="menu-order-btn" aria-label="Add Saffron Chai to order" data-name="Saffron Chai" data-price="₹189">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/rose-chai.jpg" alt="Delicate Rose Chai with organic rose petals" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Floral</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Rose Chai</h3>
+              <span class="menu-item-price">₹169</span>
+            </div>
+            <p class="menu-item-text">A gentle floral twist combining sun-dried Damask rose petals with a rich, comforting tea base.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-flower2" aria-hidden="true"></i> Rose Petals</span>
+              <button class="menu-order-btn" aria-label="Add Rose Chai to order" data-name="Rose Chai" data-price="₹169">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/vanilla-chai.jpg" alt="Smooth Vanilla Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Aromatic</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Vanilla Chai</h3>
+              <span class="menu-item-price">₹169</span>
+            </div>
+            <p class="menu-item-text">A smooth, aromatic blend with pure Madagascar bourbon vanilla bean and a velvety cream finish.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-stars" aria-hidden="true"></i> Real Vanilla</span>
+              <button class="menu-order-btn" aria-label="Add Vanilla Chai to order" data-name="Vanilla Chai" data-price="₹169">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/house-chai.jpg" alt="Special House Artisanal Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">House Special</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Special House Chai</h3>
+              <span class="menu-item-price">₹179</span>
+            </div>
+            <p class="menu-item-text">A distinctive house-crafted blend of eight warming spices, slow simmered to signature perfection.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-trophy" aria-hidden="true"></i> Master Blend</span>
+              <button class="menu-order-btn" aria-label="Add Special House Chai to order" data-name="Special House Chai" data-price="₹179">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY 03 – ICED CHAI
+       ======================================================================== -->
+  <section class="menu-category-section" id="iced-chai">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">A REFRESHING TWIST</span>
+          <span class="menu-category-num" aria-hidden="true">03</span>
+        </div>
+        <h2 class="menu-section-heading">Chai, with a Cooler Side.</h2>
+        <p class="menu-section-desc">
+          Refresh your day with chilled chai creations that bring together familiar flavours and a refreshing finish.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/iced-masala.jpg" alt="Iced Masala Chai over crystal ice" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Chilled</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Iced Masala Chai</h3>
+              <span class="menu-item-price">₹159</span>
+            </div>
+            <p class="menu-item-text">Our signature spiced masala chai brewed bold, chilled over ice, and topped with cold frothed milk.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-snow" aria-hidden="true"></i> Over Ice</span>
+              <button class="menu-order-btn" aria-label="Add Iced Masala Chai to order" data-name="Iced Masala Chai" data-price="₹159">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/iced-vanilla.jpg" alt="Iced Vanilla Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Refreshing</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Iced Vanilla Chai</h3>
+              <span class="menu-item-price">₹179</span>
+            </div>
+            <p class="menu-item-text">Smooth bourbon vanilla notes paired with refreshing chilled tea and a light sweet milk layer.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-droplet" aria-hidden="true"></i> Sweet &amp; Cool</span>
+              <button class="menu-order-btn" aria-label="Add Iced Vanilla Chai to order" data-name="Iced Vanilla Chai" data-price="₹179">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/iced-cardamom.jpg" alt="Iced Cardamom Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Cooling</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Iced Cardamom Chai</h3>
+              <span class="menu-item-price">₹169</span>
+            </div>
+            <p class="menu-item-text">Fragrant green cardamom shaken over ice with full-cream milk and a subtle hint of raw sugar.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-brightness-high" aria-hidden="true"></i> Shaken Cold</span>
+              <button class="menu-order-btn" aria-label="Add Iced Cardamom Chai to order" data-name="Iced Cardamom Chai" data-price="₹169">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/creamy-iced-chai.jpg" alt="Velvety Creamy Iced Chai" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Velvety</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Creamy Iced Chai</h3>
+              <span class="menu-item-price">₹179</span>
+            </div>
+            <p class="menu-item-text">A smooth, ultra-creamy chilled chai experience finished with a light dusting of cinnamon powder.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-cup-straw" aria-hidden="true"></i> Extra Creamy</span>
+              <button class="menu-order-btn" aria-label="Add Creamy Iced Chai to order" data-name="Creamy Iced Chai" data-price="₹179">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY 04 – TRADITIONAL TEA & INFUSIONS
+       ======================================================================== -->
+  <section class="menu-category-section" id="tea-infusions">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">A WORLD OF TEA</span>
+          <span class="menu-category-num" aria-hidden="true">04</span>
+        </div>
+        <h2 class="menu-section-heading">Slow Moments, Beautiful Brews.</h2>
+        <p class="menu-section-desc">
+          Explore soothing tea varieties and aromatic infusions made for peaceful moments and mindful breaks.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/classic-black-tea.jpg" alt="Clear amber Classic Black Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Orthodox</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Classic Black Tea</h3>
+              <span class="menu-item-price">₹129</span>
+            </div>
+            <p class="menu-item-text">A bold and refreshing traditional single-estate orthodox black tea with subtle malty undertones.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-leaf" aria-hidden="true"></i> Whole Leaf</span>
+              <button class="menu-order-btn" aria-label="Add Classic Black Tea to order" data-name="Classic Black Tea" data-price="₹129">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/green-tea.jpg" alt="Delicate whole leaf Green Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Antioxidant</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Green Tea</h3>
+              <span class="menu-item-price">₹139</span>
+            </div>
+            <p class="menu-item-text">A light, delicate whole-leaf green tea with grassy sweetness and a remarkably clean, crisp finish.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-flower1" aria-hidden="true"></i> First Flush</span>
+              <button class="menu-order-btn" aria-label="Add Green Tea to order" data-name="Green Tea" data-price="₹139">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/lemon-tea.jpg" alt="Zesty Lemon Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Citrus</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Lemon Tea</h3>
+              <span class="menu-item-price">₹139</span>
+            </div>
+            <p class="menu-item-text">A refreshing golden tea infused with freshly squeezed lemon juice, organic honey, and mint.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-sun" aria-hidden="true"></i> Raw Honey</span>
+              <button class="menu-order-btn" aria-label="Add Lemon Tea to order" data-name="Lemon Tea" data-price="₹139">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/herbal-infusion.jpg" alt="Chamomile Herbal Infusion" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Caffeine Free</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Herbal Infusion</h3>
+              <span class="menu-item-price">₹159</span>
+            </div>
+            <p class="menu-item-text">A soothing blend of dried chamomile blossoms, lemongrass, lavender, and sweet cinnamon bark.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-moon-stars" aria-hidden="true"></i> Calming</span>
+              <button class="menu-order-btn" aria-label="Add Herbal Infusion to order" data-name="Herbal Infusion" data-price="₹159">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY 05 – REFRESHING COOLERS
+       ======================================================================== -->
+  <section class="menu-category-section" id="refreshing-coolers">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">FRESH AND REFRESHING</span>
+          <span class="menu-category-num" aria-hidden="true">05</span>
+        </div>
+        <h2 class="menu-section-heading">A Fresh Way to Unwind.</h2>
+        <p class="menu-section-desc">
+          Enjoy refreshing beverage choices that bring a little brightness and freshness to your day.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/lemon-cooler.jpg" alt="Fresh Lemon Cooler with mint and crushed ice" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Citrus Zing</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Fresh Lemon Cooler</h3>
+              <span class="menu-item-price">₹139</span>
+            </div>
+            <p class="menu-item-text">A sparkling, revitalizing citrus-inspired drink with muddled fresh lemons and Himalayan pink salt.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-droplet-half" aria-hidden="true"></i> Sparkling</span>
+              <button class="menu-order-btn" aria-label="Add Fresh Lemon Cooler to order" data-name="Fresh Lemon Cooler" data-price="₹139">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/mint-cooler.jpg" alt="Crisp Mint Lime Cooler" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Fresh Mint</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Mint Cooler</h3>
+              <span class="menu-item-price">₹149</span>
+            </div>
+            <p class="menu-item-text">A vibrant cooling beverage made with crushed garden mint leaves, lime zest, and cold spring water.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-wind" aria-hidden="true"></i> Crisp Mint</span>
+              <button class="menu-order-btn" aria-label="Add Mint Cooler to order" data-name="Mint Cooler" data-price="₹149">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/peach-iced-tea.jpg" alt="Sun-kissed Peach Iced Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Fruity</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Peach Iced Tea</h3>
+              <span class="menu-item-price">₹159</span>
+            </div>
+            <p class="menu-item-text">A chilled artisanal black tea steeped with sweet summer peach puree and served with fresh peach slices.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-heart-pulse" aria-hidden="true"></i> Real Fruit</span>
+              <button class="menu-order-btn" aria-label="Add Peach Iced Tea to order" data-name="Peach Iced Tea" data-price="₹159">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/classic-lemon-iced-tea.jpg" alt="Classic Lemon Iced Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Classic Cool</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Classic Lemon Iced Tea</h3>
+              <span class="menu-item-price">₹149</span>
+            </div>
+            <p class="menu-item-text">A familiar, timeless chilled tea brewed strong with a bright, uplifting lemon twist and mint sprigs.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-cup-straw" aria-hidden="true"></i> Timeless</span>
+              <button class="menu-order-btn" aria-label="Add Classic Lemon Iced Tea to order" data-name="Classic Lemon Iced Tea" data-price="₹149">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY 06 – SWEET TREATS & BITES
+       ======================================================================== -->
+  <section class="menu-category-section" id="sweet-treats">
+    <div class="container-editorial">
+      <div class="menu-section-header reveal-on-scroll">
+        <div class="menu-header-badge">
+          <span class="editorial-category-label">THE PERFECT COMPANION</span>
+          <span class="menu-category-num" aria-hidden="true">06</span>
+        </div>
+        <h2 class="menu-section-heading">Something Lovely on the Side.</h2>
+        <p class="menu-section-desc">
+          Complete your chai moment with delightful sweet treats and savoury bites freshly prepared every morning.
+        </p>
+      </div>
+
+      <div class="menu-items-grid">
+        <!-- Item 1 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="0">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/butter-cookies.jpg" alt="Golden Butter Cookies" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Freshly Baked</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Butter Cookies</h3>
+              <span class="menu-item-price">₹89</span>
+            </div>
+            <p class="menu-item-text">Light, crumbly, and golden butter cookies crafted specifically to pair with hot steaming chai.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-basket" aria-hidden="true"></i> 4 Pieces</span>
+              <button class="menu-order-btn" aria-label="Add Butter Cookies to order" data-name="Butter Cookies" data-price="₹89">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="80">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/tea-cake.jpg" alt="Spiced Tea Cake slice" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Cardamom Spiced</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Tea Cake</h3>
+              <span class="menu-item-price">₹119</span>
+            </div>
+            <p class="menu-item-text">A soft, moist slice of comforting tea cake delicately spiced with green cardamom and cinnamon.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-cake" aria-hidden="true"></i> Single Slice</span>
+              <button class="menu-order-btn" aria-label="Add Tea Cake to order" data-name="Tea Cake" data-price="₹119">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="160">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/veg-puff.jpg" alt="Flaky golden Veg Puff" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Flaky Pastry</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Veg Puff</h3>
+              <span class="menu-item-price">₹99</span>
+            </div>
+            <p class="menu-item-text">Golden, flaky layered puff pastry generously stuffed with aromatic seasoned spiced vegetables.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-fire" aria-hidden="true"></i> Served Warm</span>
+              <button class="menu-order-btn" aria-label="Add Veg Puff to order" data-name="Veg Puff" data-price="₹99">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="menu-item-card reveal-on-scroll" data-delay="240">
+          <div class="menu-item-media">
+            <img src="assets/images/menu/mini-samosa.jpg" alt="Crisp golden Mini Samosas with chutney" class="menu-item-img" loading="lazy">
+            <span class="menu-item-badge">Crispy Golden</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Mini Samosa</h3>
+              <span class="menu-item-price">₹109</span>
+            </div>
+            <p class="menu-item-text">Crisp, bite-sized savoury pastries filled with spiced potatoes and peas, served with sweet-tangy chutney.</p>
+            <div class="menu-item-footer">
+              <span class="menu-meta-tag"><i class="bi bi-check2-circle" aria-hidden="true"></i> 3 Pieces</span>
+              <button class="menu-order-btn" aria-label="Add Mini Samosa to order" data-name="Mini Samosa" data-price="₹109">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 07 — A MENU MADE FOR EVERY MOMENT
+       Editorial section maintaining consistent Warm Ivory background
+       ======================================================================== -->
+  <section class="menu-moment-section" id="everyMoment">
+    <div class="container-editorial">
+      <div class="menu-moment-card reveal-on-scroll">
+        <div class="menu-moment-grid">
+          <!-- Left: Lifestyle photo -->
+          <div class="menu-moment-media">
+            <img src="assets/images/menu/moment-lifestyle.jpg"
+              alt="Friends sharing comforting cups of chai at the Tea House"
+              class="menu-moment-img"
+              loading="lazy">
+            <div class="menu-moment-badge">
+              <span>Made with Love</span>
+            </div>
+          </div>
+
+          <!-- Right: Narrative -->
+          <div class="menu-moment-content">
+            <span class="editorial-category-label">TEA HOUSE ATMOSPHERE</span>
+            <h2 class="menu-moment-heading">Whatever the Moment,<br><em>There's a Perfect Sip.</em></h2>
+            <p class="menu-moment-text">
+              Whether you're starting your morning, catching up with friends, or taking a peaceful break,
+              there's always a reason to enjoy a little chai. Our kitchen simmers fresh pots throughout the day
+              so every pour is served at peak warmth and flavour.
+            </p>
+
+            <div class="menu-moment-features">
+              <div class="menu-feat-item">
+                <i class="bi bi-sun" aria-hidden="true"></i>
+                <div>
+                  <strong>Morning Calm</strong>
+                  <span>Bold awakenings to start your day right</span>
+                </div>
+              </div>
+              <div class="menu-feat-item">
+                <i class="bi bi-chat-heart" aria-hidden="true"></i>
+                <div>
+                  <strong>Midday Catchups</strong>
+                  <span>Comforting sips made for good conversation</span>
+                </div>
+              </div>
+              <div class="menu-feat-item">
+                <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                <div>
+                  <strong>Evening Unwind</strong>
+                  <span>Gentle floral and caffeine-free infusions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 08 — FINAL CTA
+       Deep forest green background, ivory text, terracotta CTAs
+       ======================================================================== -->
+  <section class="menu-cta-section" id="menuCta">
+    <!-- Oversized ghost backdrop -->
+    <div class="menu-cta-backdrop" aria-hidden="true">A CHAI MOMENT</div>
+    <!-- Sage organic blobs -->
+    <div class="menu-cta-blob menu-cta-blob--left" aria-hidden="true"></div>
+    <div class="menu-cta-blob menu-cta-blob--right" aria-hidden="true"></div>
+
+    <div class="container-editorial menu-cta-inner">
+      <div class="menu-cta-content reveal-on-scroll">
+        <span class="menu-cta-eyebrow editorial-category-label">YOUR NEXT SIP</span>
+        <h2 class="menu-cta-heading">Your Next Favourite<br><em>Chai Is Waiting.</em></h2>
+        <p class="menu-cta-desc">
+          Find your flavour, take a moment, and make every chai break a little more special.
+          Visit our heritage stall or reach out for custom catering.
+        </p>
+        <div class="menu-cta-buttons">
+          <a href="about.html" class="btn-terracotta">
+            <span>Our Story</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="contact.html" class="btn-forest menu-cta-btn-alt">
+            <span>Get in Touch</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Dynamic Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Toast Container Placeholder -->
+  <div id="toastNotificationContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1200;"></div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Modular Vanilla JavaScript Files -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages/menu.js"></script>
+</body>
+</html>

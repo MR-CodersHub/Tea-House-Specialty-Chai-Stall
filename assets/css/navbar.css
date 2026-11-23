@@ -1,0 +1,511 @@
+/* ==========================================================================
+   TEA HOUSE & SPECIALTY CHAI - NAVBAR COMPONENT STYLING
+   ========================================================================== */
+
+:root {
+  --nav-bg-top: #EFECE1;
+  --nav-bg-main: #F7F4EA;
+  --nav-text: #123D2E;
+  --nav-text-muted: #586B60;
+  --nav-accent: #C87538;
+  --nav-border: rgba(18, 61, 46, 0.1);
+  --nav-shadow: 0 4px 20px rgba(18, 61, 46, 0.06);
+}
+
+[data-theme="dark"] {
+  --nav-bg-top: #0D261C;
+  --nav-bg-main: #123326;
+  --nav-text: #F7F4EA;
+  --nav-text-muted: #A4B8AC;
+  --nav-accent: #DE8E54;
+  --nav-border: rgba(247, 244, 234, 0.12);
+  --nav-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Header Container */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: var(--nav-bg-main);
+  box-shadow: var(--nav-shadow);
+  transition: all 0.3s ease;
+}
+
+/* 1. Top Information Bar */
+.top-info-bar {
+  background-color: var(--nav-bg-top);
+  border-bottom: 1px solid var(--nav-border);
+  font-size: 0.82rem;
+  color: var(--nav-text-muted);
+  padding: 0.45rem 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.top-info-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.top-info-left,
+.top-info-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.top-info-item svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  opacity: 0.85;
+}
+
+.top-info-item .brand-badge {
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: 0.5px;
+}
+
+.top-info-item .tagline-quote {
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--nav-accent);
+}
+
+.social-links-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-links-top a {
+  color: var(--nav-text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+
+.social-links-top a:hover {
+  color: var(--nav-accent);
+  background-color: rgba(200, 117, 56, 0.12);
+  transform: translateY(-1px);
+}
+
+/* 2. Main Navigation Bar */
+.main-navbar {
+  padding: 0.85rem 0;
+  transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+.site-header.scrolled .main-navbar {
+  padding: 0.55rem 0;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand Logo */
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.brand-logo-image {
+  width: 48px;
+  height: 32px;
+  padding: 2px;
+  flex: 0 0 auto;
+  border-radius: 3px;
+  background-color: #F7F4EA;
+  object-fit: contain;
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+  color: var(--nav-text);
+  line-height: 0.95;
+  white-space: nowrap;
+}
+
+.brand-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  color: var(--nav-accent);
+  line-height: 1.3;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Nav Menu Links */
+.navbar-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-custom {
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--nav-text);
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+  transition: color 0.25s ease;
+  letter-spacing: 0.2px;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--nav-accent);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: var(--nav-accent);
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+/* Right Controls (RTL, Theme, Profile) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Toggle Buttons */
+.nav-action-btn {
+  background: transparent;
+  border: 1px solid var(--nav-border);
+  color: var(--nav-text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.38rem 0.75rem;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav-action-btn:hover {
+  background-color: rgba(200, 117, 56, 0.1);
+  border-color: var(--nav-accent);
+  color: var(--nav-accent);
+}
+
+.nav-action-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+}
+
+/* Profile Dropdown */
+.profile-dropdown-wrapper {
+  position: relative;
+}
+
+.profile-trigger-btn {
+  background: transparent;
+  border: 1px solid var(--nav-border);
+  color: var(--nav-text);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.profile-trigger-btn:hover,
+.profile-trigger-btn[aria-expanded="true"] {
+  background-color: var(--nav-accent);
+  border-color: var(--nav-accent);
+  color: #FFFFFF;
+}
+
+.profile-trigger-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.profile-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 190px;
+  background-color: var(--nav-bg-main);
+  border: 1px solid var(--nav-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+  z-index: 1100;
+}
+
+.profile-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.profile-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1.2rem;
+  color: var(--nav-text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile-menu li a:hover {
+  background-color: rgba(200, 117, 56, 0.12);
+  color: var(--nav-accent);
+}
+
+.profile-menu-divider {
+  height: 1px;
+  background-color: var(--nav-border);
+  margin: 0.35rem 0;
+}
+
+/* Mobile Hamburger Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--nav-border);
+  color: var(--nav-text);
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  position: relative;
+  z-index: 1060;
+  border-radius: 50%;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  flex: 0 0 2px;
+  background-color: currentColor;
+  margin: 3px auto;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-nav-toggle.active .hamburger-line:nth-child(1) {
+  transform: translateY(7.2px) rotate(45deg);
+}
+
+.mobile-nav-toggle.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.active .hamburger-line:nth-child(3) {
+  transform: translateY(-7.2px) rotate(-45deg);
+}
+
+/* Mobile Drawer Overlay */
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 61, 46, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1040;
+}
+
+.mobile-drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Navigation Container */
+.mobile-navigation-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: var(--nav-bg-main);
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1065;
+}
+
+.mobile-navigation-drawer.active {
+  right: 0;
+}
+
+/* RTL Adjustments for Navbar */
+[dir="rtl"] .top-info-left,
+[dir="rtl"] .top-info-right {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .profile-menu {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .mobile-navigation-drawer {
+  right: auto;
+  left: -320px;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.2);
+  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[dir="rtl"] .mobile-navigation-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+/* Mobile Specific Breakpoints */
+@media (max-width: 1199.98px) {
+  .top-info-bar .tagline-quote,
+  .top-info-bar .top-address {
+    display: none;
+  }
+
+  .navbar-nav-links {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .top-info-bar {
+    font-size: 0.75rem;
+  }
+
+  .top-hours {
+    display: none;
+  }
+
+  .brand-logo-image {
+    width: 40px;
+    height: 27px;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .brand-sub {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .navbar-actions {
+    gap: 0.35rem;
+  }
+
+  .nav-action-btn span {
+    display: none;
+  }
+
+  .nav-action-btn {
+    padding: 0.38rem;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+  }
+
+  .profile-trigger-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mobile-nav-toggle {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .hamburger-line {
+    width: 20px;
+  }
+}
